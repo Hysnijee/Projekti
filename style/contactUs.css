@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #191b1f;
+    font-family: century gothic;
+}
+.main{
+    display: flex;
+    padding-top:30px;
+    padding-left:10%;
+}
+/*-----------------*/
+.box1{
+    width:45%;
+}
+.box1 ul li{
+    color: white;
+    margin:30px;
+    list-style: none;
+}
+.box1 ul li:first-child{
+    font-size: 30pt;
+}
+.box1 img{
+    width: 220px;
+    height:220px;
+    border-radius: 50%;
+}
+/*----------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;;
+    padding-top: 30px;
+    padding-left:100px;
+}
+form input{
+    width:500px;
+    height:30px;
+    border:none;
+    border-bottom:1px solid white;
+    margin:20px;
+}
+form label{
+    margin:20px;
+    color: white;
+}
+#submit{
+    width:150px;
+    background-color: white;
+    height:50px;
+    font-size:large;
+}
+:placeholder-shown{
+    color:white;
+}
+/*-----------------------*/
+.footer{
+    display: flex;
+    color: white;
+    padding-top: 100px;
+    padding-left:10%;
+    padding-bottom: 50px;
+}
+.main-list{
+    display: flex;
+    list-style: none;
+}
+.inner-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-left:150px;
+}
+.footer ul li img{
+    width:120px;
+    height:30px;
+}
+#hr-separate{
+    width:80%;
+    margin-top:100px;
+    margin-left: 150px;
+}
+/*---------------------------*/
+.socials{
+    display: flex;
+    justify-content: center;
+    padding:30px;
+}
+.socials img{
+    width:50px;
+    height:50px;
+}
