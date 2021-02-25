@@ -7,8 +7,9 @@
     <title>Oriflame</title>
     <link rel="stylesheet" href="../style/contactUs.css">
 </head>
-<body>
-    <div class="header"></div>
+    <?php
+        include('../reusableCode/header.php');
+    ?>
     <div class="main">
         <div class="box1">
             <ul>
@@ -43,3 +44,5 @@
     <?php 
         include('../reusableCode/footer.php');
     ?>
+    </body>
+</html>

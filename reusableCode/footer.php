@@ -29,5 +29,3 @@
         <a href="https://www.twitter.com/"><img src="../images/twitter-logo.png"></a>
         <a href="https://www.youtube.com/"><img src="../images/yt-logo.png"></a>
     </div>
-</body>
-</html>

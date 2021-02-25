@@ -6,7 +6,6 @@
 }
 .header{
     height:50px;
-    background-image:url(../images/prod15.jpg);
     opacity: 0.8;
 }
 .header ul{
@@ -15,12 +14,12 @@
     top:15px;
     bottom:15px;
     justify-content: space-evenly;
-    background-image: inherit;
     list-style: none;
 }
 .header ul li a{
     text-decoration: none;
     color:white;
+    font-size: large;
 }
 /*-------------------------*/
 .first-main ul{
@@ -86,7 +85,7 @@
 }
 .second-main ul li img{
     height:200px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 /*----------------------------*/
 .third-main{
@@ -217,4 +216,22 @@
 .socials img{
     width:50px;
     height:50px;
+}
+/*-------------------*/
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+}
+.slide{
+    width:800px;
+    height:450px;
+}
+.slide-button{
+    height:50px;
+    width:30px;
+    align-items: center;
+    color: white;
+    border:none;
 }

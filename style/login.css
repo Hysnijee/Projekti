@@ -21,57 +21,7 @@
     color:white;
     font-size: large;
 }
-.main{
-    display: flex;
-    padding-top:30px;
-    padding-left:10%;
-}
-/*-----------------*/
-.box1{
-    width:45%;
-}
-.box1 ul li{
-    color: white;
-    margin:30px;
-    list-style: none;
-}
-.box1 ul li:first-child{
-    font-size: 30pt;
-}
-.box1 img{
-    width: 220px;
-    height:220px;
-    border-radius: 50%;
-}
-/*----------------*/
-form{
-    display: flex;
-    flex-direction: column;
-    width: 45%;;
-    padding-top: 30px;
-    padding-left:100px;
-}
-form input{
-    width:500px;
-    height:30px;
-    border:none;
-    border-bottom:1px solid white;
-    margin:20px;
-}
-form label{
-    margin:20px;
-    color: white;
-}
-#submit{
-    width:150px;
-    background-color: white;
-    height:50px;
-    font-size:large;
-}
-:placeholder-shown{
-    color:white;
-}
-/*-----------------------*/
+/*-------------------------*/
 .footer{
     display: flex;
     color: white;
