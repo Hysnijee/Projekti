@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #191b1f;
+    font-family: century gothic;
+}
+.header{
+    height:50px;
+    background-image:url(images/prod15.jpg);
+    opacity: 0.8;
+}
+.header ul{
+    display: flex;
+    position: relative;
+    top:15px;
+    bottom:15px;
+    justify-content: space-evenly;
+    background-image: inherit;
+    list-style: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color:white;
+}
+/*-------------------------*/
+.first-main ul{
+    display: flex;
+    padding: 50px;
+}
+.first-main ul li{
+    margin:10px;
+    list-style: none;
+}
+.first-main ul li:first-child img{
+    height:300px;
+    width:200px;
+    padding:15px;
+}
+#first-li{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+.first-main ul li:nth-child(2) img{
+    height:200px;
+    width:300px;
+    padding:20px;
+}
+#second-li{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+.first-main ul li:nth-child(3) img{
+    height:300px;
+    width:300px;
+    padding: 15px;
+}
+#third-li{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.first-main ul li:nth-child(4){
+    color:white;
+    padding: 10px;
+}
+.first-main ul li:nth-child(4) h1{
+    margin-bottom:10px;
+}
+#concept:hover{
+    color:khaki;
+}
+/*--------------------------------*/
+.second-main{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left:2px;
+    padding-right: 2px;
+}
+.second-main ul{
+    display: flex;
+    list-style: none;
+}
+.second-main ul li img{
+    height:200px;
+    opacity: 0.6;
+}
+/*----------------------------*/
+.third-main{
+    padding-top:100px;
+    background-image: url(images/prod15.jpg);
+    height:270px;
+    align-items: center;
+}
+.box{
+    height: 200px;
+    margin-left: 200px;
+    display: flex;
+}
+.inner-box-first{
+    height:200px;
+    width:400px;
+    background-color: rgb(5, 78, 54);
+    text-align: center;
+}
+.inner-box-first img{
+    width:300px;
+    height:80px;
+}
+.inner-box-second hr{
+    width:250px;
+    margin: 30px;
+}
+.inner-box-second p{
+    color:white;
+    padding-left: 40px;
+    font-size:xx-large;
+}
+#concept2{
+    color:white;
+    padding-left: 50px;
+    font-size:xx-large;
+}
+#concept2:hover{
+    color:rgb(3, 112, 48);
+}
+.inner-box-third{
+    width:500px;
+    padding: 50px;
+    color:white;
+}
+/*------------------------------------*/
+.fourth-main{
+    height:300px;
+    display:flex;
+    padding-left:25%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    align-items: center;
+}
+.f1{
+    padding:50px;
+    font-size: 50pt;
+    background-image: inherit;
+}
+.f2{
+    padding: 50px;
+    font-size: large;
+    width:600px;
+    background-image: inherit;
+}
+#button{
+    width:200px;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 20pt;
+    color: white;
+}
+/*--------------------------*/
+.fifth-main{
+    height:300px;
+    display:flex;
+    padding-left:25%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    align-items: center;
+}
+/*----------------------------------*/
+.sixth-main{
+    height:300px;
+    display:flex;
+    padding-left:25%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    align-items: center;
+}
+/*----------------------*/
+.footer{
+    display: flex;
+    color: white;
+    padding-top: 100px;
+    padding-left:10%;
+    padding-bottom: 50px;
+}
+.main-list{
+    display: flex;
+    list-style: none;
+}
+.inner-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-left:150px;
+}
+.footer ul li img{
+    width:120px;
+    height:30px;
+}
+#hr-separate{
+    width:80%;
+    margin-top:100px;
+    margin-left: 150px;
+}
+/*---------------------------*/
+.socials{
+    display: flex;
+    justify-content: center;
+    padding:30px;
+}
+.socials img{
+    width:50px;
+    height:50px;
+}
