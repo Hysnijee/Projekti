@@ -22,6 +22,25 @@
     font-size: large;
 }
 /*--------------------------*/
+.ul1 {
+    list-style: none;
+    margin-top: 70px;
+    padding-left: 100px;
+    width:200px;
+}
+.li1 a {
+    display: block;
+    color:white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: cavolini;
+}
+.li1 a:hover {
+    background-color: #555;
+    color: white;
+    width:200px;
+}
+/*-------------------*/
 .first-main, .second-main, .third-main, .fourth-main, .fifth-main, .sixth-main{
     color:white;
     display: flex;
