@@ -11,7 +11,7 @@
         <main>
             <h3>Cosmetics</h3>
             <div class="Cosmetics">
-                <ul id="ul1">
+                <ul id="ul1"> Products Categories</br></br>
                 <li id="li1"><a href="#BathBody">Bath & Body</a></li>
                 <li id="li1"><a href="#LipGloss">Lip Gloss</a></li>
                 <li id="li1"><a href="#Lip">Lip</a></li>

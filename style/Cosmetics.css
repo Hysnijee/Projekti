@@ -3,6 +3,7 @@
     padding:0;
     background-color: #191b1f;
     font-family: century gothic;
+    color:white;
 }
 .header{
     height:50px;
@@ -18,7 +19,6 @@
 }
 .header ul li a{
     text-decoration: none;
-    color:white;
     font-size: large;
 }
 /*----------------------*/
@@ -37,7 +37,6 @@
     opacity: 0.6;
 }
 h3{
-    color:white;
     font-family:Chiller;
     font-size: 60px;
     text-align: center;
@@ -45,7 +44,6 @@ h3{
     padding-top: 30px;
 }
 #ul1 {
-    border: white;
     list-style-type: none;
     margin-top: 70px;
     padding-left: 100px;
@@ -53,14 +51,14 @@ h3{
       
 #li1 a {
     display: block;
-    color:white;
     padding: 8px 16px;
     text-decoration: none;
     font-family: cavolini;
+    font-style: italic;
+    border-bottom: 1px solid rgb(56, 52, 52);
 }
 #li1 a:hover {
     background-color: #555;
-    color: white;
 }
 /*------Bath&Body*/
 
@@ -80,7 +78,6 @@ h3{
     height:300px;
     text-align:center;
     font-size:10px;
-    color:white;
     padding-left: 15%;
     padding-top: 10%;
 }
