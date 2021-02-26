@@ -27,11 +27,19 @@
     position: relative;
     align-items: center;
     padding-left: 30px;
+    
+}
+.Cosmetics img{
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 500px;
+    height: 330px;
+    opacity: 0.6;
 }
 h3{
     color:white;
     font-family:Chiller;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     font-style: italic;
     padding-top: 30px;
@@ -40,7 +48,7 @@ h3{
     border: white;
     list-style-type: none;
     margin-top: 70px;
-
+    padding-left: 100px;
 }
       
 #li1 a {
@@ -73,8 +81,8 @@ h3{
     text-align:center;
     font-size:10px;
     color:white;
-    padding-left: 150px;
-    padding-top: 100px;
+    padding-left: 15%;
+    padding-top: 10%;
 }
 #p2{
     font-style: italic;
