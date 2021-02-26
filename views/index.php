@@ -74,7 +74,7 @@
                 i përshtaten të gjithëve dhe çdo pamje. Qofshin bazat sezonale apo kombinime frymëzuese 
                 të ngjyrave, është e lehtë të blini produktet tona të reja - të gjitha 
                 të duken bukur nga mëngjesi në mbrëmje. </p>
-                <a href="learnMore.php"><input type="submit" value="learn more" id ='button'></a>
+                <a href="Cosmetic.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
         </div>
         <div class="slider">
