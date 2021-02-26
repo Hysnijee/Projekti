@@ -54,11 +54,12 @@
                     <div id="concept2">COSMETICS</div>
                 </div>
                 <div class="inner-box-third">
-                    <p>Amet nulla facilisi morbi tempus iaculis urna. 
-                        Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. 
-                        Sodales ut eu sem integer vitae justo eget magna. 
-                        Ornare suspendisse sed nisi lacus. 
-                        Nunc sed velit dignissim sodales ut eu. </p>
+                    <p>Për më shumë se 50 vjet, Oriflame u ka fuqizuar njerëzit të 
+                    bëjnë një ndryshim në jetën e tyre duke rekomanduar dhe shitur produkte 
+                    bukurie me cilësi të lartë të frymëzuar nga natyra dhe mundësuar nga shkenca suedeze. 
+                    Oriflame është kompania më e madhe e bukurisë në Evropë që shet 
+                    drejtpërdrejt me një komunitet global 
+                    me mbi 3 milion konsulentë të pavarur të shitjeve në të gjithë botën. </p>
                 </div>
             </div>
         </div>
@@ -86,13 +87,12 @@
         </div>
         <div class="fifth-main">
             <div class="f2">
-                <p>Magna eget est lorem ipsum dolor sit amet consectetur. 
-                    Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. 
-                    Nibh nisl condimentum id venenatis a condimentum vitae sapien 
-                    pellentesque. Interdum velit laoreet id donec ultrices. 
-                    Euismod in pellentesque massa placerat duis. 
-                    Urna condimentum mattis pellentesque id. 
-                    Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. </p>
+                <p>Për më shumë se 50 vjet, Oriflame u ka fuqizuar njerëzit të bëjnë një 
+                ndryshim në jetën e tyre duke rekomanduar dhe shitur produkte bukurie me cilësi 
+                të lartë të frymëzuar nga natyra dhe mundësuar nga shkenca suedeze. 
+                Oriflame është kompania më e madhe e bukurisë në Evropë që shet drejtpërdrejt 
+                me një komunitet global 
+                me mbi 3 milion konsulentë të pavarur të shitjeve në të gjithë botën.</p>
                 <a href="learnMore.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
             <div class="f1">

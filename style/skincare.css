@@ -21,6 +21,35 @@
     color:white;
     font-size: large;
 }
+/*--------------------------*/
+.first-main, .second-main, .third-main, .fourth-main, .fifth-main, .sixth-main{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 17%;
+    padding-right: 15%;
+    padding-top:20px;
+}
+p{
+    text-align: center;
+    font-size: xx-large;
+    padding-top:20px;
+}
+.main-ul{
+    display: flex;
+    list-style: none;
+}
+.main-ul li{
+    padding: 50px;
+}
+.main-ul img{
+    height:150px;
+    width:150px;
+    margin-bottom: 10px;
+}
+.cmimi{
+    margin-top:10px;
+}
 /*----------------------*/
 .footer{
     display: flex;
