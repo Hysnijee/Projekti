@@ -14,16 +14,10 @@
         <div class="box1">
             <ul>
                 <li><h1>00</h1></li>
-                <li>Morbi libero ligula, molestie id pulvinar tempus, efficitur vitae ante. 
-                Integer at leo tincidunt, ultricies nibh vitae, mollis ex. Cras lorem leo, 
-                ullamcorper vitae nunc id, consectetur laoreet velit. 
-                Vivamus venenatis, ligula vitae consequat accumsan, purus justo varius mi, vitae dapibus neque lorem vitae turpis. 
-                Fusce finibus metus massa, quis efficitur ligula ultricies at. 
-                Aenean mi mauris, lacinia in venenatis nec, venenatis non nunc. 
-                Nam vel ipsum ac quam congue gravida. Nunc at est quis velit efficitur vestibulum. 
-                Cras molestie efficitur mauris, in varius tellus vehicula ut. 
-                Praesent molestie risus id neque mollis, et posuere lectus condimentum. 
-                Cras vitae nisi in ligula tempus faucibus ut commodo massa. </li>
+                <li>Ne ju inkurajojmë të kontaktoni nëse nuk keni gjetur përgjigjet që keni 
+                    kërkuar këtu në Shërbimin e Klientit të Oriflame. 
+                    Ne e vlerësojmë opinionin tuaj, dhe presim për të dëgjuar nga ju.
+                    Ju lutem plotësojeni formën e dhënë nëse dëshironi të na shkruani email.</li>
                 <li><img src="../images/ceo.jpg"></li>
             </ul>
         </div>

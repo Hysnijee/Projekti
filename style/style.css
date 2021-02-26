@@ -225,7 +225,7 @@
     padding-left: 10%;
 }
 .slide{
-    width:800px;
+    width:700px;
     height:450px;
 }
 .slide-button{
@@ -234,4 +234,10 @@
     align-items: center;
     color: white;
     border:none;
+}
+#h1-skincare{
+    position: relative;
+    color:white;
+    top:170px;
+    right:220px;
 }

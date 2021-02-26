@@ -17,19 +17,13 @@
                 <li id="second-li"><img src="../images/prod2.jpg"><div id="concept">ACCESORIES</div></li>
                 <li id="third-li"><img src="../images/prod3.jpg"></li>
                 <li id="fourth-li">
-                    <h1>Lorem Ipsum</h1>
+                    <h1>Një kompani e bukurisë si asnjë tjetër</h1>
                     <p>
-                        It is a long established fact that a reader 
-                        will be distracted by the readable content 
-                        of a page when looking at its layout. 
-                        The point of using Lorem Ipsum is that it has 
-                        a more-or-less normal distribution of letters, 
-                        as opposed to using 'Content here, content here', 
-                        making it look like readable English. 
-                        Many desktop publishing packages and web page 
-                        editors now use Lorem Ipsum as their default model 
-                        text, and a search for 'lorem ipsum' will uncover 
-                        many web sites still in their infancy.
+                    Për mbi 50 vjet kemi mundësuar njerëzit nga e gjithë bota të festojnë 
+                    bukurinë e tyre personale dhe të përmbushin ëndrrat e tyre. 
+                    Ne krijojmë dhe ofrojmë produkte me cilësi të lartë, të sigurtë, 
+                    të orientuar drejt prirjes për të dashuruar 
+                    bukurinë dhe mundësinë unike për t'u bërë pjesë e një bashkësie globale bukurie.
                     </p>
                 </li>
             </ul>
@@ -73,13 +67,13 @@
                 <h1>01<h1>
             </div>
             <div class="f2">
-                <p>Magna eget est lorem ipsum dolor sit amet consectetur. 
-                    Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. 
-                    Nibh nisl condimentum id venenatis a condimentum vitae sapien 
-                    pellentesque. Interdum velit laoreet id donec ultrices. 
-                    Euismod in pellentesque massa placerat duis. 
-                    Urna condimentum mattis pellentesque id. 
-                    Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. </p>
+                <p>Grimi duhet të rrisë bukurinë tuaj natyrore, por gjithashtu t'ju japë liri për të 
+                shprehur personalitetin tuaj individual, rrezatues. 
+                Ne ofrojmë zgjedhjet dhe gjërat e domosdoshme për bukurinë më të mirë të modës si maskarë, 
+                buzëkuq, kozmetikë të përditshëm për fytyrën, sytë, buzët dhe thonjtë, plus nuancat që 
+                i përshtaten të gjithëve dhe çdo pamje. Qofshin bazat sezonale apo kombinime frymëzuese 
+                të ngjyrave, është e lehtë të blini produktet tona të reja - të gjitha 
+                të duken bukur nga mëngjesi në mbrëmje. </p>
                 <a href="learnMore.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
         </div>
@@ -107,24 +101,22 @@
         </div>
         <div class="slider">
                 <button class="slide-button slide-left" onclick="levizja2(-1)">&#10094;</button> <!--&#10094 ne unicode shigjeta-->
-                <img class="slide slide2" src="../images/prod2.jpg">
-                <img class="slide slide2" src="../images/prod3.jpg">
-                <img class="slide slide2" src="../images/prod7.jpg">
-                <button class="slide-button slide-right" onclick="levizja2(+1)">&#10095;</button>  
+                <img class="slide slide2" src="../images/skincare2.jpg">
+                <img class="slide slide2" src="../images/skincare3.jpg">
+                <img class="slide slide2" src="../images/skincare1.jpg">
+                <button class="slide-button slide-right" onclick="levizja2(+1)">&#10095;</button> 
+                <h1 id="h1-skincare">Skincare</h1> 
         </div>
         <div class="sixth-main">
         <div class="f1">
                 <h1>03<h1>
             </div>
             <div class="f2">
-                <p>Magna eget est lorem ipsum dolor sit amet consectetur. 
-                    Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. 
-                    Nibh nisl condimentum id venenatis a condimentum vitae sapien 
-                    pellentesque. Interdum velit laoreet id donec ultrices. 
-                    Euismod in pellentesque massa placerat duis. 
-                    Urna condimentum mattis pellentesque id. 
-                    Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. </p>
-                <a href="learnMore.php"><input type="submit" value="learn more" id ='button'></a>
+            <p>Ne besojmë në fuqinë e përbërësve natyror, 
+               dhe e cila me mbështetjen shkencore, krijon rezultatet më efektive. 
+                Sidoqoftë të jetë lloji i lëkurës suaj dhe mosha juaj, 
+                gama jonë e gjerë e produkteve më të reja për trajtimin dhe kujdesin ndaj lëkurës është për ju. </p>
+                <a href="skincare.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
         </div>
     </div>
