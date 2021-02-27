@@ -22,44 +22,83 @@
     font-size: large;
 }
 /*--------------------------*/
-.ul1 {
+#titulli{
+    text-align: center;
+    color:white;
+
+}
+.ul-title{
+    font-weight: bold;
+}
+.ul1{
     list-style: none;
     margin-top: 70px;
-    padding-left: 100px;
-    width:200px;
+    padding-left: 8%;
+    width:220px;
+}
+.li1{
+    color:white;
 }
 .li1 a {
     display: block;
-    color:white;
     padding: 8px 16px;
     text-decoration: none;
-    font-family: cavolini;
+    color:white;
 }
 .li1 a:hover {
     background-color: #555;
     color: white;
-    width:200px;
+    width:220px;
+}
+.box{
+    border:1px solid white;
+    border-right: none;
+    height:170px;
+    margin-top:8%;
+    color:white;
+    width:35%;
+    margin-left: 5%;
+}
+.text{
+    padding:20px;
+    font-size: small;
+}
+.skincare{
+    display: flex;
+    padding-bottom:20px;
+}
+.skincare img{
+    width:450px;
+    height:300px;
+    margin-top: 50px;
+    border:1px solid white;
+    padding:20px;
+    border-style: dashed;
 }
 /*-------------------*/
 .first-main, .second-main, .third-main, .fourth-main, .fifth-main, .sixth-main{
     color:white;
     display: flex;
     flex-direction: column;
-    padding-left: 17%;
-    padding-right: 15%;
     padding-top:20px;
+    align-items: center;
 }
 p{
-    text-align: center;
     font-size: xx-large;
-    padding-top:20px;
+    text-align: center;
+    padding:10px;
 }
 .main-ul{
     display: flex;
     list-style: none;
 }
+.main-ul ul{
+    list-style: none;
+}
 .main-ul li{
     padding: 50px;
+    width:250px;
+    text-align: center;
 }
 .main-ul img{
     height:150px;
@@ -68,6 +107,7 @@ p{
 }
 .cmimi{
     margin-top:10px;
+    text-align: center;
 }
 /*----------------------*/
 .footer{
