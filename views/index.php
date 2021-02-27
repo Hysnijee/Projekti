@@ -80,19 +80,18 @@
         </div>
         <div class="slider">
                 <button class="slide-button slide-left" onclick="levizja1(-1)">&#10094;</button> <!--&#10094 ne unicode shigjeta-->
-                <img class="slide slide1" src="../images/prod2.jpg">
-                <img class="slide slide1" src="../images/prod3.jpg">
-                <img class="slide slide1" src="../images/prod7.jpg">
+                <img class="slide slide1" src="../images/prod18.jpg">
+                <img class="slide slide1" src="../images/prod19.jpg">
+                <img class="slide slide1" src="../images/prod20.jpg">
                 <button class="slide-button slide-right" onclick="levizja1(+1)">&#10095;</button>  
         </div>
         <div class="fifth-main">
             <div class="f2">
-                <p>Për më shumë se 50 vjet, Oriflame u ka fuqizuar njerëzit të bëjnë një 
-                ndryshim në jetën e tyre duke rekomanduar dhe shitur produkte bukurie me cilësi 
-                të lartë të frymëzuar nga natyra dhe mundësuar nga shkenca suedeze. 
-                Oriflame është kompania më e madhe e bukurisë në Evropë që shet drejtpërdrejt 
-                me një komunitet global 
-                me mbi 3 milion konsulentë të pavarur të shitjeve në të gjithë botën.</p>
+                <p>Freskoni dukjen tuaj përmes koleksonit online ekskluziv të aksesorëve për femra. 
+                    Koleksioni jonë merr nga trendet kyçe të dimrit, duke përfshirë edhe aksesorët për 
+                    flokë që bien në sy, shallet me stampime të trashëguara, syzet e guximshme, kapelat e 
+                    inspiruara nga cilësia 'vintixh' dhe bizhuteritë e pasura. Është përdorur estetika maksimaliste, 
+                    ndërsa moto për aksesorët e sezonës festive është "më shumë është më shumë".</p>
                 <a href="learnMore.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
             <div class="f1">

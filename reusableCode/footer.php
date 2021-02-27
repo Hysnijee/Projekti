@@ -1,4 +1,4 @@
-<hr id="hr-separate">>
+<hr id="hr-separate">
     <div class="footer">
         <ul class="main-list">
             <ul class="inner-list">
@@ -6,26 +6,26 @@
                 <li>COMPANY LOGO</li>
             </ul>
             <ul class="inner-list">
-                <li>WEEBLY THEMES</li>
-                <li>PRE-SALE FAQS</li>
-                <li>SUBMIT A TICKET</li>
+                <li>WINTER SEASON</li>
+                <li>SPRING SEASON</li>
+                <li>SUMMER SEASON</li>
+                <li>FALL SEASON</li>
             </ul>
             <ul class="inner-list">
-                <li>WEEBLY THEMES</li>
-                <li>PRE-SALE FAQS</li>
-                <li>SUBMIT A TICKET</li>
+                <li>COLLABORATIONS</li>
+                <li>WORLDWIDE SHIPPING</li>
+                <li>PARTNERSHIPS</li>
             </ul>
             <ul class="inner-list">
-                <li>ABOUT US</li>
                 <li>CONTACT US</li>
-                <li>AFFILIATES</li>
-                <li>RESOURCES</li>
+                <li>ORDER PRODUCTS</li>
+                <li>LOGIN/REGISTER</li>
             </ul>
         </ul>
     </div>
     <div class="socials">
-        <a href="https://www.instagram.com/"><img src="../images/insta-logo.png"></a>
-        <a href="https://www.facebook.com/"><img src="../images/fb-logo.png"></a>
-        <a href="https://www.twitter.com/"><img src="../images/twitter-logo.png"></a>
-        <a href="https://www.youtube.com/"><img src="../images/yt-logo.png"></a>
+        <a href="https://www.instagram.com/oriflame/?hl=en"><img src="../images/insta-logo.png"></a>
+        <a href="https://www.facebook.com/oriflame/"><img src="../images/fb-logo.png"></a>
+        <a href="https://twitter.com/weareoriflame?lang=en"><img src="../images/twitter-logo.png"></a>
+        <a href="https://www.youtube.com/channel/UCbaKyu1JVZcgv62oC6nwx8g"><img src="../images/yt-logo.png"></a>
     </div>
