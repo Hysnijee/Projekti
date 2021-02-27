@@ -22,7 +22,7 @@
             </ul>
         </div>
         <div class="box2">
-            <form>
+            <form method="post" onsubmit="return validimIKontaktFormes()">
                 <label>Email</label>
                 <input type="text" placeholder="Enter a valid email address">
                 <label>Name</label>
@@ -31,12 +31,13 @@
                 <input type="text" placeholder="Enter your address">
                 <label>Message</label>
                 <input type="text" placeholder="Enter your message">
-                <input type="submit" value="Submit" id="submit">
+                <input type="submit" value="Submit" id="submit" name='contact-submit'>
             </form>
         </div>
     </div>
     <?php 
         include('../reusableCode/footer.php');
     ?>
+    <script src="../js/contactUs.js"></script>
     </body>
 </html>
