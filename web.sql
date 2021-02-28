@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2021 at 10:53 PM
+-- Generation Time: Feb 28, 2021 at 11:16 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -38,9 +38,11 @@ CREATE TABLE `homepagedesc` (
 --
 
 INSERT INTO `homepagedesc` (`Id`, `type`, `description`) VALUES
-(1, 'cosmetic', 'Grimi duhet të rrisë bukurinë tuaj natyrore, por gjithashtu t\'ju japë liri për të shprehur personalitetin tuaj individual, rrezatues. Ne ofrojmë zgjedhjet dhe gjërat e domosdoshme për bukurinë më të mirë të modës si maskarë, buzëkuq, kozmetikë të përditsh'),
+(1, 'cosmetic', 'Grimi duhet të rrisë bukurinë tuaj natyrore, por gjithashtu t\'ju japë liri për të shprehur personalitetin tuaj individual, rrezatues. Ne ofrojmë zgjedhjet dhe gjërat e domosdoshme për bukurinë më të mirë të modës si maskarë, buzëkuq, kozmetikë të përditshëm për fytyrën, sytë, buzët dhe thonjtë, plus nuancat që i përshtaten të gjithëve dhe çdo pamje. Qofshin bazat sezonale apo kombinime frymëzuese të ngjyrave, është e lehtë të blini produktet tona të reja - të gjitha të duken bukur nga mëngjesi në mbrëmje. '),
 (2, 'accesories', 'Freskoni dukjen tuaj përmes koleksonit online ekskluziv të aksesorëve për femra. Koleksioni jonë merr nga trendet kyçe të dimrit, duke përfshirë edhe aksesorët për flokë që bien në sy, shallet me stampime të trashëguara, syzet e guximshme, kapelat e inspiruara nga cilësia \'vintixh\' dhe bizhuteritë e pasura. Është përdorur estetika maksimaliste, ndërsa moto për aksesorët e sezonës festive është \"më shumë është më shumë\".'),
-(3, 'skincare', 'Ne besojmë në fuqinë e përbërësve natyror, dhe e cila me mbështetjen shkencore, krijon rezultatet më efektive. Sidoqoftë të jetë lloji i lëkurës suaj dhe mosha juaj, gama jonë e gjerë e produkteve më të reja për trajtimin dhe kujdesin ndaj lëkurës është për ju. ');
+(3, 'skincare', 'Ne besojmë në fuqinë e përbërësve natyror, dhe e cila me mbështetjen shkencore, krijon rezultatet më efektive. Sidoqoftë të jetë lloji i lëkurës suaj dhe mosha juaj, gama jonë e gjerë e produkteve më të reja për trajtimin dhe kujdesin ndaj lëkurës është për ju. '),
+(4, 'first-paragraph', 'Për mbi 50 vjet kemi mundësuar njerëzit nga e gjithë bota të festojnë bukurinë e tyre personale dhe të përmbushin ëndrrat e tyre. Ne krijojmë dhe ofrojmë produkte me cilësi të lartë, të sigurtë, të orientuar drejt prirjes për të dashuruar bukurinë dhe mundësinë unike për t\'u bërë pjesë e një bashkësie globale bukurie.'),
+(5, 'second-paragraph', 'Për më shumë se 50 vjet, Oriflame u ka fuqizuar njerëzit të bëjnë një ndryshim në jetën e tyre duke rekomanduar dhe shitur produkte bukurie me cilësi të lartë të frymëzuar nga natyra dhe mundësuar nga shkenca suedeze. Oriflame është kompania më e madhe e bukurisë në Evropë që shet drejtpërdrejt me një komunitet global me mbi 3 milion konsulentë të pavarur të shitjeve në të gjithë botën.');
 
 -- --------------------------------------------------------
 
@@ -117,7 +119,7 @@ ALTER TABLE `skincareproducts`
 -- AUTO_INCREMENT for table `homepagedesc`
 --
 ALTER TABLE `homepagedesc`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `skincareproducts`
