@@ -92,9 +92,6 @@ p{
     display: flex;
     list-style: none;
 }
-.main-ul ul{
-    list-style: none;
-}
 .main-ul li{
     padding: 50px;
     width:250px;

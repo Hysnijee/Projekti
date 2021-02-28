@@ -1,3 +1,18 @@
+<?php 
+    session_start();
+    include_once '../components/connection.php';
+    $query = "select * from homepagedesc where type='cosmetic';";
+    $result = mysqli_query($conn, $query);
+    $query2 = "select * from homepagedesc where type='accesories';";
+    $result2 = mysqli_query($conn, $query2);
+    $query3 = "select * from homepagedesc where type='skincare';";
+    $result3 = mysqli_query($conn, $query3);
+    $query4 = "select * from homepagedesc where type='first-paragraph';";
+    $result4 = mysqli_query($conn, $query4);
+    $query5 = "select * from homepagedesc where type='second-paragraph';";
+    $result5 = mysqli_query($conn, $query5);
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,13 +33,13 @@
                 <li id="third-li"><img src="../images/prod3.jpg"></li>
                 <li id="fourth-li">
                     <h1>Një kompani e bukurisë si asnjë tjetër</h1>
-                    <p>
-                    Për mbi 50 vjet kemi mundësuar njerëzit nga e gjithë bota të festojnë 
-                    bukurinë e tyre personale dhe të përmbushin ëndrrat e tyre. 
-                    Ne krijojmë dhe ofrojmë produkte me cilësi të lartë, të sigurtë, 
-                    të orientuar drejt prirjes për të dashuruar 
-                    bukurinë dhe mundësinë unike për t'u bërë pjesë e një bashkësie globale bukurie.
-                    </p>
+                    <?php 
+                        while($rows = mysqli_fetch_assoc($result4)){
+                    ?>
+                    <p><?php echo $rows['description']?></p>
+                    <?php
+                    }
+                    ?>
                 </li>
             </ul>
         </div>
@@ -54,12 +69,13 @@
                     <div id="concept2">COSMETICS</div>
                 </div>
                 <div class="inner-box-third">
-                    <p>Për më shumë se 50 vjet, Oriflame u ka fuqizuar njerëzit të 
-                    bëjnë një ndryshim në jetën e tyre duke rekomanduar dhe shitur produkte 
-                    bukurie me cilësi të lartë të frymëzuar nga natyra dhe mundësuar nga shkenca suedeze. 
-                    Oriflame është kompania më e madhe e bukurisë në Evropë që shet 
-                    drejtpërdrejt me një komunitet global 
-                    me mbi 3 milion konsulentë të pavarur të shitjeve në të gjithë botën. </p>
+                <?php 
+                    while($rows = mysqli_fetch_assoc($result5)){
+                ?>
+                <p><?php echo $rows['description']?></p>
+                <?php
+                }
+                ?>
                 </div>
             </div>
         </div>
@@ -68,13 +84,13 @@
                 <h1>01<h1>
             </div>
             <div class="f2">
-                <p>Grimi duhet të rrisë bukurinë tuaj natyrore, por gjithashtu t'ju japë liri për të 
-                shprehur personalitetin tuaj individual, rrezatues. 
-                Ne ofrojmë zgjedhjet dhe gjërat e domosdoshme për bukurinë më të mirë të modës si maskarë, 
-                buzëkuq, kozmetikë të përditshëm për fytyrën, sytë, buzët dhe thonjtë, plus nuancat që 
-                i përshtaten të gjithëve dhe çdo pamje. Qofshin bazat sezonale apo kombinime frymëzuese 
-                të ngjyrave, është e lehtë të blini produktet tona të reja - të gjitha 
-                të duken bukur nga mëngjesi në mbrëmje. </p>
+                <?php 
+                    while($rows = mysqli_fetch_assoc($result)){
+                ?>
+                <p><?php echo $rows['description']?></p>
+                <?php
+                }
+                ?>
                 <a href="Cosmetic.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
         </div>
@@ -87,11 +103,13 @@
         </div>
         <div class="fifth-main">
             <div class="f2">
-                <p>Freskoni dukjen tuaj përmes koleksonit online ekskluziv të aksesorëve për femra. 
-                    Koleksioni jonë merr nga trendet kyçe të dimrit, duke përfshirë edhe aksesorët për 
-                    flokë që bien në sy, shallet me stampime të trashëguara, syzet e guximshme, kapelat e 
-                    inspiruara nga cilësia 'vintixh' dhe bizhuteritë e pasura. Është përdorur estetika maksimaliste, 
-                    ndërsa moto për aksesorët e sezonës festive është "më shumë është më shumë".</p>
+                <?php 
+                    while($rows = mysqli_fetch_assoc($result2)){
+                ?>
+                <p><?php echo $rows['description']?></p>
+                <?php
+                }
+                ?>
                 <a href="learnMore.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
             <div class="f1">
@@ -111,10 +129,13 @@
                 <h1>03<h1>
             </div>
             <div class="f2">
-            <p>Ne besojmë në fuqinë e përbërësve natyror, 
-               dhe e cila me mbështetjen shkencore, krijon rezultatet më efektive. 
-                Sidoqoftë të jetë lloji i lëkurës suaj dhe mosha juaj, 
-                gama jonë e gjerë e produkteve më të reja për trajtimin dhe kujdesin ndaj lëkurës është për ju. </p>
+                <?php 
+                    while($rows = mysqli_fetch_assoc($result3)){
+                ?>
+                <p><?php echo $rows['description']?></p>
+                <?php
+                }
+                ?>
                 <a href="skincare.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
         </div>
