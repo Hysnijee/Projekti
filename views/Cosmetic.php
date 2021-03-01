@@ -9,7 +9,7 @@
         ?>
 
         <main>
-            <h3>Cosmetics</h3>
+            <img src="../images/Cosmetics.PNG">
             <div class="Cosmetics">
                 <ul id="ul1"> Products Categories</br></br>
                 <li id="li1"><a href="#BathBody">Bath & Body</a></li>
@@ -23,7 +23,7 @@
                 </ul>
                 <img src="../images/photo1.jpg">
             </div>
-
+            
             <div id="BathBody">
                 <h4>Bath & Body </h4>
                 <div id="Rreshti">

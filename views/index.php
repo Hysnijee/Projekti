@@ -110,7 +110,7 @@
                 <?php
                 }
                 ?>
-                <a href="learnMore.php"><input type="submit" value="learn more" id ='button'></a>
+                <a href="accessories.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
             <div class="f1">
                 <h1>02<h1>
