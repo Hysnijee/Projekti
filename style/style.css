@@ -76,8 +76,6 @@
 .second-main{
     padding-top: 30px;
     padding-bottom: 100px;
-    padding-left:2px;
-    padding-right: 2px;
 }
 .second-main ul{
     display: flex;
@@ -144,13 +142,11 @@
 .f1{
     padding:50px;
     font-size: 50pt;
-    background-image: inherit;
 }
 .f2{
     padding: 50px;
     font-size: large;
     width:600px;
-    background-image: inherit;
 }
 #button{
     width:200px;
@@ -240,4 +236,237 @@
     color:white;
     top:170px;
     right:220px;
+}
+
+
+/*Responsive for IPhone X*/
+@media only screen and (max-width:400px){
+    *{
+        font-size: xx-small;
+    }
+    .first-main ul li:first-child img{
+        width:100px;
+        height:130px;
+    }
+    #first-li{
+        border-left:none;
+        text-align: center;
+    }
+    .first-main ul li:nth-child(2) img{
+        width:150px;
+        height:100px;
+        padding:15px;
+    }
+    .first-main ul li:nth-child(3) img{
+        width:100px;
+        height:100px;
+    }
+    .first-main ul{
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+    }
+    #third-li{
+        border-right:none;
+        text-align: center;
+    }
+    #concept{
+        margin:5px;
+    }
+    .second-main ul li img{
+        height:70px;
+        width:34px;
+    }
+    .third-main{
+        height:200px;
+    }
+    .box{
+        margin-left:35px;
+        flex-direction: column;
+        width:310px;
+    }
+    .inner-box-first{
+        height:50px;
+        width:inherit;
+    }
+    .inner-box-first img{
+        width:70px;
+        height:20px;
+    }
+    .inner-box-second{
+        text-align: center;
+        width:inherit;
+    }
+    .inner-box-second hr{
+        margin: 10px;
+        margin-left: 25px;
+    }
+    .inner-box-second p{
+        font-size: xx-small;
+        padding-left: 5px;
+    }
+    #concept2{
+        font-size: xx-small;
+        padding-left:10px;
+    }
+    .fourth-main{
+        padding-left:0;
+        height:200px;
+    }
+    .slide{
+        width:220px;
+        height:150px;
+    }
+    .slider{
+        padding: 0;
+    }
+    .fifth-main{
+        padding: 0;
+    }
+    #h1-skincare{
+        top:50px;
+        right:80px;
+    }
+    .sixth-main{
+        padding: 0;
+    }
+    .footer{
+        padding:0;
+        
+    }
+    #hr-separate{
+        margin-left: 40px;
+        margin-top:0;
+    }
+    .inner-list{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .footer ul li img{
+        width:50px;
+    }
+    .first-footer-ul li:nth-child(2){
+        display: none;
+    }
+    .main-list{
+        margin-left: 15px;
+    }
+    .socials img{
+        width: 30px;
+        height:30px;
+    }
+    .inner-box-third{
+        padding:0;
+        width:inherit;
+        height:150px;
+        margin-top: 10px;
+    }
+    .inner-box-third p{
+        padding:30px;
+        padding-top: 5px;
+    }
+    .f1{
+        padding-right:10px;
+        padding-left: 50px;
+    }
+    .f1 h1{
+        font-size: large;
+    }
+    #button{
+        height:40px;
+        margin-top: 30px;
+        font-size: medium;
+    }
+    .fifth-main .f1{
+        padding-left:10px;
+        padding-right: 50px;
+    }
+}
+
+/*Page responsive for Tablet*/
+@media only screen and (min-width:750px) and (max-width:800px){
+    *{
+        font-size: small;
+    }
+    .first-main ul{
+        padding:30px;
+        height:240px;
+    }
+    .first-main ul li:first-child img {
+        height: 180px;
+        width: 100px;
+    }
+    .first-main ul li:nth-child(2) img {
+        height: 100px;
+        width: 100px;
+    }
+    .first-main ul li:nth-child(3) img {
+        height: 100px;
+        width: 100px;
+    }
+    #concept{
+        font-size: medium;
+    }
+    .second-main ul li img{
+        height:100px;
+    }
+    .third-main{
+        height: 180px;
+        padding-bottom: 70px;
+    }
+    .box{
+        height:170px;
+        margin-left: 100px;
+    }
+    .inner-box-first{
+        height: inherit;
+    }
+    .inner-box-first img{
+        width:100px;
+        height:40px;
+    }
+    .inner-box-second hr{
+        width:auto;
+        margin:15px;
+        margin-left: 35px;
+    }
+    .inner-box-second p{
+        font-size: medium;
+        padding-left: 30px;
+    }
+    #concept2{
+        font-size: large;
+        padding-left: 30px;
+    }
+    .inner-box-third{
+        width: auto;
+    }
+    .fourth-main, .fifth-main, .sixth-main{
+        padding:70px;
+    }
+    .f1 h1{
+        font-size: xx-large;
+    }
+    .slide{
+        height:300px;
+        width:450px;
+    }
+    #button{
+        font-size: large;
+        width:150px;
+        height:40px;
+    }
+    .footer{
+        padding:40px;
+    }
+    .inner-list{
+        margin-left: 40px;
+    }
+    #hr-separate{
+        margin-left: 10%;
+    }
+    .socials img{
+        height: 40px;
+        width: 40px;
+    }
 }

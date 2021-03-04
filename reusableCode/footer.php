@@ -1,7 +1,7 @@
 <hr id="hr-separate">
     <div class="footer">
         <ul class="main-list">
-            <ul class="inner-list">
+            <ul class="inner-list first-footer-ul">
                 <li><img src="../images/oriflameLogo.png"></li>
                 <li>COMPANY LOGO</li>
             </ul>
