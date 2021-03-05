@@ -155,8 +155,12 @@ form label{
         margin-left: 10px;
         margin-top: 15px;
     }
+    .inner-list li {
+        font-size: xx-small;
+    }
     .footer ul li img{
-        width:50px;
+        width:40px;
+        height:15px;
     }
     .first-footer-ul li:nth-child(2){
         display: none;
@@ -167,5 +171,46 @@ form label{
     .socials img{
         width: 30px;
         height:30px;
+    }
+}
+
+/*Responsive for IPad*/
+@media only screen and (min-width:750px) and (max-width:800px){
+    *{
+        font-size: small;
+    }
+    .box1 ul li h1{
+        font-size: xx-large;
+    }
+    .box1 img{
+        height:150px;
+        width:auto;
+    }
+    form{
+        width: auto;
+        padding-left: 10px;
+    }
+    form input{
+        width:250px;
+        margin:10px;
+    }
+    #submit{
+        height:40px;
+        width:130px;
+        margin-top:40px;
+        font-size: medium;
+    }
+    .footer{
+        padding:40px;
+    }
+    .inner-list{
+        margin-left: 40px;
+    }
+    #hr-separate{
+        margin-left: 10%;
+    }
+    .socials img{
+        height: 40px;
+        width: 40px;
     }
 }
