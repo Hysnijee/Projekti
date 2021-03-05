@@ -342,7 +342,8 @@
         margin-top: 15px;
     }
     .footer ul li img{
-        width:50px;
+        width:40px;
+        height:15px;
     }
     .first-footer-ul li:nth-child(2){
         display: none;

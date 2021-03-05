@@ -115,7 +115,7 @@ form label{
 /*Responsive for IPhone X*/
 @media only screen and (max-width:400px){
     *{
-        font-size: small;
+        font-size: xx-small;
     }
     .main{
         flex-direction: column;
@@ -154,9 +154,6 @@ form label{
     .inner-list{
         margin-left: 10px;
         margin-top: 15px;
-    }
-    .inner-list li {
-        font-size: xx-small;
     }
     .footer ul li img{
         width:40px;
