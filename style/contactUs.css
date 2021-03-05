@@ -111,3 +111,61 @@ form label{
     width:50px;
     height:50px;
 }
+
+/*Responsive for IPhone X*/
+@media only screen and (max-width:400px){
+    *{
+        font-size: small;
+    }
+    .main{
+        flex-direction: column;
+        padding:30px;
+    }
+    .box1{
+        width:auto;
+    }
+    .box1 img{
+        height: auto;
+        width:120px;
+    }
+    form input{
+        width:auto;
+        margin:15px;
+    }
+    form label{
+        margin:15px;
+    }
+    form{
+        width:auto;
+        padding-left:0;
+    }
+    #submit{
+        height:40px;
+        width:130px;
+        margin-top: 40px;
+    }
+    .footer{
+        padding:0;
+    }
+    #hr-separate{
+        margin-left: 40px;
+        margin-top:0;
+    }
+    .inner-list{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .footer ul li img{
+        width:50px;
+    }
+    .first-footer-ul li:nth-child(2){
+        display: none;
+    }
+    .main-list{
+        margin-left: 15px;
+    }
+    .socials img{
+        width: 30px;
+        height:30px;
+    }
+}
