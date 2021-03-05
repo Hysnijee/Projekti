@@ -145,3 +145,110 @@ p{
     width:50px;
     height:50px;
 }
+
+/*Responsive for IPhoneX*/
+@media only screen and (max-width:400px){
+    *{
+        font-size: xx-small;
+    }
+    .skincare{
+        flex-direction: column;
+    }
+    .ul1{
+        margin-top:30px;
+        margin-bottom: 30px;
+        padding-left: 30%;
+    }
+    p{
+        font-size: large;
+    }
+    .box{
+        width: 250px;
+        height: auto;
+        border-bottom:none;
+        border-right:1px solid white;
+        margin-left: 60px;
+    }
+    .skincare img{
+        margin-top: 0;
+        width:250px;
+        height: auto;
+        margin-left: 40px;
+    }
+    .main-ul img{
+        width: 100px;
+        height:100px;
+    }
+    .main-ul li{
+        font-size: xx-small;
+    }
+    .footer{
+        padding:0;
+    }
+    #hr-separate{
+        margin-left: 40px;
+        margin-top:0;
+    }
+    .inner-list{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .footer ul li img{
+        width:40px;
+        height:15px;
+    }
+    .first-footer-ul li:nth-child(2){
+        display: none;
+    }
+    .main-list{
+        margin-left: 15px;
+    }
+    .socials img{
+        width: 30px;
+        height:30px;
+    }
+}
+
+/*Responsive for IPad*/
+@media only screen and (min-width:750px) and (max-width:800px){
+    *{
+        font-size: small;
+    }
+    .ul1{
+        padding-left: 30px;
+        width: auto;
+    }
+    .box{
+        height:200px;
+        width:230px;
+        margin-left:30px;
+    }
+    .text{
+        font-size: x-small;
+    }
+    .skincare img{
+        width:250px;
+        height:auto;
+        margin-top:30px;
+    }
+    p{
+        font-size: large;
+    }
+    .main-ul img{
+        width:130px;
+        height:130px;
+    }
+    .footer{
+        padding:40px;
+    }
+    .inner-list{
+        margin-left: 40px;
+    }
+    #hr-separate{
+        margin-left: 10%;
+    }
+    .socials img{
+        height: 40px;
+        width: 40px;
+    }
+}
