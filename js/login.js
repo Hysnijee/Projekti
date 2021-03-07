@@ -6,13 +6,15 @@ LogInbtn.addEventListener("click", (event)=>{
 
         if (username.value == "") {
             alert("Ju duhet te shtoni username-in.");
-            username.focus();
             return false;
         }
 
-        if (fjalkalimi.value == "") {
+        else if (fjalkalimi.value == "") {
             alert("Ju duhet te shtoni Fjalkalimin.");
-            fjalkalimi.focus();
+            return false;
+        }
+        else if (fjalkalimi.length < 7) {
+            alert("Fjalekalimi juaj duhet te permbaje se paku 8 karaktere.");
             return false;
         }
         else{
