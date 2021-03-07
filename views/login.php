@@ -14,7 +14,7 @@
             <div class="form">
                 <h3>Login</h3><br>
                 <div class="body">
-                    <form>
+                    <form method="post" onsubmit="return ValidimiLogin()">
                     <input  id="userN" type="text" placeholder="Username...">
                     <input type="password" id="pass" name="pass" placeholder="Password..." minlength="8">
                     <input  id="rememberme" type="checkbox">
@@ -33,6 +33,7 @@
 </div>
 <?php 
     include('../reusableCode/footer.php');
-?>      
+?>  
+<script src="../js/login.js"></script>    
 </body>
 </html>
