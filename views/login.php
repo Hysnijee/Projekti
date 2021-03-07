@@ -33,6 +33,7 @@
 </div>
 <?php 
     include('../reusableCode/footer.php');
-?>      
+?>  
+<script src="../js/login.js"></script>    
 </body>
 </html>
