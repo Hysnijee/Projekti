@@ -82,6 +82,13 @@
     padding:20px;
     border-style: dashed;
 }
+#shto{
+    background-color: white;
+    width: 130px;
+    height: 30px;
+    margin-top: 5px;
+    font-size: x-small;
+}
 /*-------------------*/
 .first-main, .second-main, .third-main, .fourth-main, .fifth-main, .sixth-main{
     color:white;

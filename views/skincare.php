@@ -38,7 +38,7 @@
             <li class="li1"><a href="#fourth-main">Maska</a></li>
             <li class="li1"><a href="#fifth-main">Kujdesi ndaj diellit</a></li>
             <li class="li1"><a href="#sixth-main">Ushqyes</a></li>
-            <li><a href="insertProduct.php"><input type="submit" id='insertProd' name='insert' value="Insert Product"></a></li>
+            <li><a href="cart.php"><input type="submit" id='insertProd' name='insert' value="Shporta"></a></li>
         </ul>
         <div class="box">
             <div class="text">
@@ -60,7 +60,7 @@
             while($rows = mysqli_fetch_assoc($result)){
         ?>
         <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div></li>
+            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
         </ul>
         <?php
         }
@@ -72,7 +72,7 @@
             while($rows = mysqli_fetch_assoc($result3)){
         ?>
         <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div></li>
+            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
         </ul>
         <?php
         }
@@ -84,7 +84,7 @@
             while($rows = mysqli_fetch_assoc($result4)){
         ?>
         <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div></li>
+            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
         </ul>
         <?php
         }
@@ -96,7 +96,7 @@
             while($rows = mysqli_fetch_assoc($result5)){
         ?>
         <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div></li>
+            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
         </ul>
         <?php
         }
@@ -108,7 +108,7 @@
             while($rows = mysqli_fetch_assoc($result6)){
         ?>
         <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div></li>
+            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
         </ul>
         <?php
         }
@@ -120,7 +120,7 @@
         while($rows = mysqli_fetch_assoc($result2)){
     ?>
     <ul class="main-ul">
-        <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div></li>
+        <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
     </ul>
     <?php
         }
