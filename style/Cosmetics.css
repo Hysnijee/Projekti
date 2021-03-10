@@ -98,11 +98,6 @@ h4{
     padding-top: 70px;
 }
 
-
-
-
-
-
 /*----------------------*/
 .footer{
     display: flex;
@@ -140,4 +135,70 @@ h4{
 .socials img{
     width:50px;
     height:50px;
+}
+
+
+@media only screen and (max-width:400px){
+    *{
+        font-size: xx-small;
+    }
+    img{
+        height: 160px;
+        width: 100% ;
+    }
+    .Cosmetics{
+        flex-direction: column;
+    }
+    #ul1 {
+        list-style-type: none;
+        margin-top: 20px;
+        padding-left: 30px;
+    }
+    p{
+        font-size: large;
+    }
+    .Cosmetics img{
+        padding-top: 50px;
+        padding-left:10px;
+        width:380px;
+        height: 250px;
+        opacity: 0.6;
+       
+    }
+    #Produkti{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        Width:130px;
+        height:190px;
+        text-align:center;
+        font-size:10px;
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+    .main-ul li{
+        font-size: xx-small;
+    }
+    .footer{
+        padding:0;
+    }
+    #hr-separate{
+        margin-left: 40px;
+        margin-top:0;
+    }
+    
+    .footer ul li img{
+        width:40px;
+        height:15px;
+    }
+    .first-footer-ul li:nth-child(2){
+        display: none;
+    }
+    .main-list{
+        margin-left: 15px;
+    }
+    .socials img{
+        width: 30px;
+        height:30px;
+    }
 }
