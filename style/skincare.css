@@ -36,6 +36,13 @@
     padding-left: 8%;
     width:220px;
 }
+#insertProd{
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left:15px;
+}
 .li1{
     color:white;
 }
@@ -219,7 +226,7 @@ p{
         width: auto;
     }
     .box{
-        height:200px;
+        height:210px;
         width:230px;
         margin-left:30px;
     }
