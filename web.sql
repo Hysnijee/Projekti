@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2021 at 11:16 PM
+-- Generation Time: Mar 10, 2021 at 09:29 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -93,7 +93,35 @@ INSERT INTO `skincareproducts` (`id`, `name`, `category`, `img_path`, `price`) V
 (28, 'Optimals Urban UV Mbrojtje gjatë ditës FM30', 'kunderDiellit', '../images/optimals-diell.jpeg', 9.99),
 (29, 'Sprej për Trup dhe për Fytyrë SPF 50', 'kunderDiellit', '../images/sprej-diell.jpeg', 17.99),
 (30, 'Losion për Trup dhe për Fytyrë SPF 30', 'kunderDiellit', '../images/losion-diell.jpeg', 15.99),
-(31, 'Xhel për Trup dhe për Fytyrë pas Diellit', 'kunderDiellit', '../images/xhel-diell.jpeg', 8.49);
+(31, 'Xhel për Trup dhe për Fytyrë pas Diellit', 'kunderDiellit', '../images/xhel-diell.jpeg', 8.49),
+(32, 'ushqyes', 'NovAge Skinergise Ideal Perfection Krema e Natës', '../images/novage-ushqyes2.jpeg', 21.99),
+(33, 'ushqyes', 'NovAge Skinergise Ideal Perfection Krema e Natës', '../images/novage4-ushqyes.jpeg', 21.99),
+(34, 'hhjvghv', 'ghvghvg', 'hcgchgcgvhg', 7.99);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `userid` int(11) NOT NULL,
+  `fullname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` binary(66) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `ccNo` varchar(255) NOT NULL,
+  `role` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`userid`, `fullname`, `email`, `username`, `password`, `city`, `address`, `ccNo`, `role`) VALUES
+(1, 'Hysnije Zllanoga', 'hysnijee.zllanoga@gmail.com', 'Hysnije_z', 0x333837313534323438306234663130313261313535323334663764623961626600000000000000000000000000000000000000000000000000000000000000000000, 'Rahovec', 'Mizair Isma', '2362382782992', 0);
 
 --
 -- Indexes for dumped tables
@@ -112,6 +140,12 @@ ALTER TABLE `skincareproducts`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`userid`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -125,7 +159,13 @@ ALTER TABLE `homepagedesc`
 -- AUTO_INCREMENT for table `skincareproducts`
 --
 ALTER TABLE `skincareproducts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

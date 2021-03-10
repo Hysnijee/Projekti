@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,19 +14,19 @@
     include('../reusableCode/header.php');
 ?>
 <div class="main">
-    <form method="post" onsubmit="return valdimiIFormes()">        
+    <form action="../components/registerVerify.php" method="post" onsubmit="return valdimiIFormes()">        
         <label>Full Name</label>
-        <input type="text" placeholder="Enter your firstname and lastname">
+        <input name='register-name' type="text" placeholder="Enter your firstname and lastname">
         <label>Email</label>
-        <input type="text" placeholder="Enter a valid email address">
+        <input name='register-email' type="text" placeholder="Enter a valid email address">
         <label>Username</label>
-        <input type="text" placeholder="Enter a username">
+        <input name='register-username' type="text" placeholder="Enter a username">
         <label>Password</label>
-        <input type="password" placeholder="***********">
+        <input name='register-pass' type="password" placeholder="***********">
         <label>City</label>
-        <input type="text" placeholder="Enter your city">
+        <input name='register-city' type="text" placeholder="Enter your city">
         <label>Address</label>
-        <input type="text" placeholder="Enter a valid address">
+        <input name='register-add' type="text" placeholder="Enter a valid address">
         <label>Credit Card</label>
         <select>
             <option>PayPal</option>
@@ -31,8 +34,8 @@
             <option>Mastercard</option>
         </select>
         <label>Credit Card number</label>
-        <input type="text" placeholder="Enter a valid credit card number">
-        <input type="submit" id="submit" value="Register">
+        <input name='register-ccNo' type="text" placeholder="Enter a valid credit card number">
+        <input type="submit" id="submit" value="Register" name='register-btn'>
     </form>
 </div>
 <?php 
