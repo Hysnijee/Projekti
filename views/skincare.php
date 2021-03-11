@@ -1,19 +1,6 @@
-<?php 
-    session_start();
-    include_once '../components/connection.php';
-    $query = "select * from skincareproducts where category='pastrues';";
-    $result = mysqli_query($conn, $query);
-    $query2 = "select * from skincareproducts where category='ushqyes';";
-    $result2 = mysqli_query($conn, $query2);
-    $query3 = "select * from skincareproducts where category='hidratues';";
-    $result3 = mysqli_query($conn, $query3);
-    $query4 = "select * from skincareproducts where category='serume';";
-    $result4 = mysqli_query($conn, $query4);
-    $query5 = "select * from skincareproducts where category='maska';";
-    $result5 = mysqli_query($conn, $query5);
-    $query6 = "select * from skincareproducts where category='kunderDiellit';";
-    $result6 = mysqli_query($conn, $query6);
-
+<?php
+    include_once '../components/product.php';
+    require_once '../components/productMapper.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,74 +44,44 @@
     <div class="first-main" id="first-main">
         <p>Pastrues</p>
         <?php 
-            while($rows = mysqli_fetch_assoc($result)){
-        ?>
-        <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
-        </ul>
-        <?php
-        }
+            $object = new ProductMapper();
+            $object->getProductsByLowerCategory('pastrues');
         ?>
     </div>
     <div class="second-main" id="second-main">
     <p>Hidratues</p>
         <?php 
-            while($rows = mysqli_fetch_assoc($result3)){
-        ?>
-        <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
-        </ul>
-        <?php
-        }
+            $object = new ProductMapper();
+            $object->getProductsByLowerCategory('hidratues');
         ?>
     </div>
     <div class="third-main" id="third-main">
     <p>Serume dhe Tretmane</p>
         <?php 
-            while($rows = mysqli_fetch_assoc($result4)){
-        ?>
-        <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
-        </ul>
-        <?php
-        }
+            $object = new ProductMapper();
+            $object->getProductsByLowerCategory('serume');
         ?>
     </div>
     <div class="fourth-main" id="fourth-main">
     <p>Maska</p>
         <?php 
-            while($rows = mysqli_fetch_assoc($result5)){
-        ?>
-        <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
-        </ul>
-        <?php
-        }
+            $object = new ProductMapper();
+            $object->getProductsByLowerCategory('maska');
         ?>
     </div>
     <div class="fifth-main" id="fifth-main">
     <p>Kujdesi ndaj diellit</p>
         <?php 
-            while($rows = mysqli_fetch_assoc($result6)){
-        ?>
-        <ul class="main-ul">
-            <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
-        </ul>
-        <?php
-        }
+            $object = new ProductMapper();
+            $object->getProductsByLowerCategory('kunderDiellit');
         ?>
     </div>
     <div class="sixth-main" id="sixth-main">
     <p>Ushqyes</p>
-    <?php 
-        while($rows = mysqli_fetch_assoc($result2)){
-    ?>
-    <ul class="main-ul">
-        <li><img src="<?php echo $rows['img_path']?>"><br><?php echo $rows['name']?><br><div class="cmimi"><?php echo $rows['price']?>€</div><input id="shto" type = "submit" value="Shto në Shportë"></li>
-    </ul>
-    <?php
-        }
-    ?>
+        <?php 
+            $object = new ProductMapper();
+            $object->getProductsByLowerCategory('ushqyes');
+        ?>
     </div>
 </div>
 <?php 
