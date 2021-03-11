@@ -137,7 +137,7 @@ h4{
     height:50px;
 }
 
-
+/*----------Responsive per iPhone X ---------*/
 @media only screen and (max-width:400px){
     *{
         font-size: xx-small;
@@ -164,6 +164,11 @@ h4{
         height: 250px;
         opacity: 0.6;
        
+    }
+    #Rreshti {
+        display: flex;
+        flex-direction: row;
+        padding-right: 15px;
     }
     #Produkti{
         display: flex;
@@ -200,5 +205,63 @@ h4{
     .socials img{
         width: 30px;
         height:30px;
+    }
+}
+
+/*----------Responsive per iPad ---------*/
+@media only screen and (min-width:760px) and (max-width:780px){
+    *{
+        font-size: small;
+    }
+    img{
+        padding-left: 10px;
+    }
+    #ul1 {
+        list-style-type: none;
+        margin-top: 70px;
+        padding-left: 70px;
+        font-size: 15px;
+    }
+    .Cosmetics img {
+        padding-top: 50px;
+        padding-left: 200px;
+        width: 500px;
+        height: 350px;
+        opacity: 0.6;
+    }
+    h4{
+        padding-left: 200px;
+    }
+    p{
+        font-size: 10px;
+    }
+    #Produkti {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        Width: 200px;
+        height: 300px;
+        text-align: center;
+        font-size: 12px;
+        padding-left: 100px;
+        padding-top: 10%;
+    }
+    .main-ul img{
+        width:130px;
+        height:130px;
+    }
+    
+    .footer{
+        padding:40px;
+    }
+    .inner-list{
+        margin-left: 40px;
+    }
+    #hr-separate{
+        margin-left: 10%;
+    }
+    .socials img{
+        height: 40px;
+        width: 40px;
     }
 }
