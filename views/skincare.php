@@ -43,45 +43,75 @@
     </div>
     <div class="first-main" id="first-main">
         <p>Pastrues</p>
-        <?php 
-            $object = new ProductMapper();
-            $object->getProductsByLowerCategory('pastrues');
-        ?>
+        <ul class="main-ul">
+            <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('pastrues');
+            ?>
+            </li>
+            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
+        </ul>
     </div>
     <div class="second-main" id="second-main">
     <p>Hidratues</p>
-        <?php 
-            $object = new ProductMapper();
-            $object->getProductsByLowerCategory('hidratues');
-        ?>
+        <ul class="main-ul">
+            <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('hidratues');
+            ?>
+            </li>
+            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
+        </ul>
     </div>
     <div class="third-main" id="third-main">
     <p>Serume dhe Tretmane</p>
-        <?php 
-            $object = new ProductMapper();
-            $object->getProductsByLowerCategory('serume');
-        ?>
+        <ul class="main-ul">
+            <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('serume');
+            ?>
+            </li>
+            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
+        </ul>
     </div>
     <div class="fourth-main" id="fourth-main">
     <p>Maska</p>
-        <?php 
-            $object = new ProductMapper();
-            $object->getProductsByLowerCategory('maska');
-        ?>
+        <ul class="main-ul">
+            <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('maska');
+            ?>
+            </li>
+            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
+        </ul>
     </div>
     <div class="fifth-main" id="fifth-main">
     <p>Kujdesi ndaj diellit</p>
-        <?php 
-            $object = new ProductMapper();
-            $object->getProductsByLowerCategory('kunderDiellit');
-        ?>
+        <ul class="main-ul">
+            <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('kunderDiellit');
+            ?>
+            </li>
+            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
+        </ul>
     </div>
     <div class="sixth-main" id="sixth-main">
     <p>Ushqyes</p>
-        <?php 
-            $object = new ProductMapper();
-            $object->getProductsByLowerCategory('ushqyes');
-        ?>
+        <ul class="main-ul">
+            <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('ushqyes');
+            ?>
+            </li>
+            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
+        </ul>
     </div>
 </div>
 <?php 
