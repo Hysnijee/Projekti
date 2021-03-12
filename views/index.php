@@ -1,17 +1,6 @@
 <?php 
-    session_start();
-    include_once '../components/connection.php';
-    $query = "select * from homepagedesc where type='cosmetic';";
-    $result = mysqli_query($conn, $query);
-    $query2 = "select * from homepagedesc where type='accesories';";
-    $result2 = mysqli_query($conn, $query2);
-    $query3 = "select * from homepagedesc where type='skincare';";
-    $result3 = mysqli_query($conn, $query3);
-    $query4 = "select * from homepagedesc where type='first-paragraph';";
-    $result4 = mysqli_query($conn, $query4);
-    $query5 = "select * from homepagedesc where type='second-paragraph';";
-    $result5 = mysqli_query($conn, $query5);
-    
+    include_once '../components/article.php';
+    require_once '../components/articleMapper.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,11 +23,8 @@
                 <li id="fourth-li">
                     <h1>Një kompani e bukurisë si asnjë tjetër</h1>
                     <?php 
-                        while($rows = mysqli_fetch_assoc($result4)){
-                    ?>
-                    <p><?php echo $rows['description']?></p>
-                    <?php
-                    }
+                        $object = new ArticleMapper();
+                        $object->getDescriptionByType('first-paragraph');
                     ?>
                 </li>
             </ul>
@@ -69,13 +55,10 @@
                     <div id="concept2">COSMETICS</div>
                 </div>
                 <div class="inner-box-third">
-                <?php 
-                    while($rows = mysqli_fetch_assoc($result5)){
-                ?>
-                <p><?php echo $rows['description']?></p>
-                <?php
-                }
-                ?>
+                    <?php
+                        $object = new ArticleMapper();
+                        $object->getDescriptionByType('second-paragraph');
+                    ?>
                 </div>
             </div>
         </div>
@@ -84,13 +67,10 @@
                 <h1>01<h1>
             </div>
             <div class="f2">
-                <?php 
-                    while($rows = mysqli_fetch_assoc($result)){
-                ?>
-                <p><?php echo $rows['description']?></p>
-                <?php
-                }
-                ?>
+                    <?php
+                        $object = new ArticleMapper();
+                        $object->getDescriptionByType('cosmetic');
+                    ?>
                 <a href="Cosmetic.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
         </div>
@@ -103,13 +83,10 @@
         </div>
         <div class="fifth-main">
             <div class="f2">
-                <?php 
-                    while($rows = mysqli_fetch_assoc($result2)){
-                ?>
-                <p><?php echo $rows['description']?></p>
-                <?php
-                }
-                ?>
+                    <?php
+                        $object = new ArticleMapper();
+                        $object->getDescriptionByType('accesories');
+                    ?>
                 <a href="accessories.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
             <div class="f1">
@@ -126,16 +103,13 @@
         </div>
         <div class="sixth-main">
         <div class="f1">
-                <h1>03<h1>
+            <h1>03<h1>
             </div>
             <div class="f2">
-                <?php 
-                    while($rows = mysqli_fetch_assoc($result3)){
-                ?>
-                <p><?php echo $rows['description']?></p>
-                <?php
-                }
-                ?>
+                    <?php
+                        $object = new ArticleMapper();
+                        $object->getDescriptionByType('skincare');
+                    ?>
                 <a href="skincare.php"><input type="submit" value="learn more" id ='button'></a>
             </div>
         </div>
