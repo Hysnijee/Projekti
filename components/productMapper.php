@@ -16,9 +16,11 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":name", $name);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){    
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
+            echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br>';
-            echo $result['price']. '<br><br>';
+            echo $result['price']. '€<br><br><br>';
+            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
         }
     }
 
@@ -27,9 +29,11 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":category", $category);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){    
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){  
+            echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>'; 
             echo $result['name']. '<br>';
-            echo $result['price']. '<br><br>';
+            echo $result['price']. '€<br><br><br>';
+            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
         }
     }
 
@@ -38,9 +42,11 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":lowerCategory", $lowerCategory);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){    
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){ 
+            echo '<image src='.$result['img_path'].' style="width:150px; height:150px;"><br><br>';    
             echo $result['name']. '<br>';
-            echo $result['price']. '<br><br>';
+            echo $result['price']. '€<br><br>';
+            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
         }
     }
 
@@ -48,9 +54,11 @@ class ProductMapper extends DatabasePDOConfiguration{
         $this->query = "select * from products";
         $statement = $this->conn->prepare($this->query);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){    
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
+            echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>';     
             echo $result['name']. '<br>';
-            echo $result['price']. '<br><br>';
+            echo $result['price']. '€<br><br><br>';
+            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
         }
     }
 
@@ -84,9 +92,11 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":id", $productId);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){    
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){ 
+            echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>';    
             echo $result['name']. '<br>';
-            echo $result['price']. '<br><br>';
+            echo $result['price']. '€<br><br><br>';
+            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
         }
     }
 }

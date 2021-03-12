@@ -175,6 +175,12 @@
     color: white;
     align-items: center;
 }
+/*----------------------------*/
+#shto{
+    width:120px; 
+    height:30px; 
+    background-color:white; 
+}
 /*----------------------*/
 .footer{
     display: flex;
@@ -372,6 +378,9 @@
     .f1 h1{
         font-size: large;
     }
+    .f2{
+        font-size: xx-small;
+    }
     #button{
         height:40px;
         margin-top: 30px;
@@ -446,6 +455,9 @@
     }
     .f1 h1{
         font-size: xx-large;
+    }
+    .f2{
+        font-size: small;
     }
     .slide{
         height:300px;

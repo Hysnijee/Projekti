@@ -50,7 +50,6 @@
                 $object->getProductsByLowerCategory('pastrues');
             ?>
             </li>
-            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
         </ul>
     </div>
     <div class="second-main" id="second-main">
@@ -62,7 +61,6 @@
                 $object->getProductsByLowerCategory('hidratues');
             ?>
             </li>
-            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
         </ul>
     </div>
     <div class="third-main" id="third-main">
@@ -74,7 +72,6 @@
                 $object->getProductsByLowerCategory('serume');
             ?>
             </li>
-            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
         </ul>
     </div>
     <div class="fourth-main" id="fourth-main">
@@ -86,7 +83,6 @@
                 $object->getProductsByLowerCategory('maska');
             ?>
             </li>
-            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
         </ul>
     </div>
     <div class="fifth-main" id="fifth-main">
@@ -98,7 +94,6 @@
                 $object->getProductsByLowerCategory('kunderDiellit');
             ?>
             </li>
-            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
         </ul>
     </div>
     <div class="sixth-main" id="sixth-main">
@@ -110,7 +105,6 @@
                 $object->getProductsByLowerCategory('ushqyes');
             ?>
             </li>
-            <li><input type='submit' id='shto' value='Shto në Shportë'></li>
         </ul>
     </div>
 </div>
