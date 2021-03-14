@@ -15,8 +15,10 @@
 ?>
 <div class="main">
     <form action="../components/registerVerify.php" method="post" onsubmit="return valdimiIFormes()">        
-        <label>Full Name</label>
-        <input name='register-name' type="text" placeholder="Enter your firstname and lastname">
+        <label>Name</label>
+        <input name='register-name' type="text" placeholder="Enter your firstname">
+        <label>Last Name</label>
+        <input name='register-lastname' type="text" placeholder="Enter your lastname">
         <label>Email</label>
         <input name='register-email' type="text" placeholder="Enter a valid email address">
         <label>Username</label>

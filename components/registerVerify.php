@@ -15,6 +15,7 @@ else{
 
 class Registration{
     private $name="";
+    private $lastname="";
     private $username="";
     private $email="";
     private $password="";
@@ -24,6 +25,7 @@ class Registration{
 
     function __construct($formData){
         $this->name=$formData['register-name'];
+        $this->lastname=$formData['register-lastname'];
         $this->username=$formData['register-username'];
         $this->email=$formData['register-email'];
         $this->password=$formData['register-pass'];
@@ -33,16 +35,18 @@ class Registration{
     }
 
     public function insertUser(\SimpleUser $user){
-        $query = "insert into user (name, username, email, password, role) values (:name,:username, :email, :pass,:role)";
+        $query = "insert into user (name, lastname, username, email, password, role) values (:name, :lastname, :username, :email, :pass,:role)";
         $statement = $this->conn->prepare($query);
         
         $name = $user->getName();
+        $lastname = $user->getLastName();
         $username = $user->getUsername();
         $email = $user->getEmail();
         $pass = md5($user->getPassword());
         $role = $user->getRole();
 
         $statement->bindParam(":name", $name);
+        $statement->bindParam(":lastname", $lastname);
         $statement->bindParam(":username", $username);
         $statement->bindParam(":email", $email);
         $statement->bindParam(":pass", $pass);
@@ -51,7 +55,7 @@ class Registration{
     }
 
     public function insertData(){
-        $user = new SimpleUser($this->username, $this->password, 0, $this->email, $this->name, $this->city, $this->address, $this->ccNo);
+        $user = new SimpleUser($this->username, $this->password, 0, $this->email, $this->name, $this->lastname, $this->city, $this->address, $this->ccNo);
         $mapper = new UserMapper();
         $mapper->insertUser($user);
         header("Location:../views/login.php");
