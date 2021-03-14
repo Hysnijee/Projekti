@@ -2,7 +2,7 @@
 
 include_once 'userMapper.php';
 include_once 'simpleUser.php';
-if (isset($_GET['username']) && isset($_GET['username'])) {
+if (isset($_GET['username']) && isset($_GET['id'])) {
     $userId = $_GET['id'];
     $username = $_GET['username'];
     $name = $_GET['name'];

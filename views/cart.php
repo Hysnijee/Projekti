@@ -10,7 +10,9 @@
 <?php
     include('../reusableCode/header.php');
 ?>
-<div class="main"></div>
+<div class="main">
+    
+</div>
 <?php 
     include('../reusableCode/footer.php');
 ?>
