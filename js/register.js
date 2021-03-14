@@ -3,16 +3,21 @@ const emailReg = /^[A-Za-z0-9+_.-]+@(.+)$/;
 
 function valdimiIFormes(){
     let inputs = document.querySelectorAll("input");
-    fullname = inputs[0].value;
-    email = inputs[1].value;
-    username = inputs[2].value;
-    password = inputs[3].value;
-    city = inputs[4].value;
-    address = inputs[5].value;
-    ccNo = inputs[6].value;
+    namee = inputs[0].value;
+    lastname = inputs[1].value;
+    email = inputs[2].value;
+    username = inputs[3].value;
+    password = inputs[4].value;
+    city = inputs[5].value;
+    address = inputs[6].value;
+    ccNo = inputs[7].value;
 
-    if(fullname==""){
-        alert("Please enter your full name!");
+    if(namee==""){
+        alert("Please enter your name!");
+        return false;
+    }
+    else if(lastname==""){
+        alert("Please enter your name!");
         return false;
     }
     else if(email==""){
