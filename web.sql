@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2021 at 12:19 PM
+-- Generation Time: Mar 14, 2021 at 09:41 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -47,6 +47,58 @@ INSERT INTO `homepagedesc` (`Id`, `type`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `category` varchar(255) NOT NULL,
+  `lowerCategory` varchar(255) NOT NULL,
+  `img_path` varchar(255) NOT NULL,
+  `price` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `category`, `lowerCategory`, `img_path`, `price`) VALUES
+(1, 'NovAge Vaj Pastrues për Fytyrë', 'skincare', 'pastrues', '../images/novage-pastrues.jpg', 19.99),
+(2, 'Optimals Even Out Pastrues Shkumoz', 'skincare', 'pastrues', '../images/optimals-pastrues.jpeg', 8.99),
+(3, 'Pure Skin 2-në-1 Pastrim & Skrab', 'skincare', 'pastrues', '../images/pureskin-pastrues.jpeg', 4.79),
+(4, 'Love Nature Pastrues me Tërshërë', 'skincare', 'pastrues', '../images/lovenature-pastrues.jpeg', 6.49),
+(5, 'Optimals Hydra Micellar Ujë Pastrues', 'skincare', 'pastrues', '../images/optimalsUje-pastrues.jpeg', 8.99),
+(6, 'Essentials me Vitamin E & Vaj Kanol', 'skincare', 'pastrues', '../images/essentials-pastrues.jpeg', 5.99),
+(7, 'NovAge Bright Sublime Set', 'skincare', 'ushqyes', '../images/novage-ushqyes.jpeg', 59.99),
+(8, 'Tender Care Balsam Mbrojtës me Vaj Organik të Farës së Shegës', 'skincare', 'ushqyes', '../images/tendercare-ushqyes.jpeg', 6.49),
+(9, 'Eco Beauty Krema për Fytyrë', 'skincare', 'ushqyes', '../images/ecobeauty-ushqyes.jpeg', 21.99),
+(10, 'NovAge Time Restore Krema Regjenerative e Natës', 'skincare', 'ushqyes', '../images/novage2-ushqyes.jpeg', 28.99),
+(11, 'NovAge Ultimate Lift Set', 'skincare', 'ushqyes', '../images/novage3-ushqyes.jpeg', 68.74),
+(12, 'Milk & Honey Gold Kremë e Ditës Ushqyese', 'skincare', 'ushqyes', '../images/milkhoney-ushqyes.jpeg', 5.49),
+(13, 'Essentials me Vitamin E & Vaj Kanoli', 'skincare', 'hidratues', '../images/essentials-krem.jpeg', 6.49),
+(14, 'NovAge Bright Sublime Kremë e Ditës', 'skincare', 'hidratues', '../images/novage-krem.jpeg', 25.99),
+(15, 'NovAge Bright Sublime Kremë e Natës', 'skincare', 'hidratues', '../images/novage-krem2.jpeg', 17.99),
+(16, 'RoyalVelvet për ripërtrirjen e lëkurës', 'skincare', 'hidratues', '../images/royalvelvet-krem.jpeg', 7.99),
+(17, 'Diamond Cellular për ripërtrirjen e lëkurës', 'skincare', 'hidratues', '../images/diamond-krem.jpeg', 8.99),
+(18, 'Optimals Serum Antioksidant', 'skincare', 'serume', '../images/optimals-serum.jpeg', 14.99),
+(19, 'NovAge mbrojtës kundër akneve', 'skincare', 'serume', '../images/novage-serum.jpeg', 23.99),
+(20, 'NovAge Ecollagen Wrinkle Power', 'skincare', 'serume', '../images/novage2-serum.jpeg', 17.99),
+(21, 'Pure Skin SOS Spot Xhel', 'skincare', 'serume', '../images/pureskin-serum.jpeg', 7.99),
+(22, 'Love Nature Vaj me Dru Caji', 'skincare', 'serume', '../images/lovenature-serum.jpeg', 3.99),
+(23, 'Pure Skin pë Pastrimin e Pucrrave të Zeza', 'skincare', 'maska', '../images/pureskin-mask.jpeg', 3.99),
+(24, 'Love Nature Maskë Argjile Rrodhe', 'skincare', 'maska', '../images/lovenature-mask.jpeg', 0.79),
+(25, 'NovAge Maskë Fortësuese për Fytyrë', 'skincare', 'maska', '../images/novage-mask.jpeg', 7.49),
+(26, 'Set Maskë Argjile (Pajisjet për Pastrim)', 'skincare', 'maska', '../images/argjile-mask.jpeg', 0.79),
+(27, 'NovAge Ultimate Lift Contour Define SPF15', 'skincare', 'kunderDiellit', '../images/novage-diell.jpeg', 28.99),
+(28, 'Optimals Urban UV Mbrojtje gjatë ditës FM30', 'skincare', 'kunderDiellit', '../images/optimals-diell.jpeg', 9.99),
+(29, 'Sprej për Trup dhe për Fytyrë SPF 50', 'skincare', 'kunderDiellit', '../images/sprej-diell.jpeg', 17.99),
+(30, 'Losion për Trup dhe për Fytyrë SPF 30', 'skincare', 'kunderDiellit', '../images/losion-diell.jpeg', 15.99),
+(31, 'Xhel për Trup dhe për Fytyrë pas Diellit', 'skincare', 'kunderDiellit', '../images/xhel-diell.jpeg', 8.49);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -82,6 +134,12 @@ ALTER TABLE `homepagedesc`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -96,6 +154,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `homepagedesc`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `user`

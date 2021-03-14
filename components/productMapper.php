@@ -10,7 +10,6 @@ class ProductMapper extends DatabasePDOConfiguration{
         $this->conn = $this->getConnection();
     }
 
-
     public function getProductByName($name){
         $this->query = "select * from products where name=:name";
         $statement = $this->conn->prepare($this->query);
@@ -20,7 +19,6 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br>';
             echo $result['price']. '€<br><br><br>';
-            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
         }
     }
 
@@ -33,7 +31,6 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>'; 
             echo $result['name']. '<br>';
             echo $result['price']. '€<br><br><br>';
-            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
         }
     }
 
