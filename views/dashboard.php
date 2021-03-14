@@ -20,12 +20,15 @@
         <table>
             <thead>
                 <tr class="first-row">
-                    <td colspan="5">Users List </td>
+                    <td colspan="8">Users List </td>
                 </tr>
                 <tr class="second-row">
                     <td>Name</td>
+                    <td>Last Name </td>
                     <td>Username</td>
                     <td>Email</td>
+                    <td>City</td>
+                    <td>Address</td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>
@@ -35,12 +38,15 @@
                     foreach ($users as $user) {
                 ?>
                     <tr>
-                        <td><?php echo $user['fullname']; ?></td>
+                        <td><?php echo $user['name']; ?></td>
+                        <td><?php echo $user['lastname']; ?></td>
                         <td><?php echo $user['username']; ?></td>
                         <td><?php echo $user['email']; ?></td>
+                        <td><?php echo $user['city']; ?></td>
+                        <td><?php echo $user['address']; ?></td>
                         <td><a href=<?php echo "../views/edit.php?id=" . $user['userid'];
                                     ?>>Edit</td>
-                        <td><a href=<?php echo "../logicComponents/deleteUser.php?id=" . $user['userid'];
+                        <td><a href=<?php echo "../components/deleteUser.php?id=" . $user['userid'];
                                     ?>>Delete</td>
                     </tr>
                 <?php

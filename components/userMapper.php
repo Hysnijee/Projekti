@@ -29,10 +29,11 @@ class UserMapper extends DatabasePDOConfiguration{
     }
 
     public function insertUser(\SimpleUser $user){
-        $query = "insert into user (fullname, email, username, password, city, address, ccNo, role) values (:fullname, :email, :username, :pass, :city, :address, :ccNo, :role)";
+        $query = "insert into user (name, lastname, email, username, password, city, address, ccNo, role) values (:name, :lastname, :email, :username, :pass, :city, :address, :ccNo, :role)";
         $statement = $this->conn->prepare($query);
         
         $name = $user->getName();
+        $lastname = $user->getLastName();
         $username = $user->getUsername();
         $email = $user->getEmail();
         $city = $user->getCity();
@@ -41,7 +42,8 @@ class UserMapper extends DatabasePDOConfiguration{
         $pass = md5($user->getPassword());
         $role = $user->getRole();
 
-        $statement->bindParam(":fullname", $name);
+        $statement->bindParam(":name", $name);
+        $statement->bindParam(":lastname", $lastname);
         $statement->bindParam(":username", $username);
         $statement->bindParam(":email", $email);
         $statement->bindParam(":city", $city);
@@ -49,6 +51,26 @@ class UserMapper extends DatabasePDOConfiguration{
         $statement->bindParam(":ccNo", $ccNo);
         $statement->bindParam(":pass", $pass);
         $statement->bindParam(":role", $role);
+        $statement->execute();
+    }
+
+    public function editUser(\SimpleUser $user, $id){
+        $this->query = "update user set name=:name, lastname=:lastname, username=:username, email=:email, city=:city, address=:address where UserID=:id";
+        var_dump($user);
+        $statement = $this->conn->prepare($this->query);
+        $name = $user->getName();
+        $lastname = $user->getLastName();
+        $username = $user->getUsername();
+        $email = $user->getEmail();
+        $city = $user->getCity();
+        $address = $user->getAddress();
+        $statement->bindParam(":name", $name);
+        $statement->bindParam(":lastname", $lastname);
+        $statement->bindParam(":username", $username);
+        $statement->bindParam(":email", $email);
+        $statement->bindParam(":city", $city);
+        $statement->bindParam(":address", $address);
+        $statement->bindParam(":id", $id);
         $statement->execute();
     }
 

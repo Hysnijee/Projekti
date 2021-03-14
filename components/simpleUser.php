@@ -4,15 +4,17 @@ include_once 'user.php';
 class SimpleUser extends Person{
     private $email;
     private $name;
+    private $lastname;
     private $city;
     private $address;
     private $cc;
     private $ccNo;
     
-    public function __construct($username, $password, $role, $email, $name, $city, $address, $ccNo){
+    public function __construct($username, $password, $role, $email, $name, $lastname, $city, $address, $ccNo){
         parent::__construct($username, $password, $role);
         $this->email = $email;
         $this->name = $name;
+        $this->lastname = $lastname;
         $this->city = $city;
         $this->address = $address;
         $this->ccNo = $ccNo;
@@ -29,6 +31,10 @@ class SimpleUser extends Person{
 
     public function getName(){
         return $this->name;
+    }
+    
+    public function getLastName(){
+        return $this->lastname;
     }
 
     public function getUsername(){

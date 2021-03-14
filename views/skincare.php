@@ -44,12 +44,11 @@
     <div class="first-main" id="first-main">
         <p>Pastrues</p>
         <ul class="main-ul">
-            <li>
             <?php 
                 $object = new ProductMapper();
                 $object->getProductsByLowerCategory('pastrues');
             ?>
-            </li>
+            <li><input type="submit" id="shto" value="Shto në Shportë"></li>
         </ul>
     </div>
     <div class="second-main" id="second-main">
