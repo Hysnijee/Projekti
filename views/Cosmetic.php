@@ -29,16 +29,51 @@
             </div>
             
             <div id="BathBody">
-            <h4>Bath & Body</h4>
+                <h4>Bath & Body</h4>
                 <div id="Rreshti">
-                    
-                    <?php 
-                    $object = new ProductMapper();
-                    $object->getProductsByLowerCategory('Bath & Body');
-                    ?>
-                    
+                    <div id="Produkti">
+                        <?php 
+                        $object = new ProductMapper();
+                        $object->getProductsByName('Body Lotion FAIRNESS');
+                        ?>
+                    </div>
+                    <div id="Produkti">
+                        <?php 
+                        $object = new ProductMapper();
+                        $object->getProductsByName('Lotion FAIRNESS');
+                        ?>
+                    </div>
+                    <div id="Produkti">
+                        <?php 
+                        $object = new ProductMapper();
+                        $object->getProductsByName('Bubble Bath');
+                        ?>
+                    </div>  
+                </div>
+
+                <div id="Rreshti">
+                    <div id="Produkti">
+                        <?php 
+                        $object = new ProductMapper();
+                        $object->getProductsByName('Feminelle Special Care');
+                        ?>
+                    </div>
+                    <div id="Produkti">
+                        <?php 
+                        $object = new ProductMapper();
+                        $object->getProductsByName('Bubble Bath Sweetheart');
+                        ?>
+                    </div>
+                    <div id="Produkti">
+                        <?php 
+                        $object = new ProductMapper();
+                        $object->getProductsByName('Body & Mind');
+                        ?>
+                    </div>  
                 </div>
             </div>
+
+            /*Hysi a mundesh me pa pse po me qet error nese e marr   getProductsByName, se me marr byName nuk prishet dizajni faqes */
 
             <div id="LipGloss">
                 <h4>Lip Gloss</h4> 

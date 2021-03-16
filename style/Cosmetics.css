@@ -65,19 +65,15 @@ img{
 #li1 a:hover {
     background-color: #555;
 }
-/*------Bath&Body*/
 
-#BathBody{
-    display: flex;
-    flex-direction: column;
-}
 #Rreshti{
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        padding-right: 15px;
 }
 #Produkti{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:space-evenly;
     Width:200px;
     height:300px;
@@ -86,10 +82,7 @@ img{
     padding-left: 15%;
     padding-top: 10%;
 }
-#p2{
-    font-style: italic;
-    color:rgb(211, 195, 195);
-}
+
 h4{
     color:rgb(231, 220, 220);
     font-size: 40px;
@@ -167,8 +160,12 @@ h4{
     }
     #Rreshti {
         display: flex;
-        justify-content:space-between;
+        flex-direction: row;
+        padding-right: 15px;
         text-align:center;
+        font-size:10px;
+        padding-left: 100px;
+        padding-top: 10%;
     }
     #Produkti{
         display: flex;
