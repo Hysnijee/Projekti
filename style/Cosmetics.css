@@ -167,8 +167,8 @@ h4{
     }
     #Rreshti {
         display: flex;
-        flex-direction: row;
-        padding-right: 15px;
+        justify-content:space-between;
+        text-align:center;
     }
     #Produkti{
         display: flex;
