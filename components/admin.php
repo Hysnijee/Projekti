@@ -2,8 +2,8 @@
 
 class Admin extends Person {
 
-    public function __construct($usernam, $password, $role){
-        parent::__construct($usernam, $password, $role);
+    public function __construct($username, $password, $role){
+        parent::__construct($username, $password, $role);
     }
 
     public function setSession(){

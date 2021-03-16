@@ -185,6 +185,9 @@ h3{
 
 /*Responsive for IPhoneX*/
 @media only screen and (max-width:400px){
+    *{
+        font-size: xx-small;
+    }
     .main {
         height: 400px;
         background-repeat: no-repeat;
@@ -201,6 +204,7 @@ h3{
     }
     .footer{
         padding:0;
+        
     }
     select{
         width: 250px;
@@ -228,6 +232,7 @@ h3{
     }
     .main-list{
         margin-left: 15px;
+        font-size:xx-small;
     }
     .socials img{
         width: 30px;
