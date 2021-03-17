@@ -16,8 +16,9 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement->bindParam(":name", $name);
         $statement->execute();
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>';  
-            echo $result['name']. '<br>';
+            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo $result['name']. '<br><br>';
+            echo $result['category'].'<br>';
             echo $result['price']. '€<br><br><br>';
         }
     }

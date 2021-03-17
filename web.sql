@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2021 at 10:13 PM
+-- Generation Time: Mar 17, 2021 at 12:44 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -42,7 +42,8 @@ INSERT INTO `homepagedesc` (`Id`, `type`, `description`) VALUES
 (2, 'accesories', 'Freskoni dukjen tuaj përmes koleksonit online ekskluziv të aksesorëve për femra. Koleksioni jonë merr nga trendet kyçe të dimrit, duke përfshirë edhe aksesorët për flokë që bien në sy, shallet me stampime të trashëguara, syzet e guximshme, kapelat e inspiruara nga cilësia \'vintixh\' dhe bizhuteritë e pasura. Është përdorur estetika maksimaliste, ndërsa moto për aksesorët e sezonës festive është \"më shumë është më shumë\".'),
 (3, 'skincare', 'Ne besojmë në fuqinë e përbërësve natyror, dhe e cila me mbështetjen shkencore, krijon rezultatet më efektive. Sidoqoftë të jetë lloji i lëkurës suaj dhe mosha juaj, gama jonë e gjerë e produkteve më të reja për trajtimin dhe kujdesin ndaj lëkurës është për ju. '),
 (4, 'first-paragraph', 'Për mbi 50 vjet kemi mundësuar njerëzit nga e gjithë bota të festojnë bukurinë e tyre personale dhe të përmbushin ëndrrat e tyre. Ne krijojmë dhe ofrojmë produkte me cilësi të lartë, të sigurtë, të orientuar drejt prirjes për të dashuruar bukurinë dhe mundësinë unike për t\'u bërë pjesë e një bashkësie globale bukurie.'),
-(5, 'second-paragraph', 'Për më shumë se 50 vjet, Oriflame u ka fuqizuar njerëzit të bëjnë një ndryshim në jetën e tyre duke rekomanduar dhe shitur produkte bukurie me cilësi të lartë të frymëzuar nga natyra dhe mundësuar nga shkenca suedeze. Oriflame është kompania më e madhe e bukurisë në Evropë që shet drejtpërdrejt me një komunitet global me mbi 3 milion konsulentë të pavarur të shitjeve në të gjithë botën.');
+(5, 'second-paragraph', 'Për më shumë se 50 vjet, Oriflame u ka fuqizuar njerëzit të bëjnë një ndryshim në jetën e tyre duke rekomanduar dhe shitur produkte bukurie me cilësi të lartë të frymëzuar nga natyra dhe mundësuar nga shkenca suedeze. Oriflame është kompania më e madhe e bukurisë në Evropë që shet drejtpërdrejt me një komunitet global me mbi 3 milion konsulentë të pavarur të shitjeve në të gjithë botën.'),
+(6, 'Fashion-up', 'Accessories are the alpha and omega in any wardrobe to express style, elegance and personality. \r\nYou can transform your look with our wide range of accessories, including beautiful jewelry, gorgeous handbags, cool sunglasses and great gift ideas.');
 
 -- --------------------------------------------------------
 
@@ -112,7 +113,7 @@ INSERT INTO `products` (`id`, `name`, `category`, `lowerCategory`, `img_path`, `
 (49, 'Purple Lip Gloss', 'Cosmetics', 'Lip Gloss', '../images/lg3.Jpeg', 3),
 (50, 'Open Pink Lip', 'Cosmetics', 'Lip', '../images/lip1.Jpeg', 3),
 (51, 'Pink Lip', 'Cosmetics', 'Lip', '../images/lip2.jpg', 3),
-(52, 'Nude Lip', 'Cosmetics', 'Lip', '../images/lip3.jpg', 3),
+(52, 'Nude Lipp', 'Cosmetics', 'Lip', '../images/lip3.jpg', 3),
 (53, 'Purple Lip', 'Cosmetics', 'Lip', '../images/lip4.jpg', 3),
 (54, 'Red Lip', 'Cosmetics', 'Lip', '../images/lip5.Jpeg', 3),
 (55, 'Nude Lip', 'Cosmetics', 'Lip', '../images/lip6.jpg', 3),
@@ -141,7 +142,7 @@ INSERT INTO `products` (`id`, `name`, `category`, `lowerCategory`, `img_path`, `
 (78, 'ColourBox Face Powder 1', 'Cosmetics', 'Powder', '../images/powder3.jpg', 12),
 (79, 'Colour Powder', 'Cosmetics', 'Powder', '../images/powder4.webp', 24),
 (80, 'Powder 2', 'Cosmetics', 'Powder ', '../images/powder5.webp', 12),
-(81, 'Colour Powder', 'Cosmetics', 'Powder', '../images/powder6.webp', 24),
+(81, 'Colour Powder 1', 'Cosmetics', 'Powder', '../images/powder6.webp', 24),
 (82, 'Hydratin face cream - Normal Skin', 'Cosmetics', 'Organic Products', '../images/organic1.Jpeg', 8),
 (83, 'Nourishing face cream - Dry Skin', 'Cosmetics', 'Organic Products', '../images/organic2.Jpeg', 6),
 (84, 'Purifying face wash', 'Cosmetics', 'Organic Products', '../images/organic3.jpg', 4.5),
@@ -172,25 +173,25 @@ INSERT INTO `products` (`id`, `name`, `category`, `lowerCategory`, `img_path`, `
 (109, 'To You Hat in a Box', 'Accessories', 'Accessories', '../images/acc19.Jpeg', 8.95),
 (110, 'Laura Knit Scarf', 'Accessories', 'Accessories', '../images/acc20.Jpeg', 16.99),
 (111, 'Oceanica Bucket Bag', 'Accessories', 'Accessories', '../images/acc21.Jpeg', 24.95),
-(112, 'Dragonfly Garnet Earrings', 'Accessories', 'Jewerly', '../images/acc1.Jpeg', 9.99),
-(113, 'Empower Love Bracelet', 'Accessories', 'Jewerly', '../images/acc2.Jpeg', 17.99),
-(114, 'Lucky Clover Bracelet', 'Accessories', 'Jewerly', '../images/acc3.Jpeg', 8.99),
-(115, 'Lucky Clover Earrings', 'Accessories', 'Jewerly', '../images/acc4.Jpeg', 9.99),
-(116, 'Quartz Blossom Ring 19', 'Accessories', 'Jewerly', '../images/acc5.Jpeg', 39.99),
-(117, 'Rose Pearl Ring 20', 'Accessories', 'Jewerly', '../images/acc6.Jpeg', 9.99),
-(118, 'Galaxy Quartz Ring 17', 'Accessories', 'Jewerly', '../images/acc10.Jpeg', 19.99),
-(119, 'Savage Hawk´s Eye Ring 16', 'Accessories', 'Jewerly', '../images/acc11.Jpeg', 19.99),
-(120, 'Passionate Tourmaline Earrings', 'Accessories', 'Jewerly', '../images/acc14.Jpeg', 39.99),
-(121, 'Feminina Sunglasses', 'Accessories', 'Fashion Accessories', '../images/acc7.Jpeg', 13.99),
-(122, 'Essential Watch', 'Accessories', 'Fashion Accessories', '../images/acc9.Jpeg', 29.99),
-(123, 'EClassica Sunglasses', 'Accessories', 'Fashion Accessories', '../images/acc12.Jpeg', 19.99),
-(124, 'Exotic Quilted Bag', 'Accessories', 'Fashion Accessories', '../images/acc15.Jpeg', 34.99),
-(125, 'Saga Mist Bag', 'Accessories', 'Fashion Accessories', '../images/acc16.Jpeg', 32.95),
-(126, 'Bjork Colourful Scarf', 'Accessories', 'Fashion Accessories', '../images/acc17.Jpeg', 11.95),
-(127, 'Energy Clutch wallet', 'Accessories', 'Fashion Accessories', '../images/acc18.Jpeg', 17.95),
-(128, 'To You Hat in a Box', 'Accessories', 'Fashion Accessories', '../images/acc19.Jpeg', 8.95),
-(129, 'Laura Knit Scarf', ' Accessories', 'Fashion  Accessories', '../images/acc20.Jpeg', 16.95),
-(130, 'Oceanica Bucket Bag', 'Accessories', 'Fashion Accessories', '../images/acc21.Jpeg', 24.95);
+(112, 'Dragonfly Garnet Earrings.', 'Accessories', 'Jewerly', '../images/acc1.Jpeg', 9.99),
+(113, 'Empower Love Bracelet.', 'Accessories', 'Jewerly', '../images/acc2.Jpeg', 17.99),
+(114, 'Lucky Clover Bracelet.', 'Accessories', 'Jewerly', '../images/acc3.Jpeg', 8.99),
+(115, 'Lucky Clover Earrings.', 'Accessories', 'Jewerly', '../images/acc4.Jpeg', 9.99),
+(116, 'Quartz Blossom Ring 19.', 'Accessories', 'Jewerly', '../images/acc5.Jpeg', 39.99),
+(117, 'Rose Pearl Ring 20.', 'Accessories', 'Jewerly', '../images/acc6.Jpeg', 9.99),
+(118, 'Galaxy Quartz Ring 17.', 'Accessories', 'Jewerly', '../images/acc10.Jpeg', 19.99),
+(119, 'Savage Hawk´s Eye Ring 16.', 'Accessories', 'Jewerly', '../images/acc11.Jpeg', 19.99),
+(120, 'Passionate Tourmaline Earrings.', 'Accessories', 'Jewerly', '../images/acc14.Jpeg', 39.99),
+(121, 'Feminina Sunglasses.', 'Accessories', 'Fashion Accessories', '../images/acc7.Jpeg', 13.99),
+(122, 'Essential Watch.', 'Accessories', 'Fashion Accessories', '../images/acc9.Jpeg', 29.99),
+(123, 'EClassica Sunglasses.', 'Accessories', 'Fashion Accessories', '../images/acc12.Jpeg', 19.99),
+(124, 'Exotic Quilted Bag.', 'Accessories', 'Fashion Accessories', '../images/acc15.Jpeg', 34.99),
+(125, 'Saga Mist Bag.', 'Accessories', 'Fashion Accessories', '../images/acc16.Jpeg', 32.95),
+(126, 'Bjork Colourful Scarf.', 'Accessories', 'Fashion Accessories', '../images/acc17.Jpeg', 11.95),
+(127, 'Energy Clutch wallet.', 'Accessories', 'Fashion Accessories', '../images/acc18.Jpeg', 17.95),
+(128, 'To You Hat in a Box.', 'Accessories', 'Fashion Accessories', '../images/acc19.Jpeg', 8.95),
+(129, 'Laura Knit Scarf.', ' Accessories', 'Fashion  Accessories', '../images/acc20.Jpeg', 16.95),
+(130, 'Oceanica Bucket Bag.', 'Accessories', 'Fashion Accessories', '../images/acc21.Jpeg', 24.95);
 
 -- --------------------------------------------------------
 
@@ -249,7 +250,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `homepagedesc`
 --
 ALTER TABLE `homepagedesc`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `products`

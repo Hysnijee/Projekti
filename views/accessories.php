@@ -1,3 +1,9 @@
+<?php
+    include_once '../components/product.php';
+    require_once '../components/productMapper.php';
+    include_once '../components/article.php';
+    require_once '../components/articleMapper.php';
+?>
 <!DOCTYPE html>
 <head>
     <title>Accessories</title>
@@ -18,173 +24,175 @@
             </div>
 
             <p id="pp"><b>Fashion Up</b></br></br>
-            Accessories are the alpha and omega in any wardrobe to express style, elegance and personality. 
-            You can transform your look with our wide range of accessories, including beautiful jewelry, 
-            gorgeous handbags, cool sunglasses and great gift ideas.</p>
-
+            <?php 
+                $object = new ArticleMapper();
+                $object->getDescriptionByType('Fashion-up');
+            ?>
+            </p>
+           
             <div id="Accessories">
                 <h4>Accessories</h4>
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc1.Jpeg">
-                    <p>Dragonfly Garnet Earrings</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 9.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Dragonfly Garnet Earrings');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc2.Jpeg">
-                    <p>Empower Love Bracelet</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 17.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Empower Love Bracelet');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc3.Jpeg">
-                    <p>Lucky Clover Bracelet</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 8.99 $</p>
-                </div>
-                </div>
-
-                <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc4.Jpeg">
-                    <p>Lucky Clover Earrings</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 9.99 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc5.Jpeg">
-                    <p>Quartz Blossom Ring 19</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 39.99 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc6.Jpeg">
-                    <p>Rose Pearl Ring 20</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 9.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Lucky Clover Bracelet');
+                        ?>
+                    </div>
                 </div>
 
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc7.Jpeg">
-                    <p>Feminina Sunglasses</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 13.99 $</p>
+                    <div id="Produkti">
+                         <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Lucky Clover Earrings');
+                         ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Quartz Blossom Ring 19');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Rose Pearl Ring 20');
+                        ?>
+                    </div>
                 </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc8.Jpeg">
-                    <p>Grace Rose Watch</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 19.99 $</p>
-                </div>
+                <div id="Rreshti">
+                     <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Feminina Sunglasses');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc9.Jpeg">
-                    <p>Essential Watch</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 29.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Grace Rose Watch');
+                        ?>
+                     </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Essential Watch');
+                        ?>
+                    </div>
                 </div>
 
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc10.Jpeg">
-                    <p>Galaxy Quartz Ring 17</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 19.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Galaxy Quartz Ring 17');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc11.Jpeg">
-                    <p>Savage Hawk´s Eye Ring 16</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 19.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Savage Hawk´s Eye Ring 16');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc12.Jpeg">
-                    <p>EClassica Sunglasses</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 19.99 $</p>
-                </div>
-                </div>
-
-
-                <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc13.Jpeg">
-                    <p>Passionate Watch</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 39.99 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc14.Jpeg">
-                    <p>Passionate Tourmaline Earrings</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 39.99 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc15.Jpeg">
-                    <p>Exotic Quilted Bag</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 34.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('EClassica Sunglasses');
+                        ?>
+                    </div>
                 </div>
 
 
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc16.Jpeg">
-                    <p>Saga Mist Bag</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 32.95 $</p>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Passionate Watch');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Passionate Tourmaline Earrings');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Exotic Quilted Bag');
+                        ?>
+                    </div>
                 </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc17.Jpeg">
-                    <p>Bjork Colourful Scarf</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 11.95 $</p>
-                </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc18.Jpeg">  
-                    <p>Energy Clutch wallet</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 17.95 $</p>
-                </div>
+                <div id="Rreshti">
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Saga Mist Bag');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Bjork Colourful Scarf');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Energy Clutch wallet');
+                        ?>
+                    </div>
                 </div>
 
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc19.Jpeg">
-                    <p>To You Hat in a Box</p>      
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 8.95 $</p>
-                </div>
+                     <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('To You Hat in a Box');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc20.Jpeg">        
-                    <p>Laura Knit Scarf</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 16.95 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Laura Knit Scarf');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc21.Jpeg">
-                    <p>Oceanica Bucket Bag</p>         
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 24.95 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Oceanica Bucket Bag');
+                        ?>
+                    </div>
                 </div>
             </div>
             
@@ -192,156 +200,154 @@
             <div id="Jewerly">
                 <h4>Jewerly</h4>
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc1.Jpeg">         
-                    <p>Dragonfly Garnet Earrings</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 9.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Dragonfly Garnet Earrings.');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc2.Jpeg">
-                    <p>Empower Love Bracelet</p>       
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 17.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Empower Love Bracelet.');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc3.Jpeg">
-                    <p>Lucky Clover Bracelet</p>      
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 8.99 $</p>
-                </div>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Lucky Clover Bracelet.');
+                        ?>
+                    </div>
 
-                <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc4.Jpeg">        
-                    <p>Lucky Clover Earrings</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 9.99 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc5.Jpeg">      
-                    <p>Quartz Blossom Ring 19</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 39.99 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc6.Jpeg">
-                    <p>Rose Pearl Ring 20</p>              
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 9.99 $</p>
-                </div>
                 </div>
 
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc10.Jpeg">
-                    <p>Galaxy Quartz Ring 17</p>         
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 19.99 $</p>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Lucky Clover Earrings.');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Quartz Blossom Ring 19.');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Rose Pearl Ring 20.');
+                        ?>
+                    </div>
                 </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc11.Jpeg">
-                    <p>Savage Hawk´s Eye Ring 16</p>   
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 19.99 $</p>
-                </div>
+                <div id="Rreshti">
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Galaxy Quartz Ring 17.');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc14.Jpeg">
-                    <p>Passionate Tourmaline Earrings</p>     
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 39.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Savage Hawk´s Eye Ring 16.');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Passionate Tourmaline Earrings.');
+                        ?>
+                    </div>
                 </div>
             </div>
 
             <div id="FashionAccessories">
                 <h4>Fashion Accessories</h4>     
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc7.Jpeg">
-                    <p>Feminina Sunglasses</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 13.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Feminina Sunglasses.');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc9.Jpeg"> 
-                    <p>Essential Watch</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 29.99 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Essential Watch.');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc12.Jpeg">
-                    <p>EClassica Sunglasses</p>
-                    <p id="p2"> Accessories</p>    
-                    <p>çmimi: 19.99 $</p>
-                </div>    
-                </div>
-
-                <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc15.Jpeg">       
-                    <p>Exotic Quilted Bag</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 34.99 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc16.Jpeg">
-                    <p>Saga Mist Bag</p>                   
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 32.95 $</p>
-                </div>
-
-                <div id="Produkti">
-                    <img src="../images/acc17.Jpeg">    
-                    <p>Bjork Colourful Scarf</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 11.95 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('EClassica Sunglasses.');
+                        ?>
+                    </div>  
                 </div>
 
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc18.Jpeg">
-                    <p>Energy Clutch wallet</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 17.95 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Exotic Quilted Bag.');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc19.Jpeg">
-                    <p>To You Hat in a Box</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 8.95 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Saga Mist Bag.');
+                        ?>
+                    </div>
 
-                <div id="Produkti">
-                    <img src="../images/acc20.Jpeg">             
-                    <p>Laura Knit Scarf</p>
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 16.95 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Bjork Colourful Scarf.');
+                        ?>
+                    </div>  
                 </div>
 
                 <div id="Rreshti">
-                <div id="Produkti">
-                    <img src="../images/acc21.Jpeg">
-                    <p>Oceanica Bucket Bag</p>          
-                    <p id="p2"> Accessories</p>
-                    <p>çmimi: 24.95 $</p>
-                </div>
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Energy Clutch wallet.');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('To You Hat in a Box.');
+                        ?>
+                    </div>
+
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Laura Knit Scarf.');
+                        ?>
+                    </div>  
                 </div>
 
-               
+                <div id="Rreshti">
+                    <div id="Produkti">
+                        <?php 
+                            $object = new ProductMapper();
+                            $object->getProductByName('Oceanica Bucket Bag.');
+                        ?>
+                    </div>
                 </div>
             </div>
     </main>
