@@ -15,17 +15,12 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":name", $name);
         $statement->execute();
-<<<<<<< HEAD
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
-        return $result;
-=======
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
             echo '<image src='.$result['img_path'].'><br><br>';  
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br>';
             echo $result['price']. '€<br><br><br>';
         }
->>>>>>> f01b8ab5c75254b44223caa78f3212f1d48d32ca
     }
 
     public function getProductsByCategory($category){
@@ -33,8 +28,12 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":category", $category);
         $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
-        return $result;
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
+            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo $result['name']. '<br><br>';
+            echo $result['category'].'<br>';
+            echo $result['price']. '€<br><br><br>';
+        }
     }
 
     public function getProductsByLowerCategory($lowerCategory){
@@ -42,16 +41,24 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":lowerCategory", $lowerCategory);
         $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
-        return $result;
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
+            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo $result['name']. '<br><br>';
+            echo $result['category'].'<br>';
+            echo $result['price']. '€<br><br><br>';
+        }
     }
 
     public function getAllProducts(){
         $this->query = "select * from products";
         $statement = $this->conn->prepare($this->query);
         $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
-        return $result;
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
+            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo $result['name']. '<br><br>';
+            echo $result['category'].'<br>';
+            echo $result['price']. '€<br><br><br>';
+        }
     }
 
     public function insertProduct($product){
@@ -84,8 +91,11 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":id", $productId);
         $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC); 
-        return $result;
-    }
+        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
+            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo $result['name']. '<br><br>';
+            echo $result['category'].'<br>';
+            echo $result['price']. '€<br><br><br>';
+        }
 
 }
