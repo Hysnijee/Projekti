@@ -31,7 +31,7 @@
 }
 img{
     height: 300px;
-    width: 100% ;
+    width: 100% ;  
 }
 
 .Cosmetics img{
@@ -41,13 +41,6 @@ img{
     height: 330px;
     opacity: 0.6;
 }
-/*h3{
-    font-family:Chiller;
-    font-size: 60px;
-    text-align: center;
-    font-style: italic;
-    padding-top: 30px;
-}*/
 #ul1 {
     list-style-type: none;
     margin-top: 70px;
@@ -67,19 +60,19 @@ img{
 }
 
 #Rreshti{
-        display: flex;
-        flex-direction: row;
-        padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 15px;
 }
 #Produkti{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:space-evenly;
-    Width:200px;
-    height:300px;
+    Width:250px;
+    height:360px;
     text-align:center;
     font-size:10px;
-    padding-left: 15%;
+    padding-left: 11%;
     padding-top: 10%;
 }
 
