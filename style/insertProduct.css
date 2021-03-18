@@ -21,6 +21,35 @@
     color:white;
     font-size: large;
 }
+/*--------------*/
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:40px;
+    color:white;
+}
+input{
+    width:500px;
+    height:30px;
+    color:white;
+    border:none;
+    border-bottom: 2px solid white;
+}
+input,label{
+    margin:15px;
+    margin-left:33%;
+}
+h2{
+    text-align: center;
+}
+.submit{
+    width:250px;
+    height:40px;
+    background-color: rgb(199, 172, 140);
+    margin-top:40px;
+    margin-left: 42%;
+}
 /*-------------------------*/
 .footer{
     display: flex;

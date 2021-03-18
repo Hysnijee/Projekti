@@ -16,10 +16,11 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement->bindParam(":name", $name);
         $statement->execute();
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
+            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px; align-self:center;"><br><br>';  
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br><br>';
+            echo $result['price']. '€<br><br>';
+            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
         }
     }
 
@@ -32,7 +33,8 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br><br>';
+            echo $result['price']. '€<br><br>';
+            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
         }
     }
 
@@ -45,7 +47,8 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br><br>';
+            echo $result['price']. '€<br><br>';
+            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
         }
     }
 
@@ -57,7 +60,8 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo '<image src='.$result['img_path'].' style=" width:130px; height:130px;"><br><br>';  
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br><br>';
+            echo $result['price']. '€<br><br>';
+            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
         }
     }
 
@@ -95,7 +99,8 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br><br>';
+            echo $result['price']. '€<br><br>';
+            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
         }
     }
 

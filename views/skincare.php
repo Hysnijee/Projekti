@@ -25,7 +25,7 @@
             <li class="li1"><a href="#fourth-main">Maska</a></li>
             <li class="li1"><a href="#fifth-main">Kujdesi ndaj diellit</a></li>
             <li class="li1"><a href="#sixth-main">Ushqyes</a></li>
-            <li><a href="cart.php"><input type="submit" id='insertProd' name='insert' value="Shporta"></a></li>
+            <li><a href="insertProduct.php"><input type="submit" id='insertProd' name='insert' value="Shto Produkt"></a></li>
         </ul>
         <div class="box">
             <div class="text">
@@ -65,7 +65,7 @@
     </div>
     <div class="third-main" id="third-main">
     <ul class="main-ul">
-        <p>Serume dhe Tretmane</p>
+        <p>Serume</p>
         <li>
             <?php 
                 $object = new ProductMapper();
