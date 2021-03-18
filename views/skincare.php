@@ -1,8 +1,6 @@
 <?php
     include_once '../components/product.php';
     require_once '../components/productMapper.php';
-    $mapper = new ProductMapper();
-    $products = $mapper->getAllProducts();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,40 +41,72 @@
         </div>
         <img src="../images/skincare-bg.jpg">
     </div>
-    <div class="first-main">
-    <table>
-            <thead>
-                <tr class="first-row">
-                    <td colspan="8">Users List </td>
-                </tr>
-                <tr class="second-row">
-                    <td></td>
-                    <td>Name</td>
-                    <td>Category</td>
-                    <td>Lower Category</td>
-                    <td>Price</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                    foreach ($products as $orders) {
-                ?>
-                    <tr>
-                        <td><img src="<?php echo $orders['img_path'];?>"></td>
-                        <td><?php echo $orders['name']; ?></td>
-                        <td><?php echo $orders['category']; ?></td>
-                        <td><?php echo $orders['lowerCategory']; ?></td>
-                        <td><?php echo $orders['price']; ?>€</td>
-                    </tr>
-                <?php
-                }
-                ?>
-            </tbody>
-        </table>
+    <div class="first-main" id="first-main">
+    <ul class="main-ul">
+        <p>Pastrues</p>
+        <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('pastrues');
+            ?>
+        </li>
+    </ul>
     </div>
-        
+    <div class="second-main" id="second-main">
+    <ul class="main-ul">
+        <p>Hidratues</p>
+        <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('hidratues');
+            ?>
+        </li>
+    </ul>
+    </div>
+    <div class="third-main" id="third-main">
+    <ul class="main-ul">
+        <p>Serume dhe Tretmane</p>
+        <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('serume');
+            ?>
+        </li>
+    </ul>
+    </div>
+    <div class="fourth-main" id="fourth-main">
+    <ul class="main-ul">
+        <p>Maska</p>
+        <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('maska');
+            ?>
+        </li>
+    </ul>
+    </div>
+    <div class="fifth-main" id="fifth-main">
+    <ul class="main-ul">
+        <p>Kujdesi ndaj Diellit</p>
+        <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('kunderDiellit');
+            ?>
+        </li>
+    </ul>
+    </div>
+    <div class="sixth-main" id="sixth-main">
+    <ul class="main-ul">
+        <p>Ushqyes</p>
+        <li>
+            <?php 
+                $object = new ProductMapper();
+                $object->getProductsByLowerCategory('ushqyes');
+            ?>
+        </li>
+    </ul>
+    </div>
 </div>
 <?php 
     include('../reusableCode/footer.php');

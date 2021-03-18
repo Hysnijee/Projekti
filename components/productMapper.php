@@ -16,9 +16,9 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement->bindParam(":name", $name);
         $statement->execute();
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br><br>';
-            echo $result['category'].'<br>';
+            echo $result['category'].'<br><br>';
             echo $result['price']. '€<br><br><br>';
         }
     }
@@ -29,9 +29,9 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement->bindParam(":category", $category);
         $statement->execute();
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br><br>';
-            echo $result['category'].'<br>';
+            echo $result['category'].'<br><br>';
             echo $result['price']. '€<br><br><br>';
         }
     }
@@ -42,9 +42,9 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement->bindParam(":lowerCategory", $lowerCategory);
         $statement->execute();
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br><br>';
-            echo $result['category'].'<br>';
+            echo $result['category'].'<br><br>';
             echo $result['price']. '€<br><br><br>';
         }
     }
@@ -54,9 +54,9 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->execute();
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo '<image src='.$result['img_path'].' style=" width:130px; height:130px;"><br><br>';  
             echo $result['name']. '<br><br>';
-            echo $result['category'].'<br>';
+            echo $result['category'].'<br><br>';
             echo $result['price']. '€<br><br><br>';
         }
     }
@@ -92,9 +92,9 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement->bindParam(":id", $productId);
         $statement->execute();
         while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].'><br><br>';  
+            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
             echo $result['name']. '<br><br>';
-            echo $result['category'].'<br>';
+            echo $result['category'].'<br><br>';
             echo $result['price']. '€<br><br><br>';
         }
     }
