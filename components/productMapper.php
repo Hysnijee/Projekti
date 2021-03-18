@@ -97,5 +97,6 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo $result['category'].'<br>';
             echo $result['price']. '€<br><br><br>';
         }
+    }
 
 }
