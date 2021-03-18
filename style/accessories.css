@@ -153,12 +153,16 @@ h4{
         display: flex;
         flex-direction: column;
         justify-content:space-evenly;
-        Width:130px;
-        height:190px;
+        Width: 250px;
+        height: 450px;
         text-align:center;
         font-size:10px;
-        padding-left: 5%;
+        padding-left: 10%;
         padding-top: 10%;
+    }
+    #Produkti img{
+        width: auto;
+        height: 150px;
     }
     #Rreshti {
         display: flex;
