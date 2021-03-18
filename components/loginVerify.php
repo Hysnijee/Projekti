@@ -1,6 +1,7 @@
 <?php
     include_once 'simpleUser.php';
-    include_once 'Admin.php';
+    include_once 'admin.php';
+    include_once 'userMapper.php';
 
     session_start();
 
@@ -18,7 +19,7 @@
     
 
         function __constructor($fromData){
-            $this->name=$fromData['userN'];
+            $this->name=$fromData['username'];
             $this->password = $fromData['password'];
         }
 
@@ -42,36 +43,26 @@
         }
 
         private function usernameAndPasswordCorrect($username, $password){
-            $loggedInUser = null;
-            $users = "Location:..web.sql"::getUsers();
+            $mapper = new userMapper();
+            $user = $mapper->getUserByUsername($username);
 
-            foreach($users as $user){
-                if($user['userN'] == $username && $user['password'] == $password){
-                    if($user['role'] == 1){
-                        $loggedInUser = new Admin ($user['id'], $user['userN'], $user['password'], $user['role']);
-                        break;
-                    }
-                    else {
-                        $loggedInUser = new SimpleUser($user['id'], $user['userN'], $user['password'], $user['role']);
-                        break;
-                    }
-                    return true;
+            if($user == null || count($user) == 0 ){
+                return false;
+            }
+            else if (password_verify($user['username'] == $username && $user['password'] == $password)){
+                if($user['role'] == 1){
+                    $obj = new Admin ($user['id'], $user['username'], $user['password'], $user['role']);
+                    $obj->setSession();
                 }
+                else {
+                    $obj = new SimpleUser($user['id'], $user['username'], $user['password'], $user['role']);
+                    $obj->setSession();
+                }
+                return true;
             }
-            if($loggedInUser !=null){
-                $loggedInUser->setSession();
-                $loggedInUser->setCookie();
+            else{
+                return false;
             }
-            return $loggedInUser;
-        }
-
-        public function insertData(){
-            $user = new SimpleUser($this->username, $this->password);
-            $mapper = new UserMapper();
-            $mapper->insertUser($user);
-            header("Location:../views/index.php");
         }
     }
-
-
 ?>

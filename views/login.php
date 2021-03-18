@@ -15,10 +15,8 @@
                 <h3>Login</h3><br>
                 <div class="body">
                     <form method="post" onsubmit="return ValidimiLogin()">
-                    <input  id="userN" type="text" placeholder="Username...">
-                    <input type="password" id="pass" name="pass" placeholder="Password..." minlength="8">
-                    <input  id="rememberme" type="checkbox">
-                    <label  for="rememberme">Remember me</label><br>
+                    <input  id="username" type="text" placeholder="Username...">
+                    <input type="password" id="password" name="password" placeholder="********" minlength="8">
                     <p id="pFTG"> Or login with</p>
                     <div class="FTG">
                         <a href="https://www.facebook.com/"><img id="ftg1" src="../images/facebookLogo.png"></a>
