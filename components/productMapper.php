@@ -15,11 +15,8 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":name", $name);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>';  
-            echo $result['name']. '<br>';
-            echo $result['price']. '€<br><br><br>';
-        }
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
     }
 
     public function getProductsByCategory($category){
@@ -27,11 +24,8 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":category", $category);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){  
-            echo '<image src='.$result['img_path'].'style="width:150px; height:150px;"><br><br>'; 
-            echo $result['name']. '<br>';
-            echo $result['price']. '€<br><br><br>';
-        }
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
     }
 
     public function getProductsByLowerCategory($lowerCategory){
@@ -39,23 +33,16 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":lowerCategory", $lowerCategory);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){ 
-            echo '<image src='.$result['img_path'].' style="width:150px; height:150px;"><br><br>';    
-            echo $result['name']. '<br>';
-            echo $result['price']. '€<br><br>';
-            echo '<input type="submit" value="Shto në Shportë" id="shto">'.'<br><br><br>';
-        }
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
     }
 
     public function getAllProducts(){
         $this->query = "select * from products";
         $statement = $this->conn->prepare($this->query);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<li><image src='.$result['img_path'].'style="width:150px; height:150px;"></li><br><br>';     
-            echo '<li>'.$result['name']. '</li><br>';
-            echo '<li>'.$result['price']. '€</li><br><br><br>';
-        }
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result;
     }
 
     public function insertProduct($product){
