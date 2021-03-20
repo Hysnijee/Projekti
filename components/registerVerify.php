@@ -42,14 +42,14 @@ class Registration{
         $lastname = $user->getLastName();
         $username = $user->getUsername();
         $email = $user->getEmail();
-        $pass = md5($user->getPassword());
+        $password = md5($user->getPassword());
         $role = $user->getRole();
 
         $statement->bindParam(":name", $name);
         $statement->bindParam(":lastname", $lastname);
         $statement->bindParam(":username", $username);
         $statement->bindParam(":email", $email);
-        $statement->bindParam(":pass", $pass);
+        $statement->bindParam(":password", $password);
         $statement->bindParam(":role", $role);
         $statement->execute();
     }

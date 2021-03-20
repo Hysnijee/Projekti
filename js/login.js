@@ -1,18 +1,18 @@
 function ValidimiLogin(){
-    let LogInbtn = document.getElementById('login');
+    let loginbtn = document.getElementById('login');
 
             const username = document.getElementById('username');
-            const fjalkalimi = document.getElementById('password');
+            const password = document.getElementById('password');
 
             if (username.value == "") {
                 alert("Ju duhet te shtoni username-in.");
                 return false;
             }
-            else if (fjalkalimi.value == "") {
+            else if (password.value == "") {
                 alert("Ju duhet te shtoni Fjalkalimin.");
                 return false;
             }
-            else if (fjalkalimi.length < 7) {
+            else if (password.length < 7) {
                 alert("Fjalekalimi juaj duhet te permbaje se paku 8 karaktere.");
                 return false;
             }

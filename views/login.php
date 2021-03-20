@@ -14,8 +14,8 @@
             <div class="form">
                 <h3>Login</h3><br>
                 <div class="body">
-                    <form method="post" onsubmit="return ValidimiLogin()">
-                    <input  id="username" type="text" placeholder="Username...">
+                    <form action="../components/loginVerify.php" method="post" onsubmit="return ValidimiLogin()">
+                    <input  id="username" type="text" name="username" placeholder="Username...">
                     <input type="password" id="password" name="password" placeholder="********" minlength="8">
                     <p id="pFTG"> Or login with</p>
                     <div class="FTG">
@@ -23,7 +23,7 @@
                         <a href="https://twitter.com/login?lang=en-gb"><img id="ftg2" src="../images/TwitterLogo.PNG"></a>
                         <a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img id="ftg3" src="../images/GoogleLogo.png"></a>
                     </div>
-                    <input  id="login" type="submit" value="Login"><br><br>
+                    <input  id="login" type="submit" value="Login" name='loginbtn'><br><br>
                     </form>
                     <p id="pR">Don't have an account?<a href="../views/register.php" id="registerlink">Sign up</a></p>
                 </div>
