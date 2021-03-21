@@ -1,11 +1,11 @@
 <?php
-    include_once 'simpleUser.php';
     include_once 'admin.php';
-    include_once 'userMapper.php';
+    include_once 'simpleUser.php';
+    require_once 'userMapper.php';
 
     session_start();
 
-    if(isset($_POST['login'])){
+    if(isset($_POST['loginbtn'])){
         $login = new Login ($_POST);
         $login->verifyData();
     }
@@ -19,8 +19,8 @@
     
 
         function __constructor($fromData){
-            $this->name=$fromData['username'];
-            $this->password = $fromData['password'];
+            $this->username=$fromData['username'];
+            $this->password=$fromData['password'];
         }
 
         public function verifyData(){
@@ -43,26 +43,24 @@
         }
 
         private function usernameAndPasswordCorrect($username, $password){
-            $mapper = new userMapper();
+            $mapper = new UserMapper();
             $user = $mapper->getUserByUsername($username);
-
-            if($user == null || count($user) == 0 ){
+            if ($user == null || count($user) == 0){
                 return false;
-            }
-            else if (password_verify($user['username'] == $username && $user['password'] == $password)){
-                if($user['role'] == 1){
-                    $obj = new Admin ($user['id'], $user['username'], $user['password'], $user['role']);
+            } 
+            else if (password_verify($password, $user['userPassword'])) {
+                if ($user['role'] == 1) {
+                    $obj = new Admin($user['id'], $user['username'], $user['password'], $user['role']);
                     $obj->setSession();
-                }
-                else {
-                    $obj = new SimpleUser($user['id'], $user['username'], $user['password'], $user['role']);
+                } else {
+                    $obj = new SimpleUser($user['id'], $user['username'], $user['password'], $user['role'], "");
                     $obj->setSession();
                 }
                 return true;
-            }
+            } 
             else{
                 return false;
-            }
+            } 
         }
     }
 ?>

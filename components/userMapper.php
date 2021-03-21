@@ -39,7 +39,7 @@ class UserMapper extends DatabasePDOConfiguration{
         $city = $user->getCity();
         $address = $user->getAddress();
         $ccNo = $user->getCcNo();
-        $pass = md5($user->getPassword());
+        $password = password_hash($user->getPassword(), PASSWORD_BCRYPT);
         $role = $user->getRole();
 
         $statement->bindParam(":name", $name);
