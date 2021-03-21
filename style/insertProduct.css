@@ -46,9 +46,9 @@ h2{
 .submit{
     width:250px;
     height:40px;
-    background-color: rgb(199, 172, 140);
     margin-top:40px;
     margin-left: 42%;
+    border:2px solid white;
 }
 /*-------------------------*/
 .footer{
