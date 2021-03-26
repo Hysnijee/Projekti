@@ -29,8 +29,8 @@ class UserMapper extends DatabasePDOConfiguration{
     }
 
     public function insertUser(\SimpleUser $user){
-        $query = "insert into user (name, lastname, email, username, password, city, address, ccNo, role) values (:name, :lastname, :email, :username, :pass, :city, :address, :ccNo, :role)";
-        $statement = $this->conn->prepare($query);
+        $this->query = "insert into user (name, lastname, email, username, password, city, address, ccNo, role) values (:name, :lastname, :email, :username, :pass, :city, :address, :ccNo, :role)";
+        $statement = $this->conn->prepare($this->query);
         
         $name = $user->getName();
         $lastname = $user->getLastName();
@@ -39,7 +39,7 @@ class UserMapper extends DatabasePDOConfiguration{
         $city = $user->getCity();
         $address = $user->getAddress();
         $ccNo = $user->getCcNo();
-        $password = password_hash($user->getPassword(), PASSWORD_BCRYPT);
+        $pass = password_hash($user->getPassword(), PASSWORD_BCRYPT);
         $role = $user->getRole();
 
         $statement->bindParam(":name", $name);
