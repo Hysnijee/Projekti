@@ -13,12 +13,12 @@
 <div class="main">
         <form action="../components/productLogic.php" method="post">
             <h2>Insert Product</h2> 
+            <label>Name</label>
+            <input id="name" name='prod-name' type="text" placeholder="Name...">
             <label>Category</label>
             <input id="category" name='prod-category' type="text" placeholder="Category...">
             <label>Lower Category</label>
-            <input id="lowercategory" name='prod-lowercategory' type="text" placeholder="Lower Category...">
-            <label>Name</label>
-            <input id="name" name='prod-name' type="text" placeholder="Name...">
+            <input id="lowercategory" name='prod-lowerCategory' type="text" placeholder="Lower Category...">
             <label>Price</label>
             <input id="price" name='prod-price' type="text" placeholder="Price...">
             <label>Image Path</label>

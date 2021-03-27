@@ -90,30 +90,40 @@
     font-size: x-small;
 }
 /*-------------------*/
-.first-main, .second-main, .third-main, .fourth-main, .fifth-main, .sixth-main{
-    color:white;
+#Rreshti{
+    display: flex;
+    flex-direction: row;
+}
+#Produkti{
     display: flex;
     flex-direction: column;
-    padding-top:20px;
-    align-items: center;
-    font-size:x-small;
+    justify-content:space-evenly;
+    Width:200px;
+    height:300px;
+    text-align:center;
+    font-size:10px;
+    padding-left: 15%;
+    padding-top: 3%;
 }
-.main-ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+#p2{
+    font-style: italic;
+    color:rgb(211, 195, 195);
 }
-.main-ul li{
-    padding: 35px;
-    width:250px;
+#pp{
     text-align: center;
-    font-size: small;
+    width: 62%;
+    padding-left:19%;
+    padding-top: 100px;
 }
-p{
-    font-size: xx-large;
+h4{
+    color:rgb(231, 220, 220);
+    font-size: 40px;
     text-align: center;
-    padding:10px;
+    font-style: italic;
+    padding-top: 80px;
 }
+
+
 /*----------------------*/
 .footer{
     display: flex;

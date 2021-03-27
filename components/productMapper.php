@@ -20,7 +20,6 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br><br>';
             echo $result['price']. '€<br><br>';
-            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
         }
     }
 
@@ -29,13 +28,7 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":category", $category);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
-            echo $result['name']. '<br><br>';
-            echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br>';
-            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
-        }
+        return $result = $statement->fetch(PDO::FETCH_ASSOC);
     }
 
     public function getProductsByLowerCategory($lowerCategory){
@@ -43,26 +36,14 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":lowerCategory", $lowerCategory);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
-            echo $result['name']. '<br><br>';
-            echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br>';
-            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
-        }
+        return $result = $statement->fetch(PDO::FETCH_ASSOC);
     }
 
     public function getAllProducts(){
         $this->query = "select * from products";
         $statement = $this->conn->prepare($this->query);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].' style=" width:130px; height:130px;"><br><br>';  
-            echo $result['name']. '<br><br>';
-            echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br>';
-            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
-        }
+        return $result = $statement->fetch(PDO::FETCH_ASSOC);
     }
 
     public function insertProduct($product){
@@ -95,13 +76,7 @@ class ProductMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":id", $productId);
         $statement->execute();
-        while($result = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo '<image src='.$result['img_path'].' style=" width:150px; height:150px;"><br><br>';  
-            echo $result['name']. '<br><br>';
-            echo $result['category'].'<br><br>';
-            echo $result['price']. '€<br><br>';
-            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
-        }
+        return $result = $statement->fetch(PDO::FETCH_ASSOC);
     }
 
 }
