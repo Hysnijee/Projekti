@@ -31,7 +31,7 @@
             }
             else if ($this->usernameAndPasswordCorrect($this->username, $this->password)){
                 echo "1";
-                //header("Location:../views/index.php");
+               /* header("Location:../views/index.php");*/
             }
             else{
                 echo "2";
