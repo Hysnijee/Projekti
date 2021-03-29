@@ -76,13 +76,13 @@
 .second-main{
     padding-top: 30px;
     padding-bottom: 100px;
-    width:100vw;
 }
-.second-main ul{
+.image-list{
     display: flex;
     list-style: none;
+    width:80%;
 }
-.second-main ul li img{
+.image-list li img{
     height:200px;
     opacity: 0.8;
 }

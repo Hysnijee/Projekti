@@ -30,7 +30,7 @@
             </ul>
         </div>
         <div class="second-main">
-            <ul>
+            <ul class="image-list">
                 <li><img src="../images/prod16.jpg"></li>
                 <li><img src="../images/prod17.jpg"></li>
                 <li><img src="../images/prod7.jpg"></li>
