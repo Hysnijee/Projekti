@@ -20,6 +20,7 @@ class ProductMapper extends DatabasePDOConfiguration{
             echo $result['name']. '<br><br>';
             echo $result['category'].'<br><br>';
             echo $result['price']. '€<br><br>';
+            echo '<a href="../components/deleteProduct.php?id="'. $result['id'].'><img src="../images/delete.png" style="width:20px; height:20px;"></a><br><br>';
         }
     }
 

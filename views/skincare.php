@@ -14,7 +14,7 @@
 <?php
     include('../reusableCode/header.php');
 ?>
-< class="main">
+<div class="main">
     <p id="titulli">Kujdesi ndaj Lëkurës</p>
     <div class="skincare">
         <ul class="ul1">
@@ -41,8 +41,8 @@
         </div>
         <img src="../images/skincare-bg.jpg">
     </div>
-    <div id="Pastrues">
-        <div id="Rreshti">
+    <div id="pastrues">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                     <?php 
                     $object = new ProductMapper();
@@ -90,7 +90,7 @@
     </div>
 
     <div id="ushqyes">
-        <div id="Rreshti">
+        <div class="row">
                 <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -113,7 +113,7 @@
             </div>
         </div>
 
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -138,7 +138,7 @@
     </div>
 
     <div id="hidratues">
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -162,7 +162,7 @@
         </div>
 
 
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -180,7 +180,7 @@
     </div>
 
     <div id="serume">
-        <div id="Rreshti">
+        <div class="row">
                 <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -203,7 +203,7 @@
             </div>
         </div>
     
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -221,7 +221,7 @@
     </div>
 
     <div id="maska">
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -244,7 +244,7 @@
             </div>
         </div>
 
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -255,7 +255,7 @@
     </div>
 
     <div id="kunderDiellit">
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
@@ -278,7 +278,7 @@
             </div>  
         </div>
 
-        <div id="Rreshti">
+        <div class="row">
             <div id="Produkti">
                 <?php 
                     $object = new ProductMapper();
