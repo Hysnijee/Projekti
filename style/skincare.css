@@ -36,13 +36,13 @@
     padding-left: 8%;
     width:220px;
 }
-#insertProd{
+/*#insertProd{
     background-color: white;
     width: 120px;
     height: 30px;
     margin-top: 20px;
     margin-left:15px;
-}
+}*/
 .li1{
     color:white;
 }
@@ -82,48 +82,25 @@
     padding:20px;
     border-style: dashed;
 }
-#shto{
-    background-color: white;
-    width: 130px;
-    height: 30px;
-    margin-top: 5px;
-    font-size: x-small;
-}
 /*-------------------*/
 .row{
     display: flex;
     justify-content: center;
 }
 #Produkti{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
+    margin:auto;
     Width:200px;
     height:300px;
     text-align:center;
-    font-size:10px;
-    padding-left: 15%;
+    font-size:small;
     padding-top: 3%;
+    color: white;
 }
-#p2{
-    font-style: italic;
-    color:rgb(211, 195, 195);
-}
-#pp{
+p{
+    color:white;
     text-align: center;
-    width: 62%;
-    padding-left:19%;
-    padding-top: 100px;
+    font-size: xx-large;
 }
-h4{
-    color:rgb(231, 220, 220);
-    font-size: 40px;
-    text-align: center;
-    font-style: italic;
-    padding-top: 80px;
-}
-
-
 /*----------------------*/
 .footer{
     display: flex;

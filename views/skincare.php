@@ -25,7 +25,7 @@
             <li class="li1"><a href="#fourth-main">Maska</a></li>
             <li class="li1"><a href="#fifth-main">Kujdesi ndaj diellit</a></li>
             <li class="li1"><a href="#sixth-main">Ushqyes</a></li>
-            <li><a href="insertProduct.php"><input type="submit" id='insertProd' name='insert' value="Shto Produkt"></a></li>
+            <!--<li><a href="insertProduct.php"><input type="submit" id='insertProd' name='insert' value="Shto Produkt"></a></li>-->
         </ul>
         <div class="box">
             <div class="text">
@@ -41,7 +41,9 @@
         </div>
         <img src="../images/skincare-bg.jpg">
     </div>
-    <div id="pastrues">
+    
+    <div id="first-main">
+    <p>Pastrues</p>
         <div class="row">
             <div id="Produkti">
                 <?php 
@@ -89,7 +91,8 @@
         </div>
     </div>
 
-    <div id="ushqyes">
+    <div id="sixth-main">
+    <p>Ushqyes</p>
         <div class="row">
                 <div id="Produkti">
                 <?php 
@@ -137,7 +140,8 @@
         </div>
     </div>
 
-    <div id="hidratues">
+    <div id="second-main">
+    <p>Hidratues</p>
         <div class="row">
             <div id="Produkti">
                 <?php 
@@ -179,7 +183,8 @@
         </div>
     </div>
 
-    <div id="serume">
+    <div id="third-main">
+    <p>Serume dhe Tretmane</p>
         <div class="row">
                 <div id="Produkti">
                 <?php 
@@ -220,7 +225,8 @@
         </div>
     </div>
 
-    <div id="maska">
+    <div id="fourth-main">
+    <p>Maska</p>
         <div class="row">
             <div id="Produkti">
                 <?php 
@@ -254,7 +260,8 @@
         </div>
     </div>
 
-    <div id="kunderDiellit">
+    <div id="fifth-main">
+    <p>Kujdesi kundër Diellit</p>
         <div class="row">
             <div id="Produkti">
                 <?php 
