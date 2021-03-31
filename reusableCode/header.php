@@ -1,7 +1,7 @@
 <body>
     <div class="header">
         <ul>
-            <li><a href="index.php">Home</a></li>
+            <li><a href="homepage.php">Home</a></li>
             <li><a href="contactUs.php">Contact Us</a></li>
             <?php
                 if(isset($_SESSION['role']) && $_SESSION['role'] == '1') {

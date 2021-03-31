@@ -10,7 +10,7 @@
         $login->verifyData();
     }
     else{
-        header("Location:../views/login.php");
+        header("Location:../views/index.php");
     }
 
     class Login {
@@ -25,13 +25,13 @@
 
         public function verifyData(){
             if($this->variablesNotDefinedWell($this->username, $this->password)){
-                header("Location:../views/login.php");
-            }
-            else if ($this->usernameAndPasswordCorrect($this->username, $this->password)){
                 header("Location:../views/index.php");
             }
+            else if ($this->usernameAndPasswordCorrect($this->username, $this->password)){
+                header("Location:../views/homepage.php");
+            }
             else{
-                header("Location:../views/login.php");
+                header("Location:../views/index.php");
             }
         }
 
