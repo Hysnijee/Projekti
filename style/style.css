@@ -176,12 +176,6 @@
     color: white;
     align-items: center;
 }
-/*----------------------------*/
-#shto{
-    width:120px; 
-    height:30px; 
-    background-color:white; 
-}
 /*----------------------*/
 .footer{
     display: flex;
@@ -244,7 +238,12 @@
     top:170px;
     right:220px;
 }
-
+#h1-accesories{
+    position: relative;
+    color:white;
+    top:170px;
+    right:270px;
+}
 
 /*Responsive for IPhone X*/
 @media only screen and (max-width:400px){

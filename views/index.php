@@ -79,7 +79,8 @@
                 <img class="slide slide1" src="../images/prod18.jpg">
                 <img class="slide slide1" src="../images/prod19.jpg">
                 <img class="slide slide1" src="../images/prod20.jpg">
-                <button class="slide-button slide-right" onclick="levizja1(+1)">&#10095;</button>  
+                <button class="slide-button slide-right" onclick="levizja1(+1)">&#10095;</button>
+                <h1 id="h1-accesories">Accesories</h1> 
         </div>
         <div class="fifth-main">
             <div class="f2">
