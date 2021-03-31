@@ -51,20 +51,27 @@
         private function usernameAndPasswordCorrect($username, $password){
             $mapper = new UserMapper();
             $user = $mapper->getUserByUsername($username);
+
+            echo 'HII';
+            
             if ($user == null || count($user) == 0) return false;
-            else if (password_verify($password, $user['password'])) {
-                if ($user['role'] == 1) {
-                    $obj = new Admin($user['id'], $user['username'], $user['password'], $user['role']);
-                    $obj->setSession();
-                } else {
-                    $obj = new SimpleUser($user['id'], $user['username'], $user['password'], $user['role']);
-                    $obj->setSession();
-                }
-                return true;
-            }
-            else{
-                return false;
-            }
+            echo 'HELLO';
+            var_dump(password_verify($password, $user['password']));
+            echo $password;
+            echo $user['password'];
+            //else if (password_verify($password, $user['password'])) {
+            //     if ($user['role'] == 1) {
+            //         $obj = new Admin($user['id'], $user['username'], $user['password'], $user['role']);
+            //         $obj->setSession();
+            //     } else {
+            //         $obj = new SimpleUser($user['id'], $user['username'], $user['password'], $user['role'], $user['email'], $user['name'], $user['lastname'], $user['city'], $user['address'], $user['ccNo']);
+            //         $obj->setSession();
+            //     }
+            //     return true;
+            // }
+            // else{
+            //     return false;
+            // }
         }
     }
 ?>

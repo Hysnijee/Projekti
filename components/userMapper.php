@@ -7,12 +7,15 @@ class UserMapper extends DatabasePDOConfiguration{
     private $query;
 
     public function __construct(){
+        echo 'mappr';
         $this->conn = $this->getConnection();
     }
 
 
     public function getUserByUsername($username){
-        $this->query = "select * from user where username=:username";
+        echo 'start';
+        echo $username;
+        $this->query = "select * from user where username=:username"; // errori 18 deri ne 21
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":username", $username);
         $statement->execute();
