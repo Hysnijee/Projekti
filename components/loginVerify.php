@@ -19,29 +19,23 @@
     
 
         public function __construct($fromData){
-            var_dump ($fromData['username']);
             $this->username=$fromData['username'];
             $this->password=$fromData['password'];
         }
 
         public function verifyData(){
             if($this->variablesNotDefinedWell($this->username, $this->password)){
-                echo "3";
-                //header("Location:../views/login.php");
+                header("Location:../views/login.php");
             }
             else if ($this->usernameAndPasswordCorrect($this->username, $this->password)){
-                echo "1";
-               /* header("Location:../views/index.php");*/
+                header("Location:../views/index.php");
             }
             else{
-                echo "2";
-                //header("Location:../views/login.php");
+                header("Location:../views/login.php");
             }
         }
 
         private function variablesNotDefinedWell($username, $password){
-            var_dump ($username);
-            var_dump($password);
             if(empty($username) || empty($password)){
                 return true;
             }
@@ -51,13 +45,14 @@
         private function usernameAndPasswordCorrect($username, $password){
             $mapper = new UserMapper();
             $user = $mapper->getUserByUsername($username);
+
             if ($user == null || count($user) == 0) return false;
-            else if (password_verify($password, $user['password'])) {
+            else if (password_verify($password, $user['password'])){
                 if ($user['role'] == 1) {
-                    $obj = new Admin($user['id'], $user['username'], $user['password'], $user['role']);
+                    $obj = new Admin($user['userid'], $user['username'], $user['password'], $user['role']);
                     $obj->setSession();
                 } else {
-                    $obj = new SimpleUser($user['id'], $user['username'], $user['password'], $user['role'], $user['email'], $user['name'], $user['lastname'], $user['city'], $user['address'], $user['ccNo']);
+                    $obj = new SimpleUser($user['userid'], $user['username'], $user['password'], $user['role'], $user['email'], $user['name'], $user['lastname'], $user['city'], $user['address'], $user['ccNo']);
                     $obj->setSession();
                 }
                 return true;

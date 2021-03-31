@@ -42,7 +42,7 @@ class Registration{
         $lastname = $user->getLastName();
         $username = $user->getUsername();
         $email = $user->getEmail();
-        $password = password_hash($user->getPassword(), PASSWORD_BCRYPT);
+        $password = password_hash($user->getPassword(), PASSWORD_DEFAULT);
         $role = $user->getRole();
 
         $statement->bindParam(":name", $name);
