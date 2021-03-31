@@ -17,7 +17,6 @@ function ValidimiLogin(){
                 return false;
             }
             else{
-                alert("Ju jeni kycur me sukses!");
                 return true;
             }
        

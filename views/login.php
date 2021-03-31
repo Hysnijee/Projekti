@@ -7,9 +7,7 @@
     <title>Oriflame</title>
     <link rel="stylesheet" href="../style/login.css">
 </head>
-<?php 
-    include('../reusableCode/header.php');
-?>
+<body>
 <div class="main">
             <div class="form">
                 <h3>Login</h3><br>
@@ -29,9 +27,6 @@
                 </div>
             </div>  
 </div>
-<?php 
-    include('../reusableCode/footer.php');
-?>  
 <script src="../js/login.js"></script>    
 </body>
 </html>

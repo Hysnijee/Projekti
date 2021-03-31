@@ -10,9 +10,7 @@
     <title>Oriflame</title>
     <link rel="stylesheet" href="../style/register.css">
 </head>
-<?php 
-    include('../reusableCode/header.php');
-?>
+<body>
 <div class="main">
     <form action="../components/registerVerify.php" method="post" onsubmit="return valdimiIFormes()">        
         <label>Name</label>
@@ -39,10 +37,7 @@
         <input name='register-ccNo' type="text" placeholder="Enter a valid credit card number">
         <input type="submit" id="submit" value="Register" name='register-btn'>
     </form>
-</div>
-<?php 
-    include('../reusableCode/footer.php');
-?>      
+</div>     
 <script src="../js/register.js"></script>
 </body>
 </html>
