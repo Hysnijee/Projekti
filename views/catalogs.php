@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    include_once '../components/catalog.php';
+    require_once '../components/catalogMapper.php';
+    $mapper = new CatalogMapper();
+    $catalogs = $mapper->getAllCatalogs();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,19 +18,39 @@
         include('../reusableCode/header.php');
     ?>
     <div class="main">
-        <ul class="inn-list">
-            <li><img src="../images/catalog/c1.jpg"><br><a href="../pdf/./Oriflame Catalog APRIL 2021 hd.pdf" target="blank">VIEW</a></li>
-            <li><img src="../images/catalog/c2.jpg"><br><a href="../pdf/./Oriflame Catalog MARCH 2021.pdf" target="blank">VIEW</a></li>
-            <li><img src="../images/catalog/c3.jpg"><br><a href="../pdf/./Oriflame Catalogue January 2021.pdf" target="blank">VIEW</a></li>
-        </ul>
-        <ul class="inn-list">
-            <li><img src="../images/catalog/c4.jpg"><br><a href="../pdf/./Oriflame catalogue november 2020.pdf" target="blank">VIEW</a></li>
-            <li><img src="../images/catalog/c5.jpg"><br><a href="../pdf/./Oriflame Catalogue september 2020.pdf" target="blank">VIEW</a></li>
-            <li><img src="../images/catalog/c6.jpg"><br><a href="../pdf/./Oriflame catalogue August 2020.pdf" target="blank">VIEW</a></li>
-        </ul>
-        <ul class="inn-list">
-            <li><img src="../images/catalog/c7.jpg"><br><a href="../pdf/./Oriflame catalogue July 2020.pdf" target="blank">VIEW</a></li>
-        </ul>
+        <div class="first-main">
+            <p>
+                Këtu mund të gjeni katalogët e fundit të Oriflame.<br>
+                Eksploroni që të shihni produktet më të reja si dhe zbritjet për cdo sezonë!<br>
+            </p>
+            <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+            ?>
+                    <a href="insertCatalog.php">Insert a Catalog</a>
+            <?php 
+                    }
+            ?>
+        </div>
+        <div class="second-main">
+            <?php
+                foreach ($catalogs as $catalog){
+            ?>
+            <ul class="inn-list">
+                <li><img src="<?php echo $catalog['img_path'];?>"></li><br>
+                <li><?php echo $catalog['name'];?></li><br>
+                <li><a href="<?php echo $catalog['pdf_path'];?>" target="blank">VIEW</a></li><br>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                <li><a href=<?php echo "../components/deleteCatalog.php?id=" . $catalog['id'];?>>Delete</a></li><br><br>
+                <?php
+                }
+                ?>
+            </ul>
+            <?php
+                }
+            ?>
+        </div>
     </div>
     <?php
         include('../reusableCode/footer.php');

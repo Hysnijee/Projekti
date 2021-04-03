@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include_once '../components/product.php';
     require_once '../components/productMapper.php';
     include_once '../components/article.php';

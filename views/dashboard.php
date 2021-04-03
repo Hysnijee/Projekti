@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include_once '../components/simpleUser.php';
     require_once '../components/userMapper.php';
     $mapper =  new UserMapper();

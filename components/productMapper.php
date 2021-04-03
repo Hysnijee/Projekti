@@ -46,31 +46,6 @@ class ProductMapper extends DatabasePDOConfiguration{
         return $result = $statement->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function insertProduct($product){
-        $query = "insert into products (name, category, lowerCategory, img_path, price) values (:name, :category, :lowerCategory, :img_path, :price)";
-        $statement = $this->conn->prepare($query);
-        
-        $name = $product->getName();
-        $category = $product->getCategory();
-        $lowerCategory = $product->getLowerCategory();
-        $image = $product->getImage();
-        $price = $product->getPrice();
-
-        $statement->bindParam(":name", $name);
-        $statement->bindParam(":category", $category);
-        $statement->bindParam(":lowerCategory", $lowerCategory);
-        $statement->bindParam(":img_path", $image);
-        $statement->bindParam(":price", $price);
-        $statement->execute();
-    }
-
-    public function deleteProduct($productId){
-        $this->query = "delete from products where id=:id";
-        $statement = $this->conn->prepare($this->query);
-        $statement->bindParam(":id", $productId);
-        $statement->execute();
-    }
-
     public function getProductByID($productId){
         $this->query = "select * from products where id=:id";
         $statement = $this->conn->prepare($this->query);

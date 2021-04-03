@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2021 at 10:46 PM
+-- Generation Time: Apr 03, 2021 at 06:08 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -20,6 +20,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `web`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `catalog`
+--
+
+CREATE TABLE `catalog` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `img_path` varchar(255) NOT NULL,
+  `pdf_path` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `catalog`
+--
+
+INSERT INTO `catalog` (`id`, `name`, `img_path`, `pdf_path`) VALUES
+(3, 'Katalogu Janar 2021', '../images/catalog/c3.jpg', '../pdf/./Oriflame Catalogue January 2021.pdf'),
+(5, 'Katalogu Nëntor 2020', '../images/catalog/c4.jpg', '../pdf/./Oriflame catalogue november 2020.pdf'),
+(6, 'Katalogu Shtator 2020', '../images/catalog/c5.jpg', '../pdf/./Oriflame Catalogue september 2020.pdf'),
+(7, 'Katalogu Gusht 2020', '../images/catalog/c6.jpg', '../pdf/./Oriflame catalogue August 2020.pdf'),
+(9, 'Katalogu Korrik 2020', '../images/catalog/c7.jpg', '../pdf/./Oriflame catalogue July 2020.pdf');
 
 -- --------------------------------------------------------
 
@@ -226,6 +250,12 @@ INSERT INTO `user` (`userid`, `name`, `lastname`, `email`, `username`, `password
 --
 
 --
+-- Indexes for table `catalog`
+--
+ALTER TABLE `catalog`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `homepagedesc`
 --
 ALTER TABLE `homepagedesc`
@@ -246,6 +276,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `catalog`
+--
+ALTER TABLE `catalog`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `homepagedesc`
