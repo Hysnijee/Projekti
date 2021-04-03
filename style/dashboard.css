@@ -29,22 +29,15 @@
 }
 table{
     color:white;
-    border:2px solid white;
-    padding:10px;
 }
 .first-row td{
-    background-color: white;
-    color:black;
     column-span:5;
     text-align: center;
     font-size: large;
 }
-.second-row td{
-    background-color: white;
-    color:black;
-}
 td{
     padding:30px;
+    border: 1px solid white;
 }
 table td a{
     text-decoration: none;
