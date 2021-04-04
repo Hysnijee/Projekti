@@ -146,6 +146,7 @@ form label{
         width:100px;
         height:30px;
         margin-top: 40px;
+        font-size: small;
     }
     .footer{
         padding:0;

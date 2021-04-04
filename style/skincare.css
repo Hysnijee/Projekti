@@ -81,6 +81,7 @@ p{
     color: white;
     font-size: small;
     text-align: center;
+    list-style-type: none;
 }
 .list li img{
     width: 150px;

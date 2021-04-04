@@ -42,7 +42,7 @@
                 <?php 
                     if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
                 ?>
-                <li><a href=<?php echo "../components/deleteCatalog.php?id=" . $catalog['id'];?>>Delete</a></li><br><br>
+                <li><a id="del-link" href=<?php echo "../components/deleteCatalog.php?id=" . $catalog['id'];?>>Delete</a></li><br><br>
                 <?php
                 }
                 ?>

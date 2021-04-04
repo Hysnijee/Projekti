@@ -58,6 +58,9 @@
     text-decoration: none;
     color:aliceblue;
 }
+#del-link{
+    color: rgb(223, 0, 0);
+}
 /*-------------------------*/
 .footer{
     display: flex;
