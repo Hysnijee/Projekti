@@ -4,7 +4,7 @@
     require_once '../components/productMapper.php';
     include_once '../components/article.php';
     require_once '../components/articleMapper.php';
-    $mapper = new ProductMapper();
+    $mapper2 = new ProductMapper();
     $mapper = new ArticleMapper();
 ?>
 <!DOCTYPE html>
@@ -45,7 +45,7 @@
             <div id="Accessories" id="Rreshti" id="Produkti"> 
                 <h4>Accessories</h4>
                 <?php
-                    $products = $mapper->getProductsByLowerCategory('Accessories');
+                    $products = $mapper2->getProductsByLowerCategory('Accessories');
                     foreach($products as $product){
                 ?>
                 <ul class="list">
@@ -68,7 +68,7 @@
             <div id="Jewerly" id="Rreshti" id="Produkti"> 
                 <h4>Jewerly</h4>
                 <?php
-                    $products = $mapper->getProductsByLowerCategory('Jewerly');
+                    $products = $mapper2->getProductsByLowerCategory('Jewerly');
                     foreach($products as $product){
                 ?>
                 <ul class="list">
@@ -91,7 +91,7 @@
             <div id="FashionAccessories" id="Rreshti" id="Produkti"> 
                 <h4>Accessories</h4>
                 <?php
-                    $products = $mapper->getProductsByLowerCategory('Fashion Accessories');
+                    $products = $mapper2->getProductsByLowerCategory('Fashion Accessories');
                     foreach($products as $product){
                 ?>
                 <ul class="list">
