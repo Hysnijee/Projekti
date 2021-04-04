@@ -43,8 +43,11 @@ img{
 
 
 #Rreshti{
+    list-style-type: none;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 #Produkti{
     display: flex;
@@ -56,6 +59,16 @@ img{
     font-size:10px;
     padding-left: 15%;
     padding-top: 3%;
+}
+.list li{
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+.list li img{
+    width: 150px;
+    height:150px;
+    margin-top:20px;
 }
 #p2{
     font-style: italic;
