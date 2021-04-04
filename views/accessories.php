@@ -27,12 +27,17 @@
                 <li id="li1"><a href="#Jewerly">Jewerly</a></li>
                 <li id="li1"><a href="#FashionAccessories">Fashion Accessories</a></li>
                 <li id="li1"><a href="#WhatsNew">What's New</a></li>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                    <li><a href="insertProduct.php"><input type="submit" id='insertProd' name='insert' value="Insert a Product"></a></li>
+                <?php 
+                    }
+                ?>
             </div>
 
             <p id="pp"><b>Fashion Up</b></br></br>
             <?php 
-                //$object = new ArticleMapper();
-                //$object->getDescriptionByType('Fashion-up');
                 $object = $mapper->getDescriptionByType('Fashion-up');
             ?>
             </p>
@@ -46,29 +51,43 @@
                 <ul class="list">
                     <li><img src="<?php echo $product['img_path'];?>"></li><br>
                     <li><?php echo $product['name'];?></li><br>
-                    <li><?php echo $product['price'];?>€</li><br><br>
+                    <li><?php echo $product['price'];?>€</li><br>
+                    <?php 
+                        if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                    ?>
+                    <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                    <?php
+                        }
+                    ?>
                 </ul>
                 <?php 
-                }
+                    }
                 ?>
             </div>
 
             <div id="Jewerly" id="Rreshti" id="Produkti"> 
-                <h4>Accessories</h4>
+                <h4>Jewerly</h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Jewerly');
                     foreach($products as $product){
                 ?>
                 <ul class="list">
-                <li><img src="<?php echo $product['img_path'];?>"></li><br>
-                <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
+                    <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                    <li><?php echo $product['name'];?></li><br>
+                    <li><?php echo $product['price'];?>€</li><br>
+                    <?php 
+                        if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                    ?>
+                    <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                    <?php
+                        }
+                    ?>
                 </ul>
                 <?php 
-                }
+                    }
                 ?>
             </div>
-
+            
             <div id="FashionAccessories" id="Rreshti" id="Produkti"> 
                 <h4>Accessories</h4>
                 <?php
@@ -76,16 +95,22 @@
                     foreach($products as $product){
                 ?>
                 <ul class="list">
-                <li><img src="<?php echo $product['img_path'];?>"></li><br>
-                <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
+                    <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                    <li><?php echo $product['name'];?></li><br>
+                    <li><?php echo $product['price'];?>€</li><br>
+                    <?php 
+                        if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                    ?>
+                    <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                    <?php
+                        }
+                    ?>
                 </ul>
                 <?php 
-                }
+                    }
                 ?>
             </div>
             
-            <!-- / -->
     </main>
 
     <?php 
