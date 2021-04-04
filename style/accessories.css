@@ -72,9 +72,6 @@ img{
     background-color: white;
     margin:5px;
 }
-
-
-/*******************************/
 #pp{
     text-align: center;
     width: 62%;
@@ -88,12 +85,7 @@ h4{
     font-style: italic;
     padding-top: 80px;
 }
-#insertProd{
-    width:150px;
-    height:30px;
-    background-color: white;
-    margin:5px;
-}
+
 
 /*--------------Footer-------------*/
 
