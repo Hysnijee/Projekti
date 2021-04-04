@@ -23,7 +23,7 @@ class CatalogMapper extends DatabasePDOConfiguration{
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":name", $name);
         $statement->execute();
-        return $result = $statement->fetch(PDO::FETCH_ASSOC);
+        return $result = $statement->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function deleteCatalog($catalogId){

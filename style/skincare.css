@@ -22,11 +22,6 @@
     font-size: large;
 }
 /*--------------------------*/
-#titulli{
-    text-align: center;
-    color:white;
-
-}
 .ul-title{
     font-weight: bold;
 }
@@ -36,13 +31,6 @@
     padding-left: 8%;
     width:220px;
 }
-/*#insertProd{
-    background-color: white;
-    width: 120px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left:15px;
-}*/
 .li1{
     color:white;
 }
@@ -83,23 +71,29 @@
     border-style: dashed;
 }
 /*-------------------*/
-.row{
-    display: flex;
-    justify-content: center;
-}
-#Produkti{
-    margin:auto;
-    Width:200px;
-    height:300px;
-    text-align:center;
-    font-size:x-small;
-    padding-top: 3%;
-    color: white;
-}
 p{
-    color:white;
     text-align: center;
+    color:white;
     font-size: xx-large;
+    padding:20px;
+    border: 1px solid white;
+    border-left: none;
+    border-right:none;
+}
+.list li{
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+.list li img{
+    width: 150px;
+    height:150px;
+    margin-top:20px;
+}
+#titulli{
+    text-align: center;
+    color:white;
+    border:none;
 }
 /*----------------------*/
 .footer{

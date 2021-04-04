@@ -24,6 +24,6 @@
             $catalog = new Catalog($this->name, $this->image, $this->pdf);
             $mapper = new CatalogMapper();
             $mapper->insertCatalog($catalog);
-            header("Location:../views/index.php");
+            header("Location:../views/catalogs.php");
         }
     }

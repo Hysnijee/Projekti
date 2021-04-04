@@ -2,6 +2,7 @@
     session_start();
     include_once '../components/product.php';
     require_once '../components/productMapper.php';
+    $mapper = new ProductMapper();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,263 +45,99 @@
     </div>
     
     <div id="first-main">
-    <p>Pastrues</p>
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Vaj Pastrues për Fytyrë');
-                ?>
-            </div>
+        <p>Pastrues</p>
+        <?php
+            $products = $mapper->getProductsByLowerCategory('pastrues');
+            foreach($products as $product){
+        ?>
+        <ul class="list">
+                <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                <li><?php echo $product['name'];?></li><br>
+                <li><?php echo $product['price'];?>€</li><br><br>
 
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Optimals Even Out Pastrues Shkumoz');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Pure Skin 2-në-1 Pastrim & Skrab');
-                ?>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="Produkti">
-                    <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Love Nature Pastrues me Tërshërë');
-                    ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Optimals Hydra Micellar Ujë Pastrues');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Essentials me Vitamin E & Vaj Kanol');
-                ?>
-            </div>
-        </div>
+        </ul>
+        <?php 
+            }
+        ?>
     </div>
-
-    <div id="sixth-main">
-    <p>Ushqyes</p>
-        <div class="row">
-                <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Bright Sublime Set');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Tender Care Balsam Mbrojtës me Vaj Organik të Farës së Shegës');
-                ?>
-                </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Eco Beauty Krema për Fytyrë');
-                ?>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Time Restore Krema Regjenerative e Natës');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Ultimate Lift Set');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Milk & Honey Gold Kremë e Ditës Ushqyese');
-                ?>
-            </div>
-        </div>
-    </div>
-
     <div id="second-main">
-    <p>Hidratues</p>
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Essentials me Vitamin E & Vaj Kanoli');
-                ?>
-            </div>
+        <p>Hidratues</p>
+        <?php
+            $products = $mapper->getProductsByLowerCategory('hidratues');
+            foreach($products as $product){
+        ?>
+        <ul class="list">
+                <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                <li><?php echo $product['name'];?></li><br>
+                <li><?php echo $product['price'];?>€</li><br><br>
 
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Bright Sublime Kremë e Ditës');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Bright Sublime Kremë e Natës');
-                ?>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('RoyalVelvet për ripërtrirjen e lëkurës');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Diamond Cellular për ripërtrirjen e lëkurës');
-                ?>
-            </div>
-        </div>
+        </ul>
+        <?php 
+            }
+        ?>
     </div>
-
     <div id="third-main">
-    <p>Serume dhe Tretmane</p>
-        <div class="row">
-                <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Optimals Serum Antioksidant');
-                ?>
-            </div>
+        <p>Serume dhe Tretmane</p>
+        <?php
+            $products = $mapper->getProductsByLowerCategory('serume');
+            foreach($products as $product){
+        ?>
+        <ul class="list">
+                <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                <li><?php echo $product['name'];?></li><br>
+                <li><?php echo $product['price'];?>€</li><br><br>
 
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge mbrojtës kundër akneve');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Ecollagen Wrinkle Power');
-                ?>
-            </div>
-        </div>
-    
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Pure Skin SOS Spot Xhel');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Love Nature Vaj me Dru Caji');
-                ?>
-            </div>
-        </div>
+        </ul>
+        <?php 
+            }
+        ?>
     </div>
-
     <div id="fourth-main">
-    <p>Maska</p>
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Pure Skin pë Pastrimin e Pucrrave të Zeza');
-                ?>
-            </div>
+        <p>Maska</p>
+        <?php
+            $products = $mapper->getProductsByLowerCategory('maska');
+            foreach($products as $product){
+        ?>
+        <ul class="list">
+                <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                <li><?php echo $product['name'];?></li><br>
+                <li><?php echo $product['price'];?>€</li><br><br>
 
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Love Nature Maskë Argjile Rrodhe');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Maskë Fortësuese për Fytyrë');
-                ?>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Set Maskë Argjile (Pajisjet për Pastrim)');
-                ?>
-            </div>
-        </div>
+        </ul>
+        <?php 
+            }
+        ?>
     </div>
-
     <div id="fifth-main">
-    <p>Kujdesi kundër Diellit</p>
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('NovAge Ultimate Lift Contour Define SPF15');
-                ?>
-            </div>
+        <p>Kujdesi ndaj Diellit</p>
+        <?php
+            $products = $mapper->getProductsByLowerCategory('kunderDiellit');
+            foreach($products as $product){
+        ?>
+        <ul class="list">
+                <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                <li><?php echo $product['name'];?></li><br>
+                <li><?php echo $product['price'];?>€</li><br><br>
 
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Optimals Urban UV Mbrojtje gjatë ditës FM30');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Sprej për Trup dhe për Fytyrë SPF 50');
-                ?>
-            </div>  
-        </div>
-
-        <div class="row">
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Losion për Trup dhe për Fytyrë SPF 30');
-                ?>
-            </div>
-
-            <div id="Produkti">
-                <?php 
-                    $object = new ProductMapper();
-                    $object->getProductByName('Xhel për Trup dhe për Fytyrë pas Diellit');
-                ?>
-            </div> 
-        </div>
+        </ul>
+        <?php 
+            }
+        ?>
+    </div>
+    <div id="sixth-main">
+        <p>Ushqyes</p>
+        <?php
+            $products = $mapper->getProductsByLowerCategory('ushqyes');
+            foreach($products as $product){
+        ?>
+        <ul class="list">
+                <li><img src="<?php echo $product['img_path'];?>"></li><br>
+                <li><?php echo $product['name'];?></li><br>
+                <li><?php echo $product['price'];?>€</li><br><br>
+        </ul>
+        <?php 
+            }
+        ?>
     </div>
 </div>
 <?php 
