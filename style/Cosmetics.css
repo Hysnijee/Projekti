@@ -22,14 +22,7 @@
     font-size: large;
 }
 /*----------------------*/
-.Cosmetics{
-    display: flex;
-    position: relative;
-    align-items: center;
-    padding-left: 30px;
-    
-}
-img{
+main img{
     height: 300px;
     width: 100% ;  
 }
@@ -58,24 +51,32 @@ img{
 #li1 a:hover {
     background-color: #555;
 }
-
-#Rreshti{
-    display: flex;
-    flex-direction: row;
-    padding-right: 15px;
+p{
+    text-align: center;
+    color:white;
+    font-size: xx-large;
+    padding:15px;
 }
-#Produkti{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    Width:250px;
-    height:360px;
-    text-align:center;
-    font-size:10px;
-    padding-left: 13%;
-    padding-top: 10%;
+.list li{
+    color: white;
+    font-size: small;
+    text-align: center;
 }
-
+.list li img{
+    width: 150px;
+    height:150px;
+    margin-top:40px;
+}
+.list li a{
+    text-decoration: none;
+    color: rgb(223, 0, 0);
+}
+#insertProd{
+    width:150px;
+    height:40px;
+    background-color: white;
+    margin:5px;
+}
 h4{
     color:rgb(231, 220, 220);
     font-size: 40px;

@@ -31,8 +31,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-      
+}      
 #li1 a {
     text-decoration: none;
     border-bottom: 1px solid #1e2125;
@@ -40,25 +39,18 @@ img{
 #li1 a:hover {
     background-color: #555;
 }
-
-
-#Rreshti{
-    list-style-type: none;
-    margin-top: 30px;
+/************************************/
+.Accessories{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding-bottom:20px;
 }
-#Produkti{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    Width:200px;
+.Accessories img{
+    width:450px;
     height:300px;
-    text-align:center;
-    font-size:10px;
-    padding-left: 15%;
-    padding-top: 3%;
+    margin-top: 50px;
+    border:1px solid white;
+    padding:20px;
+    border-style: dashed;
 }
 .list li{
     color: white;
@@ -68,12 +60,21 @@ img{
 .list li img{
     width: 150px;
     height:150px;
-    margin-top:20px;
+    margin-top:40px;
 }
-#p2{
-    font-style: italic;
-    color:rgb(211, 195, 195);
+.list li a{
+    text-decoration: none;
+    color: rgb(223, 0, 0);
 }
+#insertProd{
+    width:150px;
+    height:30px;
+    background-color: white;
+    margin:5px;
+}
+
+
+/*******************************/
 #pp{
     text-align: center;
     width: 62%;
@@ -86,6 +87,12 @@ h4{
     text-align: center;
     font-style: italic;
     padding-top: 80px;
+}
+#insertProd{
+    width:150px;
+    height:30px;
+    background-color: white;
+    margin:5px;
 }
 
 /*--------------Footer-------------*/
