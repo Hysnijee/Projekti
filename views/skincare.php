@@ -27,7 +27,13 @@
             <li class="li1"><a href="#fourth-main">Maska</a></li>
             <li class="li1"><a href="#fifth-main">Kujdesi ndaj diellit</a></li>
             <li class="li1"><a href="#sixth-main">Ushqyes</a></li>
-            <!--<li><a href="insertProduct.php"><input type="submit" id='insertProd' name='insert' value="Shto Produkt"></a></li>-->
+            <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+            ?>
+                    <li><a href="insertProduct.php"><input type="submit" id='insertProd' name='insert' value="Insert a Product"></a></li>
+            <?php 
+                    }
+            ?>
         </ul>
         <div class="box">
             <div class="text">
@@ -53,8 +59,14 @@
         <ul class="list">
                 <li><img src="<?php echo $product['img_path'];?>"></li><br>
                 <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
-
+                <li><?php echo $product['price'];?>€</li><br>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                <?php
+                }
+                ?>
         </ul>
         <?php 
             }
@@ -69,8 +81,14 @@
         <ul class="list">
                 <li><img src="<?php echo $product['img_path'];?>"></li><br>
                 <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
-
+                <li><?php echo $product['price'];?>€</li><br>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                <?php
+                }
+                ?>
         </ul>
         <?php 
             }
@@ -85,8 +103,14 @@
         <ul class="list">
                 <li><img src="<?php echo $product['img_path'];?>"></li><br>
                 <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
-
+                <li><?php echo $product['price'];?>€</li><br>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                <?php
+                }
+                ?>
         </ul>
         <?php 
             }
@@ -101,8 +125,14 @@
         <ul class="list">
                 <li><img src="<?php echo $product['img_path'];?>"></li><br>
                 <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
-
+                <li><?php echo $product['price'];?>€</li><br>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                <?php
+                }
+                ?>
         </ul>
         <?php 
             }
@@ -117,8 +147,14 @@
         <ul class="list">
                 <li><img src="<?php echo $product['img_path'];?>"></li><br>
                 <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
-
+                <li><?php echo $product['price'];?>€</li><br>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                <?php
+                }
+                ?>
         </ul>
         <?php 
             }
@@ -133,7 +169,14 @@
         <ul class="list">
                 <li><img src="<?php echo $product['img_path'];?>"></li><br>
                 <li><?php echo $product['name'];?></li><br>
-                <li><?php echo $product['price'];?>€</li><br><br>
+                <li><?php echo $product['price'];?>€</li><br>
+                <?php 
+                    if(isset($_SESSION['role']) && $_SESSION['role'] == '1'){
+                ?>
+                <li><a href=<?php echo "../components/deleteProduct.php?id=" . $product['id'];?>>Delete</a></li><br><br>
+                <?php
+                }
+                ?>
         </ul>
         <?php 
             }
