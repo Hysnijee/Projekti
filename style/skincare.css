@@ -75,10 +75,7 @@ p{
     text-align: center;
     color:white;
     font-size: xx-large;
-    padding:20px;
-    border: 1px solid white;
-    border-left: none;
-    border-right:none;
+    padding:15px;
 }
 .list li{
     color: white;
@@ -88,12 +85,22 @@ p{
 .list li img{
     width: 150px;
     height:150px;
-    margin-top:20px;
+    margin-top:40px;
 }
 #titulli{
     text-align: center;
     color:white;
     border:none;
+}
+.list li a{
+    text-decoration: none;
+    color: rgb(223, 0, 0);
+}
+#insertProd{
+    width:150px;
+    height:30px;
+    background-color: white;
+    margin:5px;
 }
 /*----------------------*/
 .footer{
