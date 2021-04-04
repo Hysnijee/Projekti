@@ -250,6 +250,9 @@
     *{
         font-size: xx-small;
     }
+    .header ul li a{
+        font-size: small;
+    }
     .first-main ul li:first-child img{
         width:100px;
         height:130px;
@@ -333,6 +336,10 @@
         top:50px;
         right:80px;
     }
+    #h1-accesories{
+        top: 50px;
+        right: 100px;
+    }
     .sixth-main{
         padding: 0;
     }
@@ -396,6 +403,11 @@
 @media only screen and (min-width:750px) and (max-width:800px){
     *{
         font-size: small;
+    }
+    #h1-accesories, #h1-skincare{
+        top: 100px;
+        right: 150px;
+        font-size: large;
     }
     .first-main ul{
         padding:30px;

@@ -146,6 +146,9 @@ p{
     *{
         font-size: xx-small;
     }
+    .header ul li a{
+        font-size: small;
+    }
     .skincare{
         flex-direction: column;
     }
@@ -169,6 +172,9 @@ p{
         width:250px;
         height: auto;
         margin-left: 40px;
+    }
+    .list li{
+        font-size: xx-small;
     }
     .footer{
         padding:0;

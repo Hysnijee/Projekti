@@ -117,6 +117,9 @@ form label{
     *{
         font-size: xx-small;
     }
+    .header ul li a{
+        font-size: small;
+    }
     .main{
         flex-direction: column;
         padding:30px;
@@ -140,8 +143,8 @@ form label{
         padding-left:0;
     }
     #submit{
-        height:40px;
-        width:130px;
+        width:100px;
+        height:30px;
         margin-top: 40px;
     }
     .footer{
