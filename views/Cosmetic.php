@@ -37,7 +37,14 @@
                     }
                 ?>
                 </ul>
-                <img src="../images/photo1.jpg">
+                
+                <div class="slider">
+                <button class="slide-button slide-left" onclick="levizja1(-1)">&#10094;</button> <!--&#10094 ne unicode shigjeta-->
+                <img class="slide slide1" src="../images/photo1.jpg">
+                <img class="slide slide1" src="../images/photo2.jpg">
+                <img class="slide slide1" src="../images/photo3.jpg">
+                <button class="slide-button slide-right" onclick="levizja1(+1)">&#10095;</button>
+                </div>   
             </div>
             
             <div id="BathBody">
@@ -229,5 +236,47 @@
         <?php 
         include('../reusableCode/footer.php');
         ?>
+    <script>
+        var slideIndex = 1;//pozitat e fotove
+        slider1(slideIndex);
+        
+        function levizja1(n) {  //poziten e fotove, pranon nje parameter n, nalt e kemi bo(+1) edhe (-1)
+           slider1(slideIndex = slideIndex+n);
+        }
+        
+        function slider1(n) {
+            var fotot = document.getElementsByClassName("slide1");
+            if (n >fotot.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = fotot.length
+            } ;
+            for (i = 0; i < fotot.length; i++) {
+                fotot[i].style.display = "none";
+            }
+            fotot[slideIndex-1].style.display = "block";
+        }
+
+        slider2(slideIndex);
+        
+        function levizja2(n) {  //poziten e fotove, pranon nje parameter n, nalt e kemi bo(+1) edhe (-1)
+           slider2(slideIndex = slideIndex+n);
+        }
+
+        function slider2(n) {
+            var fotot = document.getElementsByClassName("slide2");
+            if (n >fotot.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = fotot.length
+            } ;
+            for (i = 0; i < fotot.length; i++) {
+                fotot[i].style.display = "none";
+            }
+            fotot[slideIndex-1].style.display = "block";
+        }
+    </script>
     </body>
 </html>

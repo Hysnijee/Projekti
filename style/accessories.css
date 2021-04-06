@@ -3,7 +3,6 @@
     padding:0;
     background-color: #191b1f;
     font-family: century gothic;
-    color:white;
 }
 .header{
     height:50px;
@@ -19,9 +18,16 @@
 }
 .header ul li a{
     text-decoration: none;
+    color:white;
     font-size: large;
 }
 /*---------------Body---------------*/
+.Accessories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:20px;
+}
 img{
     width:100% ;
 }
@@ -40,17 +46,12 @@ img{
     background-color: #555;
 }
 /************************************/
-.Accessories{
-    display: flex;
-    padding-bottom:20px;
-}
-.Accessories img{
-    width:450px;
+
+.Accessories img {
+    width:100%;
     height:300px;
     margin-top: 50px;
-    border:1px solid white;
     padding:20px;
-    border-style: dashed;
 }
 .list li{
     color: white;
@@ -130,6 +131,9 @@ h4{
 @media only screen and (max-width:400px){
     *{
         font-size: xx-small;
+    }
+    .header ul li a{
+        font-size: small;
     }
     img{
         height: 280px;
