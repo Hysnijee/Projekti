@@ -58,6 +58,6 @@ class Registration{
         $user = new SimpleUser($this->username, $this->password, 0, $this->email, $this->name, $this->lastname, $this->city, $this->address, $this->ccNo);
         $mapper = new UserMapper();
         $mapper->insertUser($user);
-        header("Location:../views/login.php");
+        header("Location:../views/index.php");
     }
 }
