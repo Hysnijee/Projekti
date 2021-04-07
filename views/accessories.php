@@ -4,8 +4,8 @@
     require_once '../components/productMapper.php';
     include_once '../components/article.php';
     require_once '../components/articleMapper.php';
-    $mapper2 = new ProductMapper();
     $mapper = new ArticleMapper();
+    $mapper2 = new ProductMapper();
 ?>
 <!DOCTYPE html>
 <head>
