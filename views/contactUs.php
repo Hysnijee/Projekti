@@ -40,7 +40,7 @@
     </div>
     
     <div>
-        <button style="background-color: white; height:30px; margin-left:50px; padding: 5px 5px;">
+        <button style="background-color: white; height:30px; margin-left:50px; padding: 5px 5px; border-style:double;">
         <a href="../views/ceo.php/" style="text-decoration: none; color:white;">
         Meet the CEOs & Founders of this website</a></button>
     </div>

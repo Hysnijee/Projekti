@@ -34,11 +34,13 @@
                     }
                 ?>
             </div>
-            <p id="pp"><b>Fashion Up</b></br></br>
-            <?php 
-                $object = $mapper->getDescriptionByType('Fashion-up');
-            ?>
-            </p>
+            <div id="description">
+                <p id="pp"><b>Fashion Up</b></br></br>
+                <?php 
+                    $object = $mapper->getDescriptionByType('Fashion-up');
+                ?>
+                </p>
+            </div>
             <div id="Accessories"> 
                 <h4>Accessories</h4>
                         <?php
