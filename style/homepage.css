@@ -76,6 +76,7 @@
 .second-main{
     padding-top: 30px;
     padding-bottom: 100px;
+    width:100%;
 }
 .image-list{
     display: flex;
@@ -85,7 +86,6 @@
 .image-list li img{
     height:200px;
     opacity: 0.8;
-    width:135px;
 }
 /*----------------------------*/
 .third-main{
