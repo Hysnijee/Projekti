@@ -23,12 +23,16 @@
     color:white;
     font-size: large;
 }
-/*body*/
+/*---------body-------------*/
 .main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 50px;
+}
+#ceo{
+    display: flex;
+    flex-direction: column;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -50,30 +54,24 @@ h1{
 p{
     font-size: 14px;
 }
-.about{
-    padding-top: 70px;
-    text-align: center;
-}
 #ceobio{
     font-size: 14px;
-    padding-left: 300px;
-    padding-top: 40px;
-    width: 650px;
+    width: 400px;
+    padding-top:80px;
+    padding-bottom: 80px;
 }
-.contactCeos{
-    padding-top: 100px;
-    padding-left: 250px;
+#ceoContact{
     display: flex;
     flex-direction: row;
+    font-size:12px;
 }
-.contactCeos img{
+li img{
     border-radius: 40px;
     width: 25px;
     height: 25px;
 }
 #ulc{
     list-style-type: none;
-    padding-left: 70px;
 }
 button {
     border: none;
@@ -148,6 +146,11 @@ button:hover, a:hover {
         flex-direction: column;
         padding-top: 50px;
     }
+    #ceo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
     .card {
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
         max-width: 250px;
@@ -181,21 +184,15 @@ button:hover, a:hover {
         width: 100%;
         font-size: 14px;
     }
+    #ceoContact{
+        padding-left: 100px;
+    }
     #ceobio {
         font-size: 10px;
         padding-left: 40px;
         padding-top: 40px;
+        padding-bottom: 40px;
         width: 300px;
-    }
-    .contactCeos {
-        padding-top: 80px;
-        padding-left: 30px;
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-    }
-    #ceoAlbiona{
-        margin-bottom: 50px;
     }
     /*----footer----*/
     .footer{
@@ -228,8 +225,19 @@ button:hover, a:hover {
 @media only screen and (min-width:760px) and (max-width:780px){
 
     /*---- body ---*/
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+    #ceo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
     .card {
-        max-width: 250px;
+        max-width: 300px;
         text-align: center;
     }
     h1 {
@@ -255,18 +263,16 @@ button:hover, a:hover {
         width: 100%;
         font-size: 15px;
     }
+    #ceoContact{
+        padding-left: 250px;
+        font-size: 12px;
+    }
     #ceobio {
         font-size: 12px;
-        padding-left: 100px;
+        padding-left: 120px;
         padding-top: 40px;
         width: 550px;
-    }
-    .contactCeos {
-        padding-top: 100px;
-        padding-left: 80px;
-        display: flex;
-        flex-direction: row;
-        font-size: x-small;
+        padding-bottom: 50px;
     }
     /*footer*/
     .footer{
