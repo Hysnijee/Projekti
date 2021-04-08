@@ -49,24 +49,24 @@
         <h1>About our CEOs</h1>
         <p id="ceobio">
             <b><i>Albiona Berisha</i></b>, e lindur me 15.03.2001 ne Prishtine. Shkollimin e ulet dhe te mesem te ulet e kreu ne 
-            fshatin Dejne, Komuna e Rahovecit. Ne vitin 2019 perfundoj shkollimin e mesem ne gjimnazin "Hajdar Dushi" ne Gjakove, dhe aktualisht
+            fshatin Dejne, Komuna e Rahovecit. Ne vitin 2019 perfundoj shkollimin e mesem te larte ne gjimnazin "Hajdar Dushi" ne Gjakove, dhe aktualisht
             eshte studente e nivelit bachelor per Shkenca Kompjuterike dhe Inxhinieri ne Universitetin per Biznes dhe Teknologji (UBT).
         </p>
         <p id="ceobio">
             <b><i>Hysnije Zllanoga</i></b>, e lindur me 03.06.2001 ne Rahovec. Shkollimin e ulet dhe te mesem te ulet e kreu ne 
-            Rahovec, Komuna e Rahovecit. Ne vitin 2019 perfundoj shkollimin e mesem ne gjimnazin "Xhelal Hajda - Toni" ne Rahovec, dhe aktualisht
+            Rahovec, Komuna e Rahovecit. Ne vitin 2019 perfundoj shkollimin e mesem te larte ne gjimnazin "Xhelal Hajda - Toni" ne Rahovec, dhe aktualisht
             eshte studente e nivelit bachelor per Shkenca Kompjuterike dhe Inxhinieri ne Universitetin per Biznes dhe Teknologji (UBT).
         </p>
     </div>
     <div class="contactCeos">
             <div id="ceoAlbiona">
                 <ul id="ulc"> 
-                <li><img src="../images/ceoEmail.PNG"><span style="padding-left:10px;">Email:</span> albionaberish@hmail.com</li></br>
+                <li><img src="../images/ceoEmail.PNG"><span style="padding-left:10px;">Email:</span> albionaberish@gmail.com</li></br>
                 <li><img src="../images/ceoTel.png"><span style="padding-left:10px;">Numri</span> tel.: +383845282594</li></ul>
             </div></br>
             <div id="ceoHysnije">
                 <ul id="ulc"> 
-                <li><img src="../images/ceoEmail.PNG"><span style="padding-left:10px;">Email:</span> hysnijee.zllanoga@hmail.com</li></br>
+                <li><img src="../images/ceoEmail.PNG"><span style="padding-left:10px;">Email:</span> hysnijee.zllanoga@gmail.com</li></br>
                 <li><img src="../images/ceoTel.png"><span style="padding-left:10px;">Numri</span> tel.: +383849604201</li></ul>
             </div>
     </div>
