@@ -1,56 +1,286 @@
-    .main{
+*{
+    margin:0;
+    padding:0;
+    background-color: #191b1f;
+    font-family: century gothic;
+    color:white;
+}
+/*--------header---------*/
+.header{
+    height:50px;
+    opacity: 0.8;
+}
+.header ul{
+    display: flex;
+    position: relative;
+    top:15px;
+    bottom:15px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.header ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: large;
+}
+/*body*/
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 30px;
+    padding-top: 10px;
+}
+p{
+    font-size: 14px;
+}
+.about{
+    padding-top: 70px;
+    text-align: center;
+}
+#ceobio{
+    font-size: 14px;
+    padding-left: 300px;
+    padding-top: 40px;
+    width: 650px;
+}
+.contactCeos{
+    padding-top: 100px;
+    padding-left: 250px;
+    display: flex;
+    flex-direction: row;
+}
+.contactCeos img{
+    border-radius: 40px;
+    width: 25px;
+    height: 25px;
+}
+#ulc{
+    list-style-type: none;
+    padding-left: 70px;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+/*--------footer-----------*/
+.footer{
+    display: flex;
+    color: white;
+    padding-top: 100px;
+    padding-left:6%;
+    padding-bottom: 50px;
+}
+.main-list{
+    display: flex;
+    list-style: none;
+}
+.inner-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-left:150px;
+}
+.footer ul li img{
+    width:120px;
+    height:30px;
+}
+#hr-separate{
+    width:80%;
+    margin-top:100px;
+    margin-left: 150px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    padding:30px;
+}
+.socials img{
+    width:50px;
+    height:50px;
+}
+
+/*------ Responsive per iPhoneX ---------*/
+@media only screen and (max-width:400px){
+    *{
+        font-size: xx-small;
+    }
+    .header ul li a{
+        font-size: small;
+    }
+    /*--- body ----*/
+    .main {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        padding-top: 50px;
     }
     .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 300px;
-        margin: auto;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        max-width: 250px;
         text-align: center;
         font-family: arial;
     }
+    h1 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
     .title {
         color: grey;
-        font-size: 18px;
-    }
-    button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        font-size: 18px;
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     a {
         text-decoration: none;
-        font-size: 22px;
+        font-size: 18px;
         color: black;
     }
-    button:hover, a:hover {
-        opacity: 0.7;
+    p {
+        font-size: 10px;
+    }
+    button {
+        border: none;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        cursor: pointer;
+        width: 100%;
+        font-size: 14px;
+    }
+    #ceobio {
+        font-size: 10px;
+        padding-left: 40px;
+        padding-top: 40px;
+        width: 300px;
+    }
+    .contactCeos {
+        padding-top: 80px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
     }
     #ceoAlbiona{
-        padding-bottom: 200px;
+        margin-bottom: 50px;
     }
-    .collapsible {
-        color: white;
-        cursor: pointer;
-        border: none;
-        text-align: center;
-        outline: none;
-
+    /*----footer----*/
+    .footer{
+        padding:0;
     }
-    .active, .collapsible:hover {
-        background-color: rgb(31, 30, 30);
+    #hr-separate{
+        margin-left: 40px;
+        margin-top:0;
     }
-    .content {
-        padding: 0 18px;
+    .inner-list{
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    .footer ul li img{
+        width:40px;
+        height:15px;
+    }
+    .first-footer-ul li:nth-child(2){
         display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
     }
+    .main-list{
+        margin-left: 15px;
+    }
+    .socials img{
+        width: 30px;
+        height:30px;
+    }
+}
+/*--------- Responsive per iPad --------*/
+@media only screen and (min-width:760px) and (max-width:780px){
+
+    /*---- body ---*/
+    .card {
+        max-width: 250px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .title {
+        color: grey;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+    }
+    button {
+        border: none;
+        padding: 8px;
+        background-color: #000;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+    }
+    #ceobio {
+        font-size: 12px;
+        padding-left: 100px;
+        padding-top: 40px;
+        width: 550px;
+    }
+    .contactCeos {
+        padding-top: 100px;
+        padding-left: 80px;
+        display: flex;
+        flex-direction: row;
+        font-size: x-small;
+    }
+    /*footer*/
+    .footer{
+        padding:40px;
+        font-size: xx-small;
+    }
+    .inner-list{
+        margin-left: 40px;
+    }
+    #hr-separate{
+        margin-left: 10%;
+    }
+    .socials img{
+        height: 40px;
+        width: 40px;
+    }
+}
