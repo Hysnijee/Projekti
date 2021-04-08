@@ -22,6 +22,7 @@
                     Ne e vlerësojmë opinionin tuaj, dhe presim për të dëgjuar nga ju.
                     Ju lutem plotësojeni formën e dhënë nëse dëshironi të na shkruani email.</li>
                 <li><img src="../images/ceo.jpg"></li>
+                <li><a href="../views/ceo.php">Meet the CEOs & Founders of this website</a></li>
             </ul>
         </div>
         <div class="box2">
@@ -37,12 +38,6 @@
                 <input type="submit" value="Submit" id="submit" name='contact-submit'>
             </form>
         </div>
-    </div>
-    
-    <div>
-        <button style="background-color: white; height:30px; margin-left:50px; padding: 5px 5px; border-style:double;">
-        <a href="../views/ceo.php" style="text-decoration: none; color:white;">
-        Meet the CEOs & Founders of this website</a></button>
     </div>
     <?php 
         include('../reusableCode/footer.php');
