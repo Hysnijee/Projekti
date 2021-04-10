@@ -40,9 +40,9 @@
                 <li><img src="../images/prod10.jpg"></li>
                 <li><img src="../images/prod13.jpg"></li>
                 <li><img src="../images/prod15.jpg"></li>
-                <li><img src="../images/prod11.jpg"></li>
-                <li><img src="../images/prod9.jpg"></li>
+                <li><img src="../images/prod11.jpg"></li>               
                 <li><img src="../images/prod14.jpg"></li>
+                <li><img src="../images/prod9.jpg"></li>
             </ul>
         </div>
         <div class="third-main">
