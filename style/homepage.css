@@ -76,17 +76,20 @@
 .second-main{
     padding-top: 30px;
     padding-bottom: 100px;
-    width:100%;
+    width:99%;
 }
 .second-main ul{
     display: flex;
     list-style: none;
-    width:90%;
+    width:100%;
+}
+.second-main ul li{
+    width:10%;
 }
 .second-main ul li img{
     height:200px;
     opacity: 0.8;
-    margin:5px;
+    width:100%;
 }
 /*----------------------------*/
 .third-main{
