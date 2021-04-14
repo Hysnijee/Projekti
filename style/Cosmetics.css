@@ -304,20 +304,19 @@ h4{
     p{
         font-size: 10px;
     }
-    #Produkti {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        Width: 250px;
-        height: 450px;
-        text-align: center;
-        font-size: 12px;
-        padding-left: 100px;
-        padding-top: 10%;
-    }
     .main-ul img{
         width:130px;
         height:130px;
+    }
+    .list li{
+        color: white;
+        font-size: small;
+        text-align: center;
+        list-style-type: none;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 100px;
+        margin-left: 100px;
     }
     
     .footer{
