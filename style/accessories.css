@@ -69,6 +69,12 @@ h4{
     background-color: white;
     color: black;
 }
+#Accessories, #Jewerly, #FashionAccessories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
 .list li{
     color: white;
     font-size: small;
@@ -76,6 +82,8 @@ h4{
     list-style-type: none;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .list li img{
     width: 150px;
@@ -96,10 +104,7 @@ h4{
     width: 70%;
     margin-left: 15%;
 }
-#description :hover {
-    background-color: rgb(48, 47, 47);
-    width: 87.5%;
-}
+
 
 /*--------Footer------------*/
 .footer{

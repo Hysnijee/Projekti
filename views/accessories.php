@@ -41,8 +41,8 @@
                 ?>
                 </p>
             </div>
-            <div id="Accessories"> 
-                <h4>Accessories</h4>
+            <h4>Accessories</h4>
+                <div id="Accessories" > 
                         <?php
                         $products = $mapper2->getProductsByLowerCategory('Accessories');
                         foreach($products as $product){
@@ -62,9 +62,9 @@
                         <?php 
                             }
                         ?>
-            </div>
+                </div>
+            <h4>Jewerly</h4>
             <div id="Jewerly"> 
-                <h4>Jewerly</h4>
                 <?php
                     $products = $mapper2->getProductsByLowerCategory('Jewerly');
                     foreach($products as $product){
@@ -85,8 +85,8 @@
                     }
                 ?>
             </div>     
+            <h4>Fashion Accessories</h4>
             <div id="FashionAccessories"> 
-                <h4>Accessories</h4>
                 <?php
                     $products = $mapper2->getProductsByLowerCategory('Fashion Accessories');
                     foreach($products as $product){

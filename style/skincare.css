@@ -77,11 +77,22 @@ p{
     font-size: xx-large;
     padding:15px;
 }
+#first-main, #second-main, #third-main, #fourth-main, #fifth-main, #sixth-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
 .list li{
     color: white;
     font-size: small;
     text-align: center;
     list-style-type: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .list li img{
     width: 150px;

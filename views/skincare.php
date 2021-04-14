@@ -50,8 +50,8 @@
         <img src="../images/skincare-bg.jpg">
     </div>
     
+    <p>Pastrues</p>
     <div id="first-main">
-        <p>Pastrues</p>
         <?php
             $products = $mapper->getProductsByLowerCategory('pastrues');
             foreach($products as $product){
@@ -72,8 +72,8 @@
             }
         ?>
     </div>
+    <p>Hidratues</p>
     <div id="second-main">
-        <p>Hidratues</p>
         <?php
             $products = $mapper->getProductsByLowerCategory('hidratues');
             foreach($products as $product){
@@ -94,8 +94,8 @@
             }
         ?>
     </div>
+    <p>Serume dhe Tretmane</p>
     <div id="third-main">
-        <p>Serume dhe Tretmane</p>
         <?php
             $products = $mapper->getProductsByLowerCategory('serume');
             foreach($products as $product){
@@ -116,8 +116,8 @@
             }
         ?>
     </div>
+    <p>Maska</p>
     <div id="fourth-main">
-        <p>Maska</p>
         <?php
             $products = $mapper->getProductsByLowerCategory('maska');
             foreach($products as $product){
@@ -138,8 +138,8 @@
             }
         ?>
     </div>
+    <p>Kujdesi ndaj Diellit</p>
     <div id="fifth-main">
-        <p>Kujdesi ndaj Diellit</p>
         <?php
             $products = $mapper->getProductsByLowerCategory('kunderDiellit');
             foreach($products as $product){
@@ -160,8 +160,8 @@
             }
         ?>
     </div>
+    <p>Ushqyes</p>
     <div id="sixth-main">
-        <p>Ushqyes</p>
         <?php
             $products = $mapper->getProductsByLowerCategory('ushqyes');
             foreach($products as $product){

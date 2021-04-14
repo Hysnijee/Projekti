@@ -16,7 +16,6 @@
         <?php
         include('../reusableCode/header.php');
         ?>
-
         <main>
             <img src="../images/Cosmetics.PNG">
             <div class="Cosmetics">
@@ -47,8 +46,8 @@
                 </div>   
             </div>
             
+            <h4>Bath & Body</h4>
             <div id="BathBody">
-                <h4>Bath & Body</h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Bath & Body');
                     foreach($products as $product){
@@ -69,9 +68,8 @@
                     }
                 ?>
             </div>
-
+            <h4>Lip Gloss</h4> 
             <div id="LipGloss">
-                <h4>Lip Gloss</h4> 
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Lip Gloss');
                     foreach($products as $product){
@@ -90,12 +88,10 @@
                 </ul>
                 <?php 
                     }
-                ?>
-                
+                ?>              
             </div>
-
+            <h4>Lip </h4>
             <div id="Lip">
-                <h4>Lip </h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Lip');
                     foreach($products as $product){
@@ -116,9 +112,8 @@
                     }
                 ?>
             </div>
-
+            <h4>Foundation</h4>
             <div id="Foundation">
-                <h4>Foundation</h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Foundation');
                     foreach($products as $product){
@@ -139,9 +134,8 @@
                     }
                 ?>
             </div>
-
+            <h4>Lash Mascara </h4>
             <div id="LashMascara">
-                <h4>Lash Mascara </h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Lash Mascara');
                     foreach($products as $product){
@@ -162,9 +156,8 @@
                     }
                 ?>
             </div>
-
+            <h4>Parfume</h4>
             <div id="Parfume">
-                <h4>Parfume</h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Parfume');
                     foreach($products as $product){
@@ -183,12 +176,10 @@
                 </ul>
                 <?php 
                     }
-                ?>
-                
+                ?>      
             </div>
-
+            <h4>Powder</h4>
             <div id="Powder">
-                <h4>Powder</h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Powder');
                     foreach($products as $product){
@@ -209,9 +200,8 @@
                     }
                 ?>
             </div>
-
+            <h4>Organic Products</h4>
             <div id="Organic">
-                <h4>Organic Products</h4>
                 <?php
                     $products = $mapper->getProductsByLowerCategory('Organic Products');
                     foreach($products as $product){
@@ -243,7 +233,6 @@
         function levizja1(n) {  //poziten e fotove, pranon nje parameter n, nalt e kemi bo(+1) edhe (-1)
            slider1(slideIndex = slideIndex+n);
         }
-        
         function slider1(n) {
             var fotot = document.getElementsByClassName("slide1");
             if (n >fotot.length) {

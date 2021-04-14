@@ -73,6 +73,12 @@ p{
     font-size: xx-large;
     padding:15px;
 }
+#BathBody, #LipGloss, #Lip, #Foundation, #LashMascara, #Parfume, #Powder, #Organic{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
 .list li{
     color: white;
     font-size: small;
@@ -80,6 +86,8 @@ p{
     list-style-type: none;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 .list li img{
     width: 150px;
