@@ -307,13 +307,7 @@ h4{
         height:130px;
     }
     .list li{
-        color: white;
-        font-size: small;
-        text-align: center;
-        list-style-type: none;
         width:auto;
-        margin-right: 100px;
-        margin-left: 100px;
     }
     
     .footer{
