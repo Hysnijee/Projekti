@@ -232,6 +232,16 @@ p{
     .text{
         font-size: x-small;
     }
+    .list li{
+        color: white;
+        font-size: small;
+        text-align: center;
+        list-style-type: none;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
     .skincare img{
         width:250px;
         height:auto;

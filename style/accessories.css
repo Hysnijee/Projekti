@@ -252,6 +252,16 @@ h4 {
         width: 80%;
         margin-left: 10%;
     }
+    .list li{
+        color: white;
+        font-size: small;
+        text-align: center;
+        list-style-type: none;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
     /*footer*/
     .footer{
         padding:40px;
