@@ -227,6 +227,9 @@ p{
         width:230px;
         margin-left:30px;
     }
+    .list li{
+        margin:0;
+    }
     .text{
         font-size: x-small;
     }
