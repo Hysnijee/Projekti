@@ -231,7 +231,19 @@ p{
         font-size: x-small;
     }
     .list li{
+<<<<<<< HEAD
         width: auto;
+=======
+        color: white;
+        font-size: small;
+        text-align: center;
+        list-style-type: none;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-right: 100px;
+        margin-left: 100px;
+        width:auto;
+>>>>>>> 4cef9d0cff8fc9e82caf74a4f3d172d200399295
     }
     .skincare img{
         width:250px;
