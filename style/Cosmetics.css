@@ -84,9 +84,7 @@ p{
     font-size: small;
     text-align: center;
     list-style-type: none;
-    cursor: pointer;
     width: 200px;
-    transition: 0.3s;
     margin-right: 100px;
     margin-left: 100px;
 }
@@ -313,8 +311,7 @@ h4{
         font-size: small;
         text-align: center;
         list-style-type: none;
-        cursor: pointer;
-        transition: 0.3s;
+        width:auto;
         margin-right: 100px;
         margin-left: 100px;
     }
