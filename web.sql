@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 14, 2021 at 03:42 PM
+-- Generation Time: Apr 14, 2021 at 04:02 PM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 7.4.13
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -216,12 +216,12 @@ INSERT INTO `products` (`id`, `name`, `category`, `lowerCategory`, `img_path`, `
 (128, 'To You Hat in a Box.', 'Accessories', 'Fashion Accessories', '../images/acc19.Jpeg', 8.95),
 (129, 'Laura Knit Scarf.', ' Accessories', 'Fashion  Accessories', '../images/acc20.Jpeg', 16.95),
 (130, 'Oceanica Bucket Bag.', 'Accessories', 'Fashion Accessories', '../images/acc21.Jpeg', 24.95),
-(131, 'LOVE NATURE Hydrating Face Cream with Organic Aloe Vera & Coconut', 'skincare', 'hidratues', '../images/hidratuess.jpg', 5.99),
-(132, 'Miracle Perfection Serum', 'skincare', 'serume', '../images/serumm.jpg', 8.99),
-(133, 'LOVE NATURE Hydrating Face Cream with Organic Aloe Vera & Coconut', 'skincare', 'kunderDiellit', '../images/sunn.jpg', 16.99),
 (134, 'Demi Frame Sunglasses', 'Accessories', 'Accessories', '../images/accnew.Jpeg', 39.99),
 (135, 'Lash Extension Mascara', 'Cosmetics', 'Lash Mascara', '../images/lash9.Jpeg', 6.89),
-(136, 'Foundation for oily skin', 'Cosmetics', 'Foundation', '../images/foundation6.jpg', 12.99);
+(136, 'Foundation for oily skin', 'Cosmetics', 'Foundation', '../images/foundation6.jpg', 12.99),
+(137, 'NovAge Men Intense Losion Xhel Kundër Plakjes', 'skincare', 'hidratues', '../images/hidratues-last.Jpeg', 17.99),
+(138, 'Love Nature Skrab Marmelade e manave ​​për fytyrë', 'skincare', 'serume', '../images/serume-last.Jpeg', 5.99),
+(139, 'Sun Zone Ujë për Nxierje për Fytyrë dhe Trup', 'skincare', 'kunderDiellit', '../images/kujdesi-last.Jpeg', 8.49);
 
 -- --------------------------------------------------------
 
@@ -299,7 +299,7 @@ ALTER TABLE `homepagedesc`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=140;
 
 --
 -- AUTO_INCREMENT for table `user`
